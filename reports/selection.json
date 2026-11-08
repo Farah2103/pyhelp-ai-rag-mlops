@@ -1,0 +1,163 @@
+{
+  "selected": "B",
+  "reason": "highest dev evidence recall, then passage precision",
+  "calibration": {
+    "threshold": 0.39999999999999997,
+    "balanced_accuracy": 1.0,
+    "answer_retention": 1.0,
+    "negative_rejection": 1.0
+  },
+  "curves": [
+    {
+      "threshold": 0.2,
+      "balanced_accuracy": 0.6,
+      "answer_retention": 1.0,
+      "negative_rejection": 0.2
+    },
+    {
+      "threshold": 0.225,
+      "balanced_accuracy": 0.6,
+      "answer_retention": 1.0,
+      "negative_rejection": 0.2
+    },
+    {
+      "threshold": 0.25,
+      "balanced_accuracy": 0.6,
+      "answer_retention": 1.0,
+      "negative_rejection": 0.2
+    },
+    {
+      "threshold": 0.275,
+      "balanced_accuracy": 0.6,
+      "answer_retention": 1.0,
+      "negative_rejection": 0.2
+    },
+    {
+      "threshold": 0.3,
+      "balanced_accuracy": 0.6,
+      "answer_retention": 1.0,
+      "negative_rejection": 0.2
+    },
+    {
+      "threshold": 0.32499999999999996,
+      "balanced_accuracy": 0.7,
+      "answer_retention": 1.0,
+      "negative_rejection": 0.4
+    },
+    {
+      "threshold": 0.35,
+      "balanced_accuracy": 0.8,
+      "answer_retention": 1.0,
+      "negative_rejection": 0.6
+    },
+    {
+      "threshold": 0.375,
+      "balanced_accuracy": 0.9,
+      "answer_retention": 1.0,
+      "negative_rejection": 0.8
+    },
+    {
+      "threshold": 0.39999999999999997,
+      "balanced_accuracy": 1.0,
+      "answer_retention": 1.0,
+      "negative_rejection": 1.0
+    },
+    {
+      "threshold": 0.42499999999999993,
+      "balanced_accuracy": 1.0,
+      "answer_retention": 1.0,
+      "negative_rejection": 1.0
+    },
+    {
+      "threshold": 0.44999999999999996,
+      "balanced_accuracy": 1.0,
+      "answer_retention": 1.0,
+      "negative_rejection": 1.0
+    },
+    {
+      "threshold": 0.4749999999999999,
+      "balanced_accuracy": 1.0,
+      "answer_retention": 1.0,
+      "negative_rejection": 1.0
+    },
+    {
+      "threshold": 0.49999999999999994,
+      "balanced_accuracy": 1.0,
+      "answer_retention": 1.0,
+      "negative_rejection": 1.0
+    },
+    {
+      "threshold": 0.5249999999999999,
+      "balanced_accuracy": 1.0,
+      "answer_retention": 1.0,
+      "negative_rejection": 1.0
+    },
+    {
+      "threshold": 0.5499999999999999,
+      "balanced_accuracy": 0.95,
+      "answer_retention": 0.9,
+      "negative_rejection": 1.0
+    },
+    {
+      "threshold": 0.575,
+      "balanced_accuracy": 0.85,
+      "answer_retention": 0.7,
+      "negative_rejection": 1.0
+    },
+    {
+      "threshold": 0.5999999999999999,
+      "balanced_accuracy": 0.85,
+      "answer_retention": 0.7,
+      "negative_rejection": 1.0
+    },
+    {
+      "threshold": 0.625,
+      "balanced_accuracy": 0.85,
+      "answer_retention": 0.7,
+      "negative_rejection": 1.0
+    },
+    {
+      "threshold": 0.6499999999999999,
+      "balanced_accuracy": 0.85,
+      "answer_retention": 0.7,
+      "negative_rejection": 1.0
+    },
+    {
+      "threshold": 0.6749999999999998,
+      "balanced_accuracy": 0.8,
+      "answer_retention": 0.6,
+      "negative_rejection": 1.0
+    },
+    {
+      "threshold": 0.7,
+      "balanced_accuracy": 0.8,
+      "answer_retention": 0.6,
+      "negative_rejection": 1.0
+    },
+    {
+      "threshold": 0.7249999999999999,
+      "balanced_accuracy": 0.75,
+      "answer_retention": 0.5,
+      "negative_rejection": 1.0
+    },
+    {
+      "threshold": 0.7499999999999998,
+      "balanced_accuracy": 0.7,
+      "answer_retention": 0.4,
+      "negative_rejection": 1.0
+    },
+    {
+      "threshold": 0.7749999999999999,
+      "balanced_accuracy": 0.7,
+      "answer_retention": 0.4,
+      "negative_rejection": 1.0
+    },
+    {
+      "threshold": 0.7999999999999998,
+      "balanced_accuracy": 0.6,
+      "answer_retention": 0.2,
+      "negative_rejection": 1.0
+    }
+  ],
+  "limitation": "Small source-derived dev/test set; no independent annotator. Threshold is a heuristic, not proof of grounding."
+}

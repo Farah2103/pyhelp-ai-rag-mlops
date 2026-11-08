@@ -1,0 +1,10 @@
+{
+  "name": "B",
+  "chunk_size": 800,
+  "chunk_overlap": 120,
+  "top_k": 5,
+  "embedding_model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+  "embedding_revision": "e8f8c211226b894fcb81acc59f3b34ba3efd5f42",
+  "min_score": 0.3,
+  "max_context_chars": 6000
+}

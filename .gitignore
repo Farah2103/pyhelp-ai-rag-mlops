@@ -1,0 +1,15 @@
+.venv/
+__pycache__/
+.pytest_cache/
+.coverage
+.env
+*.log
+mlruns/
+models/
+monitoring/requests.jsonl
+*.db
+artifacts/experiments/
+
+.venv-modern/
+
+.dvc/private-cache/

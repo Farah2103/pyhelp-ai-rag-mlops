@@ -1,0 +1,1041 @@
+{
+  "version": "3.11.18",
+  "archive_sha256": "e3cf166d4e090f36f09faf4b0c4a0d54ece3402f4a18a4c8328c946cc5e825cb",
+  "documents": [
+    {
+      "document_id": "7b14fb6d66c9e627",
+      "source_path": "tutorial/introduction.txt",
+      "title": "3. An Informal Introduction to Python",
+      "version": "3.11.18",
+      "sha256": "12542318badb8702ec8225931001641bfb865e2bbc97c283e25c0a4b3c2b43d9",
+      "clean_sha256": "12542318badb8702ec8225931001641bfb865e2bbc97c283e25c0a4b3c2b43d9",
+      "bytes": 18061,
+      "characters": 18061,
+      "sections": [
+        {
+          "title": "3. An Informal Introduction to Python",
+          "start": 0,
+          "end": 1189
+        },
+        {
+          "title": "3.1. Using Python as a Calculator",
+          "start": 1189,
+          "end": 1389
+        },
+        {
+          "title": "3.1.1. Numbers",
+          "start": 1389,
+          "end": 4062
+        },
+        {
+          "title": "3.1.2. Text",
+          "start": 4062,
+          "end": 11733
+        },
+        {
+          "title": "3.1.3. Lists",
+          "start": 11733,
+          "end": 14751
+        },
+        {
+          "title": "3.2. First Steps Towards Programming",
+          "start": 14751,
+          "end": 18061
+        }
+      ],
+      "origin": "user-supplied Python documentation archive",
+      "anomalies": []
+    },
+    {
+      "document_id": "3c62cfa3bb5c4c96",
+      "source_path": "tutorial/controlflow.txt",
+      "title": "4. More Control Flow Tools",
+      "version": "3.11.18",
+      "sha256": "4f568b95b4de231e13f089fb1f8c853a7e18210a42dce976f305d3eef83f92a9",
+      "clean_sha256": "4f568b95b4de231e13f089fb1f8c853a7e18210a42dce976f305d3eef83f92a9",
+      "bytes": 37796,
+      "characters": 37788,
+      "sections": [
+        {
+          "title": "4. More Control Flow Tools",
+          "start": 0,
+          "end": 170
+        },
+        {
+          "title": "4.1. \"if\" Statements",
+          "start": 170,
+          "end": 1084
+        },
+        {
+          "title": "4.2. \"for\" Statements",
+          "start": 1084,
+          "end": 2381
+        },
+        {
+          "title": "4.3. The \"range()\" Function",
+          "start": 2381,
+          "end": 4338
+        },
+        {
+          "title": "4.4. \"break\" and \"continue\" Statements, and \"else\" Clauses on Loops",
+          "start": 4338,
+          "end": 6386
+        },
+        {
+          "title": "4.5. \"pass\" Statements",
+          "start": 6386,
+          "end": 7065
+        },
+        {
+          "title": "4.6. \"match\" Statements",
+          "start": 7065,
+          "end": 13274
+        },
+        {
+          "title": "4.7. Defining Functions",
+          "start": 13274,
+          "end": 17976
+        },
+        {
+          "title": "4.8. More on Defining Functions",
+          "start": 17976,
+          "end": 18166
+        },
+        {
+          "title": "4.8.1. Default Argument Values",
+          "start": 18166,
+          "end": 20070
+        },
+        {
+          "title": "4.8.2. Keyword Arguments",
+          "start": 20070,
+          "end": 23630
+        },
+        {
+          "title": "4.8.3. Special parameters",
+          "start": 23630,
+          "end": 24607
+        },
+        {
+          "title": "4.8.3.1. Positional-or-Keyword Arguments",
+          "start": 24607,
+          "end": 24816
+        },
+        {
+          "title": "4.8.3.2. Positional-Only Parameters",
+          "start": 24816,
+          "end": 25432
+        },
+        {
+          "title": "4.8.3.3. Keyword-Only Arguments",
+          "start": 25432,
+          "end": 25682
+        },
+        {
+          "title": "4.8.3.4. Function Examples",
+          "start": 25682,
+          "end": 28590
+        },
+        {
+          "title": "4.8.3.5. Recap",
+          "start": 28590,
+          "end": 29414
+        },
+        {
+          "title": "4.8.4. Arbitrary Argument Lists",
+          "start": 29414,
+          "end": 30409
+        },
+        {
+          "title": "4.8.5. Unpacking Argument Lists",
+          "start": 30409,
+          "end": 31595
+        },
+        {
+          "title": "4.8.6. Lambda Expressions",
+          "start": 31595,
+          "end": 32543
+        },
+        {
+          "title": "4.8.7. Documentation Strings",
+          "start": 32543,
+          "end": 34434
+        },
+        {
+          "title": "4.8.8. Function Annotations",
+          "start": 34434,
+          "end": 35552
+        },
+        {
+          "title": "4.9. Intermezzo: Coding Style",
+          "start": 35552,
+          "end": 37788
+        }
+      ],
+      "origin": "user-supplied Python documentation archive",
+      "anomalies": []
+    },
+    {
+      "document_id": "833713645c836e5b",
+      "source_path": "tutorial/datastructures.txt",
+      "title": "5. Data Structures",
+      "version": "3.11.18",
+      "sha256": "e3b8c6efc31f07051569ac3c6f5ed535cbf1529555c27dfeed8baa59f5326102",
+      "clean_sha256": "e3b8c6efc31f07051569ac3c6f5ed535cbf1529555c27dfeed8baa59f5326102",
+      "bytes": 23770,
+      "characters": 23770,
+      "sections": [
+        {
+          "title": "5. Data Structures",
+          "start": 0,
+          "end": 155
+        },
+        {
+          "title": "5.1. More on Lists",
+          "start": 155,
+          "end": 3347
+        },
+        {
+          "title": "5.1.1. Using Lists as Stacks",
+          "start": 3347,
+          "end": 3940
+        },
+        {
+          "title": "5.1.2. Using Lists as Queues",
+          "start": 3940,
+          "end": 4969
+        },
+        {
+          "title": "5.1.3. List Comprehensions",
+          "start": 4969,
+          "end": 8060
+        },
+        {
+          "title": "5.1.4. Nested List Comprehensions",
+          "start": 8060,
+          "end": 9633
+        },
+        {
+          "title": "5.2. The \"del\" statement",
+          "start": 9633,
+          "end": 10411
+        },
+        {
+          "title": "5.3. Tuples and Sequences",
+          "start": 10411,
+          "end": 13327
+        },
+        {
+          "title": "5.4. Sets",
+          "start": 13327,
+          "end": 14988
+        },
+        {
+          "title": "5.5. Dictionaries",
+          "start": 14988,
+          "end": 17690
+        },
+        {
+          "title": "5.6. Looping Techniques",
+          "start": 17690,
+          "end": 20132
+        },
+        {
+          "title": "5.7. More on Conditions",
+          "start": 20132,
+          "end": 22071
+        },
+        {
+          "title": "5.8. Comparing Sequences and Other Types",
+          "start": 22071,
+          "end": 23770
+        }
+      ],
+      "origin": "user-supplied Python documentation archive",
+      "anomalies": []
+    },
+    {
+      "document_id": "a93925347dcb39a4",
+      "source_path": "tutorial/modules.txt",
+      "title": "6. Modules",
+      "version": "3.11.18",
+      "sha256": "e8b5491f1bb21d2cbb36e96d443f2a3169f44d73f1f23013b1706506253427fe",
+      "clean_sha256": "e8b5491f1bb21d2cbb36e96d443f2a3169f44d73f1f23013b1706506253427fe",
+      "bytes": 24573,
+      "characters": 24573,
+      "sections": [
+        {
+          "title": "6. Modules",
+          "start": 0,
+          "end": 2421
+        },
+        {
+          "title": "6.1. More on Modules",
+          "start": 2421,
+          "end": 5321
+        },
+        {
+          "title": "6.1.1. Executing modules as scripts",
+          "start": 5321,
+          "end": 6180
+        },
+        {
+          "title": "6.1.2. The Module Search Path",
+          "start": 6180,
+          "end": 7635
+        },
+        {
+          "title": "6.1.3. \"Compiled\" Python files",
+          "start": 7635,
+          "end": 9778
+        },
+        {
+          "title": "6.2. Standard Modules",
+          "start": 9778,
+          "end": 11162
+        },
+        {
+          "title": "6.3. The \"dir()\" Function",
+          "start": 11162,
+          "end": 15522
+        },
+        {
+          "title": "6.4. Packages",
+          "start": 15522,
+          "end": 19629
+        },
+        {
+          "title": "6.4.1. Importing * From a Package",
+          "start": 19629,
+          "end": 22877
+        },
+        {
+          "title": "6.4.2. Intra-package References",
+          "start": 22877,
+          "end": 23852
+        },
+        {
+          "title": "6.4.3. Packages in Multiple Directories",
+          "start": 23852,
+          "end": 24573
+        }
+      ],
+      "origin": "user-supplied Python documentation archive",
+      "anomalies": []
+    },
+    {
+      "document_id": "a337544bc5e94c94",
+      "source_path": "tutorial/errors.txt",
+      "title": "8. Errors and Exceptions",
+      "version": "3.11.18",
+      "sha256": "84bfaa11ece035f3f33c5cfe40d174bf620a95ab8fccbc7fadbcce580af30e64",
+      "clean_sha256": "84bfaa11ece035f3f33c5cfe40d174bf620a95ab8fccbc7fadbcce580af30e64",
+      "bytes": 22064,
+      "characters": 22064,
+      "sections": [
+        {
+          "title": "8. Errors and Exceptions",
+          "start": 0,
+          "end": 273
+        },
+        {
+          "title": "8.1. Syntax Errors",
+          "start": 273,
+          "end": 1038
+        },
+        {
+          "title": "8.2. Exceptions",
+          "start": 1038,
+          "end": 2801
+        },
+        {
+          "title": "8.3. Handling Exceptions",
+          "start": 2801,
+          "end": 8783
+        },
+        {
+          "title": "8.4. Raising Exceptions",
+          "start": 8783,
+          "end": 9900
+        },
+        {
+          "title": "8.5. Exception Chaining",
+          "start": 9900,
+          "end": 11756
+        },
+        {
+          "title": "8.6. User-defined Exceptions",
+          "start": 11756,
+          "end": 12488
+        },
+        {
+          "title": "8.7. Defining Clean-up Actions",
+          "start": 12488,
+          "end": 15398
+        },
+        {
+          "title": "8.8. Predefined Clean-up Actions",
+          "start": 15398,
+          "end": 16492
+        },
+        {
+          "title": "8.9. Raising and Handling Multiple Unrelated Exceptions",
+          "start": 16492,
+          "end": 19656
+        },
+        {
+          "title": "8.10. Enriching Exceptions with Notes",
+          "start": 19656,
+          "end": 22064
+        }
+      ],
+      "origin": "user-supplied Python documentation archive",
+      "anomalies": []
+    },
+    {
+      "document_id": "34a2c2d71755e4db",
+      "source_path": "tutorial/venv.txt",
+      "title": "12. Virtual Environments and Packages",
+      "version": "3.11.18",
+      "sha256": "155ca53cea2d56d4c5d9137423ed9585468bc0984a8ce78f1f4a91286397ca0b",
+      "clean_sha256": "155ca53cea2d56d4c5d9137423ed9585468bc0984a8ce78f1f4a91286397ca0b",
+      "bytes": 7121,
+      "characters": 7121,
+      "sections": [
+        {
+          "title": "12. Virtual Environments and Packages",
+          "start": 0,
+          "end": 78
+        },
+        {
+          "title": "12.1. Introduction",
+          "start": 78,
+          "end": 1381
+        },
+        {
+          "title": "12.2. Creating Virtual Environments",
+          "start": 1381,
+          "end": 3402
+        },
+        {
+          "title": "12.3. Managing Packages with pip",
+          "start": 3402,
+          "end": 7121
+        }
+      ],
+      "origin": "user-supplied Python documentation archive",
+      "anomalies": []
+    },
+    {
+      "document_id": "7db8120c5e3a870c",
+      "source_path": "faq/programming.txt",
+      "title": "Programming FAQ",
+      "version": "3.11.18",
+      "sha256": "16ad4d7607236cd86c79f51a5c2d011a58847e89be74969055cfc71f7e867549",
+      "clean_sha256": "16ad4d7607236cd86c79f51a5c2d011a58847e89be74969055cfc71f7e867549",
+      "bytes": 74605,
+      "characters": 74605,
+      "sections": [
+        {
+          "title": "Programming FAQ",
+          "start": 0,
+          "end": 34
+        },
+        {
+          "title": "General Questions",
+          "start": 34,
+          "end": 72
+        },
+        {
+          "title": "Is there a source code level debugger with breakpoints, single-stepping, etc.?",
+          "start": 72,
+          "end": 1406
+        },
+        {
+          "title": "Are there tools to help find bugs or perform static analysis?",
+          "start": 1406,
+          "end": 1712
+        },
+        {
+          "title": "How can I create a stand-alone binary from a Python script?",
+          "start": 1712,
+          "end": 3333
+        },
+        {
+          "title": "Are there coding standards or a style guide for Python programs?",
+          "start": 3333,
+          "end": 3555
+        },
+        {
+          "title": "Core Language",
+          "start": 3555,
+          "end": 3585
+        },
+        {
+          "title": "Why am I getting an UnboundLocalError when the variable has a value?",
+          "start": 3585,
+          "end": 5260
+        },
+        {
+          "title": "What are the rules for local and global variables in Python?",
+          "start": 5260,
+          "end": 6112
+        },
+        {
+          "title": "Why do lambdas defined in a loop with different values all return the same result?",
+          "start": 6112,
+          "end": 7883
+        },
+        {
+          "title": "How do I share global variables across modules?",
+          "start": 7883,
+          "end": 8657
+        },
+        {
+          "title": "What are the \"best practices\" for using import in a module?",
+          "start": 8657,
+          "end": 11322
+        },
+        {
+          "title": "Why are default values shared between objects?",
+          "start": 11322,
+          "end": 13620
+        },
+        {
+          "title": "How can I pass optional or keyword parameters from one function to another?",
+          "start": 13620,
+          "end": 14162
+        },
+        {
+          "title": "What is the difference between arguments and parameters?",
+          "start": 14162,
+          "end": 14788
+        },
+        {
+          "title": "Why did changing list 'y' also change list 'x'?",
+          "start": 14788,
+          "end": 17841
+        },
+        {
+          "title": "How do I write a function with output parameters (call by reference)?",
+          "start": 17841,
+          "end": 20058
+        },
+        {
+          "title": "How do you make a higher order function in Python?",
+          "start": 20058,
+          "end": 21536
+        },
+        {
+          "title": "How do I copy an object in Python?",
+          "start": 21536,
+          "end": 21889
+        },
+        {
+          "title": "How can I find the methods or attributes of an object?",
+          "start": 21889,
+          "end": 22182
+        },
+        {
+          "title": "How can my code discover the name of an object?",
+          "start": 22182,
+          "end": 23725
+        },
+        {
+          "title": "What's up with the comma operator's precedence?",
+          "start": 23725,
+          "end": 24244
+        },
+        {
+          "title": "Is there an equivalent of C's \"?:\" ternary operator?",
+          "start": 24244,
+          "end": 24801
+        },
+        {
+          "title": "Is it possible to write obfuscated one-liners in Python?",
+          "start": 24801,
+          "end": 26225
+        },
+        {
+          "title": "What does the slash(/) in the parameter list of a function mean?",
+          "start": 26225,
+          "end": 27267
+        },
+        {
+          "title": "Numbers and strings",
+          "start": 27267,
+          "end": 27309
+        },
+        {
+          "title": "How do I specify hexadecimal and octal integers?",
+          "start": 27309,
+          "end": 27907
+        },
+        {
+          "title": "Why does -22 // 10 return -3?",
+          "start": 27907,
+          "end": 28596
+        },
+        {
+          "title": "How do I get int literal attribute instead of SyntaxError?",
+          "start": 28596,
+          "end": 29121
+        },
+        {
+          "title": "How do I convert a string to a number?",
+          "start": 29121,
+          "end": 30317
+        },
+        {
+          "title": "How do I convert a number to a string?",
+          "start": 30317,
+          "end": 30767
+        },
+        {
+          "title": "How do I modify a string in place?",
+          "start": 30767,
+          "end": 31546
+        },
+        {
+          "title": "How do I use strings to call functions/methods?",
+          "start": 31546,
+          "end": 32701
+        },
+        {
+          "title": "Is there an equivalent to Perl's chomp() for removing trailing newlines from strings?",
+          "start": 32701,
+          "end": 33415
+        },
+        {
+          "title": "Is there a scanf() or sscanf() equivalent?",
+          "start": 33415,
+          "end": 34004
+        },
+        {
+          "title": "What does 'UnicodeDecodeError' or 'UnicodeEncodeError' error  mean?",
+          "start": 34004,
+          "end": 34166
+        },
+        {
+          "title": "Can I end a raw string with an odd number of backslashes?",
+          "start": 34166,
+          "end": 35377
+        },
+        {
+          "title": "Performance",
+          "start": 35377,
+          "end": 35403
+        },
+        {
+          "title": "My program is too slow. How do I speed it up?",
+          "start": 35403,
+          "end": 38022
+        },
+        {
+          "title": "What is the most efficient way to concatenate many strings together?",
+          "start": 38022,
+          "end": 38886
+        },
+        {
+          "title": "Sequences (Tuples/Lists)",
+          "start": 38886,
+          "end": 38938
+        },
+        {
+          "title": "How do I convert between tuples and lists?",
+          "start": 38938,
+          "end": 39712
+        },
+        {
+          "title": "What's a negative index?",
+          "start": 39712,
+          "end": 40262
+        },
+        {
+          "title": "How do I iterate over a sequence in reverse order?",
+          "start": 40262,
+          "end": 40578
+        },
+        {
+          "title": "How do you remove duplicates from a list?",
+          "start": 40578,
+          "end": 41349
+        },
+        {
+          "title": "How do you remove multiple items from a list",
+          "start": 41349,
+          "end": 41874
+        },
+        {
+          "title": "How do you make an array in Python?",
+          "start": 41874,
+          "end": 42832
+        },
+        {
+          "title": "How do I create a multidimensional list?",
+          "start": 42832,
+          "end": 43965
+        },
+        {
+          "title": "How do I apply a method or function to a sequence of objects?",
+          "start": 43965,
+          "end": 44495
+        },
+        {
+          "title": "Why does a_tuple[i] += ['item'] raise an exception when the addition works?",
+          "start": 44495,
+          "end": 47565
+        },
+        {
+          "title": "I want to do a complicated sort: can you do a Schwartzian Transform in Python?",
+          "start": 47565,
+          "end": 48008
+        },
+        {
+          "title": "How can I sort one list by values from another list?",
+          "start": 48008,
+          "end": 48566
+        },
+        {
+          "title": "Objects",
+          "start": 48566,
+          "end": 48584
+        },
+        {
+          "title": "What is a class?",
+          "start": 48584,
+          "end": 49274
+        },
+        {
+          "title": "What is a method?",
+          "start": 49274,
+          "end": 49552
+        },
+        {
+          "title": "What is self?",
+          "start": 49552,
+          "end": 49945
+        },
+        {
+          "title": "How do I check if an object is an instance of a given class or of a subclass of it?",
+          "start": 49945,
+          "end": 52084
+        },
+        {
+          "title": "What is delegation?",
+          "start": 52084,
+          "end": 53814
+        },
+        {
+          "title": "How do I call a method defined in a base class from a derived class that extends it?",
+          "start": 53814,
+          "end": 54366
+        },
+        {
+          "title": "How can I organize my code to make it easier to change the base class?",
+          "start": 54366,
+          "end": 54889
+        },
+        {
+          "title": "How do I create static class data and static class methods?",
+          "start": 54889,
+          "end": 56372
+        },
+        {
+          "title": "How can I overload constructors (or methods) in Python?",
+          "start": 56372,
+          "end": 57236
+        },
+        {
+          "title": "I try to use __spam and I get an error about _SomeClassName__spam.",
+          "start": 57236,
+          "end": 57989
+        },
+        {
+          "title": "My class defines __del__ but it is not called when I delete the object.",
+          "start": 57989,
+          "end": 59813
+        },
+        {
+          "title": "How do I get a list of all instances of a given class?",
+          "start": 59813,
+          "end": 60133
+        },
+        {
+          "title": "Why does the result of \"id()\" appear to be not unique?",
+          "start": 60133,
+          "end": 60944
+        },
+        {
+          "title": "When can I rely on identity tests with the *is* operator?",
+          "start": 60944,
+          "end": 63932
+        },
+        {
+          "title": "How can a subclass control what data is stored in an immutable instance?",
+          "start": 63932,
+          "end": 65319
+        },
+        {
+          "title": "How do I cache method calls?",
+          "start": 65319,
+          "end": 68181
+        },
+        {
+          "title": "Modules",
+          "start": 68181,
+          "end": 68199
+        },
+        {
+          "title": "How do I create a .pyc file?",
+          "start": 68199,
+          "end": 70566
+        },
+        {
+          "title": "How do I find the current module name?",
+          "start": 70566,
+          "end": 71085
+        },
+        {
+          "title": "How can I have modules that mutually import each other?",
+          "start": 71085,
+          "end": 72970
+        },
+        {
+          "title": "__import__('x.y.z') returns <module 'x'>; how do I get z?",
+          "start": 72970,
+          "end": 73214
+        },
+        {
+          "title": "When I edit an imported module and reimport it, the changes don't show up.  Why does this happen?",
+          "start": 73214,
+          "end": 74605
+        }
+      ],
+      "origin": "user-supplied Python documentation archive",
+      "anomalies": []
+    },
+    {
+      "document_id": "59efdda0294e085d",
+      "source_path": "faq/general.txt",
+      "title": "General Python FAQ",
+      "version": "3.11.18",
+      "sha256": "f52369380d11b5b4ec5c4c253ff758a1d8d82d56c6f8430d8a93d4370a5a4825",
+      "clean_sha256": "f52369380d11b5b4ec5c4c253ff758a1d8d82d56c6f8430d8a93d4370a5a4825",
+      "bytes": 18964,
+      "characters": 18964,
+      "sections": [
+        {
+          "title": "General Python FAQ",
+          "start": 0,
+          "end": 40
+        },
+        {
+          "title": "General Information",
+          "start": 40,
+          "end": 82
+        },
+        {
+          "title": "What is Python?",
+          "start": 82,
+          "end": 959
+        },
+        {
+          "title": "What is the Python Software Foundation?",
+          "start": 959,
+          "end": 1497
+        },
+        {
+          "title": "Are there copyright restrictions on the use of Python?",
+          "start": 1497,
+          "end": 2298
+        },
+        {
+          "title": "Why was Python created in the first place?",
+          "start": 2298,
+          "end": 4539
+        },
+        {
+          "title": "What is Python good for?",
+          "start": 4539,
+          "end": 5322
+        },
+        {
+          "title": "How does the Python version numbering scheme work?",
+          "start": 5322,
+          "end": 7238
+        },
+        {
+          "title": "How do I obtain a copy of the Python source?",
+          "start": 7238,
+          "end": 7953
+        },
+        {
+          "title": "How do I get documentation on Python?",
+          "start": 7953,
+          "end": 8448
+        },
+        {
+          "title": "I've never programmed before. Is there a Python tutorial?",
+          "start": 8448,
+          "end": 8789
+        },
+        {
+          "title": "Is there a newsgroup or mailing list devoted to Python?",
+          "start": 8789,
+          "end": 9588
+        },
+        {
+          "title": "How do I get a beta test version of Python?",
+          "start": 9588,
+          "end": 10054
+        },
+        {
+          "title": "How do I submit bug reports and patches for Python?",
+          "start": 10054,
+          "end": 10351
+        },
+        {
+          "title": "Are there any published articles about Python that I can reference?",
+          "start": 10351,
+          "end": 10832
+        },
+        {
+          "title": "Are there any books on Python?",
+          "start": 10832,
+          "end": 11172
+        },
+        {
+          "title": "Where in the world is www.python.org located?",
+          "start": 11172,
+          "end": 11397
+        },
+        {
+          "title": "Why is it called Python?",
+          "start": 11397,
+          "end": 11743
+        },
+        {
+          "title": "Do I have to like \"Monty Python's Flying Circus\"?",
+          "start": 11743,
+          "end": 11868
+        },
+        {
+          "title": "Python in the real world",
+          "start": 11868,
+          "end": 11920
+        },
+        {
+          "title": "How stable is Python?",
+          "start": 11920,
+          "end": 12874
+        },
+        {
+          "title": "How many people are using Python?",
+          "start": 12874,
+          "end": 13357
+        },
+        {
+          "title": "Have any significant projects been done in Python?",
+          "start": 13357,
+          "end": 13999
+        },
+        {
+          "title": "What new developments are expected for Python in the future?",
+          "start": 13999,
+          "end": 14511
+        },
+        {
+          "title": "Is it reasonable to propose incompatible changes to Python?",
+          "start": 14511,
+          "end": 15259
+        },
+        {
+          "title": "Is Python a good language for beginning programmers?",
+          "start": 15259,
+          "end": 18964
+        }
+      ],
+      "origin": "user-supplied Python documentation archive",
+      "anomalies": []
+    },
+    {
+      "document_id": "cd5021fcd496f81a",
+      "source_path": "installing/index.txt",
+      "title": "Installing Python Modules",
+      "version": "3.11.18",
+      "sha256": "12036630a8ccb8c26ffd80fdd22c023e5b1d3c87f4272fd4d5688afa76849cd8",
+      "clean_sha256": "12036630a8ccb8c26ffd80fdd22c023e5b1d3c87f4272fd4d5688afa76849cd8",
+      "bytes": 8159,
+      "characters": 8159,
+      "sections": [
+        {
+          "title": "Installing Python Modules",
+          "start": 0,
+          "end": 1014
+        },
+        {
+          "title": "Key terms",
+          "start": 1014,
+          "end": 2936
+        },
+        {
+          "title": "Basic usage",
+          "start": 2936,
+          "end": 4466
+        },
+        {
+          "title": "How do I ...?",
+          "start": 4466,
+          "end": 4553
+        },
+        {
+          "title": "... install \"pip\" in versions of Python prior to Python 3.4?",
+          "start": 4553,
+          "end": 4914
+        },
+        {
+          "title": "... install packages just for the current user?",
+          "start": 4914,
+          "end": 5159
+        },
+        {
+          "title": "... install scientific Python packages?",
+          "start": 5159,
+          "end": 5594
+        },
+        {
+          "title": "... work with multiple versions of Python installed in parallel?",
+          "start": 5594,
+          "end": 6521
+        },
+        {
+          "title": "Common installation issues",
+          "start": 6521,
+          "end": 6577
+        },
+        {
+          "title": "Installing into the system Python on Linux",
+          "start": 6577,
+          "end": 7124
+        },
+        {
+          "title": "Pip not installed",
+          "start": 7124,
+          "end": 7341
+        },
+        {
+          "title": "Installing binary extensions",
+          "start": 7341,
+          "end": 8159
+        }
+      ],
+      "origin": "user-supplied Python documentation archive",
+      "anomalies": []
+    }
+  ],
+  "document_count": 9,
+  "section_count": 181,
+  "total_bytes": 235113,
+  "archive_crc_ok": true
+}

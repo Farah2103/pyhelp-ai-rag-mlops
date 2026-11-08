@@ -1,0 +1,677 @@
+{
+  "packages": {
+    "multidict": {
+      "installed": "6.9.1",
+      "advisory_lookup": "6.9.1"
+    },
+    "msgpack": {
+      "installed": "1.2.3",
+      "advisory_lookup": "1.2.3"
+    },
+    "matplotlib": {
+      "installed": "3.10.8",
+      "advisory_lookup": "3.10.8"
+    },
+    "python-dateutil": {
+      "installed": "2.9.0.post0",
+      "advisory_lookup": "2.9.0"
+    },
+    "six": {
+      "installed": "1.17.0",
+      "advisory_lookup": "1.17.0"
+    },
+    "pyparsing": {
+      "installed": "3.3.2",
+      "advisory_lookup": "3.3.2"
+    },
+    "pillow": {
+      "installed": "13.0.0",
+      "advisory_lookup": "13.0.0"
+    },
+    "packaging": {
+      "installed": "24.2",
+      "advisory_lookup": "24.2"
+    },
+    "numpy": {
+      "installed": "1.26.4",
+      "advisory_lookup": "1.26.4"
+    },
+    "kiwisolver": {
+      "installed": "1.4.9",
+      "advisory_lookup": "1.4.9"
+    },
+    "fonttools": {
+      "installed": "4.61.1",
+      "advisory_lookup": "4.61.1"
+    },
+    "cycler": {
+      "installed": "0.12.1",
+      "advisory_lookup": "0.12.1"
+    },
+    "contourpy": {
+      "installed": "1.3.3",
+      "advisory_lookup": "1.3.3"
+    },
+    "pathspec": {
+      "installed": "0.12.1",
+      "advisory_lookup": "0.12.1"
+    },
+    "reportlab": {
+      "installed": "4.4.9",
+      "advisory_lookup": "4.4.9"
+    },
+    "charset-normalizer": {
+      "installed": "3.5.2",
+      "advisory_lookup": "3.5.2"
+    },
+    "pip-audit": {
+      "installed": "2.8.0",
+      "advisory_lookup": "2.8.0"
+    },
+    "platformdirs": {
+      "installed": "4.14.5",
+      "advisory_lookup": "4.14.5"
+    },
+    "toml": {
+      "installed": "0.10.2",
+      "advisory_lookup": "0.10.2"
+    },
+    "rich": {
+      "installed": "15.0.0",
+      "advisory_lookup": "15.0.0"
+    },
+    "pygments": {
+      "installed": "2.21.0",
+      "advisory_lookup": "2.21.0"
+    },
+    "markdown-it-py": {
+      "installed": "4.2.0",
+      "advisory_lookup": "4.2.0"
+    },
+    "mdurl": {
+      "installed": "0.1.2",
+      "advisory_lookup": "0.1.2"
+    },
+    "requests": {
+      "installed": "2.34.2",
+      "advisory_lookup": "2.34.2"
+    },
+    "certifi": {
+      "installed": "2026.10.19",
+      "advisory_lookup": "2026.10.19"
+    },
+    "urllib3": {
+      "installed": "2.8.0",
+      "advisory_lookup": "2.8.0"
+    },
+    "idna": {
+      "installed": "3.18",
+      "advisory_lookup": "3.18"
+    },
+    "pip-requirements-parser": {
+      "installed": "32.0.1",
+      "advisory_lookup": "32.0.1"
+    },
+    "pip-api": {
+      "installed": "0.0.35",
+      "advisory_lookup": "0.0.35"
+    },
+    "pip": {
+      "installed": "26.2",
+      "advisory_lookup": "26.2"
+    },
+    "cyclonedx-python-lib": {
+      "installed": "8.9.0",
+      "advisory_lookup": "8.9.0"
+    },
+    "sortedcontainers": {
+      "installed": "2.4.0",
+      "advisory_lookup": "2.4.0"
+    },
+    "py-serializable": {
+      "installed": "1.1.2",
+      "advisory_lookup": "1.1.2"
+    },
+    "defusedxml": {
+      "installed": "0.7.1",
+      "advisory_lookup": "0.7.1"
+    },
+    "packageurl-python": {
+      "installed": "0.17.6",
+      "advisory_lookup": "0.17.6"
+    },
+    "license-expression": {
+      "installed": "30.4.4",
+      "advisory_lookup": "30.4.4"
+    },
+    "boolean.py": {
+      "installed": "5.0",
+      "advisory_lookup": "5.0"
+    },
+    "cachecontrol": {
+      "installed": "0.14.4",
+      "advisory_lookup": "0.14.4"
+    },
+    "filelock": {
+      "installed": "4.2.4",
+      "advisory_lookup": "4.2.4"
+    },
+    "pytest-cov": {
+      "installed": "6.0.0",
+      "advisory_lookup": "6.0.0"
+    },
+    "coverage": {
+      "installed": "7.6.12",
+      "advisory_lookup": "7.6.12"
+    },
+    "pytest": {
+      "installed": "9.0.3",
+      "advisory_lookup": "9.0.3"
+    },
+    "pluggy": {
+      "installed": "1.7.0",
+      "advisory_lookup": "1.7.0"
+    },
+    "iniconfig": {
+      "installed": "2.3.1",
+      "advisory_lookup": "2.3.1"
+    },
+    "psutil": {
+      "installed": "6.1.1",
+      "advisory_lookup": "6.1.1"
+    },
+    "python-dotenv": {
+      "installed": "1.2.2",
+      "advisory_lookup": "1.2.2"
+    },
+    "pydantic": {
+      "installed": "2.13.4",
+      "advisory_lookup": "2.13.4"
+    },
+    "typing-inspection": {
+      "installed": "0.4.3",
+      "advisory_lookup": "0.4.3"
+    },
+    "typing-extensions": {
+      "installed": "4.16.0",
+      "advisory_lookup": "4.16.0"
+    },
+    "pydantic-core": {
+      "installed": "2.46.4",
+      "advisory_lookup": "2.46.4"
+    },
+    "annotated-types": {
+      "installed": "0.8.0",
+      "advisory_lookup": "0.8.0"
+    },
+    "httpx": {
+      "installed": "0.28.1",
+      "advisory_lookup": "0.28.1"
+    },
+    "httpcore": {
+      "installed": "1.0.9",
+      "advisory_lookup": "1.0.9"
+    },
+    "h11": {
+      "installed": "0.16.0",
+      "advisory_lookup": "0.16.0"
+    },
+    "anyio": {
+      "installed": "4.14.2",
+      "advisory_lookup": "4.14.2"
+    },
+    "uvicorn": {
+      "installed": "0.52.1",
+      "advisory_lookup": "0.52.1"
+    },
+    "click": {
+      "installed": "8.4.2",
+      "advisory_lookup": "8.4.2"
+    },
+    "starlette": {
+      "installed": "1.6.0",
+      "advisory_lookup": "1.6.0"
+    },
+    "fastapi": {
+      "installed": "0.141.1",
+      "advisory_lookup": "0.141.1"
+    },
+    "annotated-doc": {
+      "installed": "0.0.5",
+      "advisory_lookup": "0.0.5"
+    },
+    "dvc": {
+      "installed": "3.59.1",
+      "advisory_lookup": "3.59.1"
+    },
+    "zc.lockfile": {
+      "installed": "4.1",
+      "advisory_lookup": "4.1"
+    },
+    "voluptuous": {
+      "installed": "0.16.0",
+      "advisory_lookup": "0.16.0"
+    },
+    "tqdm": {
+      "installed": "4.70.1",
+      "advisory_lookup": "4.70.1"
+    },
+    "tomlkit": {
+      "installed": "0.15.2",
+      "advisory_lookup": "0.15.2"
+    },
+    "tabulate": {
+      "installed": "0.10.0",
+      "advisory_lookup": "0.10.0"
+    },
+    "shtab": {
+      "installed": "1.13.0",
+      "advisory_lookup": "1.13.0"
+    },
+    "shortuuid": {
+      "installed": "1.0.13",
+      "advisory_lookup": "1.0.13"
+    },
+    "scmrepo": {
+      "installed": "3.6.2",
+      "advisory_lookup": "3.6.2"
+    },
+    "aiohttp-retry": {
+      "installed": "2.9.1",
+      "advisory_lookup": "2.9.1"
+    },
+    "aiohttp": {
+      "installed": "3.14.4",
+      "advisory_lookup": "3.14.4"
+    },
+    "yarl": {
+      "installed": "1.25.1",
+      "advisory_lookup": "1.25.1"
+    },
+    "propcache": {
+      "installed": "0.5.2",
+      "advisory_lookup": "0.5.2"
+    },
+    "frozenlist": {
+      "installed": "1.8.0",
+      "advisory_lookup": "1.8.0"
+    },
+    "attrs": {
+      "installed": "26.1.0",
+      "advisory_lookup": "26.1.0"
+    },
+    "aiosignal": {
+      "installed": "1.4.0",
+      "advisory_lookup": "1.4.0"
+    },
+    "aiohappyeyeballs": {
+      "installed": "2.7.1",
+      "advisory_lookup": "2.7.1"
+    },
+    "asyncssh": {
+      "installed": "2.24.1",
+      "advisory_lookup": "2.24.1"
+    },
+    "cryptography": {
+      "installed": "50.0.0",
+      "advisory_lookup": "50.0.0"
+    },
+    "cffi": {
+      "installed": "2.1.1",
+      "advisory_lookup": "2.1.1"
+    },
+    "pycparser": {
+      "installed": "3.0",
+      "advisory_lookup": "3.0"
+    },
+    "fsspec": {
+      "installed": "2026.9.0",
+      "advisory_lookup": "2026.9.0"
+    },
+    "pygtrie": {
+      "installed": "2.6.2",
+      "advisory_lookup": "2.6.2"
+    },
+    "pygit2": {
+      "installed": "1.21.0",
+      "advisory_lookup": "1.21.0"
+    },
+    "dulwich": {
+      "installed": "1.2.21",
+      "advisory_lookup": "1.2.21"
+    },
+    "gitpython": {
+      "installed": "3.2.1",
+      "advisory_lookup": "3.2.1"
+    },
+    "gitdb": {
+      "installed": "4.0.12",
+      "advisory_lookup": "4.0.12"
+    },
+    "smmap": {
+      "installed": "5.0.3",
+      "advisory_lookup": "5.0.3"
+    },
+    "ruamel.yaml": {
+      "installed": "0.19.1",
+      "advisory_lookup": "0.19.1"
+    },
+    "pydot": {
+      "installed": "4.0.1",
+      "advisory_lookup": "4.0.1"
+    },
+    "omegaconf": {
+      "installed": "2.3.1",
+      "advisory_lookup": "2.3.1"
+    },
+    "pyyaml": {
+      "installed": "6.0.3",
+      "advisory_lookup": "6.0.3"
+    },
+    "antlr4-python3-runtime": {
+      "installed": "4.9.3",
+      "advisory_lookup": "4.9.3"
+    },
+    "networkx": {
+      "installed": "3.7",
+      "advisory_lookup": "3.7"
+    },
+    "kombu": {
+      "installed": "5.7.0",
+      "advisory_lookup": "5.7.0"
+    },
+    "vine": {
+      "installed": "5.1.0",
+      "advisory_lookup": "5.1.0"
+    },
+    "amqp": {
+      "installed": "5.4.2",
+      "advisory_lookup": "5.4.2"
+    },
+    "iterative-telemetry": {
+      "installed": "0.0.10",
+      "advisory_lookup": "0.0.10"
+    },
+    "distro": {
+      "installed": "1.9.0",
+      "advisory_lookup": "1.9.0"
+    },
+    "appdirs": {
+      "installed": "1.4.4",
+      "advisory_lookup": "1.4.4"
+    },
+    "hydra-core": {
+      "installed": "1.3.8",
+      "advisory_lookup": "1.3.8"
+    },
+    "gto": {
+      "installed": "1.10.1",
+      "advisory_lookup": "1.10.1"
+    },
+    "semver": {
+      "installed": "3.1.0",
+      "advisory_lookup": "3.1.0"
+    },
+    "pydantic-settings": {
+      "installed": "2.15.0",
+      "advisory_lookup": "2.15.0"
+    },
+    "funcy": {
+      "installed": "2.1",
+      "advisory_lookup": "2.1"
+    },
+    "entrypoints": {
+      "installed": "0.4.2",
+      "advisory_lookup": "0.4.2"
+    },
+    "grandalf": {
+      "installed": "0.8",
+      "advisory_lookup": "0.8"
+    },
+    "flufl.lock": {
+      "installed": "8.2.0",
+      "advisory_lookup": "8.2.0"
+    },
+    "atpublic": {
+      "installed": "9.0.0",
+      "advisory_lookup": "9.0.0"
+    },
+    "flatten-dict": {
+      "installed": "0.5.0",
+      "advisory_lookup": "0.5.0"
+    },
+    "dvc-task": {
+      "installed": "0.40.2",
+      "advisory_lookup": "0.40.2"
+    },
+    "celery": {
+      "installed": "5.7.0",
+      "advisory_lookup": "5.7.0"
+    },
+    "tzlocal": {
+      "installed": "5.4.5",
+      "advisory_lookup": "5.4.5"
+    },
+    "click-plugins": {
+      "installed": "1.1.1.2",
+      "advisory_lookup": "1.1.1.2"
+    },
+    "click-repl": {
+      "installed": "0.4.1",
+      "advisory_lookup": "0.4.1"
+    },
+    "prompt-toolkit": {
+      "installed": "3.0.53",
+      "advisory_lookup": "3.0.53"
+    },
+    "wcwidth": {
+      "installed": "0.8.2",
+      "advisory_lookup": "0.8.2"
+    },
+    "click-didyoumean": {
+      "installed": "0.3.1",
+      "advisory_lookup": "0.3.1"
+    },
+    "billiard": {
+      "installed": "4.3.2",
+      "advisory_lookup": "4.3.2"
+    },
+    "dvc-studio-client": {
+      "installed": "0.23.0",
+      "advisory_lookup": "0.23.0"
+    },
+    "dvc-render": {
+      "installed": "1.0.2",
+      "advisory_lookup": "1.0.2"
+    },
+    "dvc-objects": {
+      "installed": "5.3.1",
+      "advisory_lookup": "5.3.1"
+    },
+    "dvc-http": {
+      "installed": "2.32.0",
+      "advisory_lookup": "2.32.0"
+    },
+    "dvc-data": {
+      "installed": "3.16.12",
+      "advisory_lookup": "3.16.12"
+    },
+    "orjson": {
+      "installed": "3.13.0",
+      "advisory_lookup": "3.13.0"
+    },
+    "sqltrie": {
+      "installed": "0.11.3",
+      "advisory_lookup": "0.11.3"
+    },
+    "diskcache": {
+      "installed": "5.6.3",
+      "advisory_lookup": "5.6.3"
+    },
+    "dictdiffer": {
+      "installed": "0.10.0",
+      "advisory_lookup": "0.10.0"
+    },
+    "dpath": {
+      "installed": "2.2.0",
+      "advisory_lookup": "2.2.0"
+    },
+    "configobj": {
+      "installed": "5.0.9",
+      "advisory_lookup": "5.0.9"
+    },
+    "colorama": {
+      "installed": "0.4.6",
+      "advisory_lookup": "0.4.6"
+    },
+    "mlflow-skinny": {
+      "installed": "2.20.3",
+      "advisory_lookup": "2.20.3"
+    },
+    "sqlparse": {
+      "installed": "0.6.1",
+      "advisory_lookup": "0.6.1"
+    },
+    "protobuf": {
+      "installed": "5.29.6",
+      "advisory_lookup": "5.29.6"
+    },
+    "opentelemetry-sdk": {
+      "installed": "1.45.2",
+      "advisory_lookup": "1.45.2"
+    },
+    "opentelemetry-semantic-conventions": {
+      "installed": "0.66b2",
+      "advisory_lookup": "0.66"
+    },
+    "opentelemetry-api": {
+      "installed": "1.45.2",
+      "advisory_lookup": "1.45.2"
+    },
+    "importlib-metadata": {
+      "installed": "8.9.0",
+      "advisory_lookup": "8.9.0"
+    },
+    "zipp": {
+      "installed": "4.1.2",
+      "advisory_lookup": "4.1.2"
+    },
+    "databricks-sdk": {
+      "installed": "0.162.0",
+      "advisory_lookup": "0.162.0"
+    },
+    "google-auth": {
+      "installed": "2.62.1",
+      "advisory_lookup": "2.62.1"
+    },
+    "pyasn1-modules": {
+      "installed": "0.4.2",
+      "advisory_lookup": "0.4.2"
+    },
+    "pyasn1": {
+      "installed": "0.6.5",
+      "advisory_lookup": "0.6.5"
+    },
+    "cloudpickle": {
+      "installed": "3.1.2",
+      "advisory_lookup": "3.1.2"
+    },
+    "cachetools": {
+      "installed": "5.5.2",
+      "advisory_lookup": "5.5.2"
+    },
+    "torch": {
+      "installed": "2.15.0+cpu",
+      "advisory_lookup": "2.15.0"
+    },
+    "jinja2": {
+      "installed": "3.1.6",
+      "advisory_lookup": "3.1.6"
+    },
+    "markupsafe": {
+      "installed": "3.0.3",
+      "advisory_lookup": "3.0.3"
+    },
+    "sympy": {
+      "installed": "1.14.0",
+      "advisory_lookup": "1.14.0"
+    },
+    "mpmath": {
+      "installed": "1.3.0",
+      "advisory_lookup": "1.3.0"
+    },
+    "setuptools": {
+      "installed": "84.2.1",
+      "advisory_lookup": "84.2.1"
+    },
+    "transformers": {
+      "installed": "5.22.2",
+      "advisory_lookup": "5.22.2"
+    },
+    "safetensors": {
+      "installed": "0.8.0",
+      "advisory_lookup": "0.8.0"
+    },
+    "typer": {
+      "installed": "0.28.0",
+      "advisory_lookup": "0.28.0"
+    },
+    "shellingham": {
+      "installed": "1.5.4",
+      "advisory_lookup": "1.5.4"
+    },
+    "tokenizers": {
+      "installed": "0.23.3",
+      "advisory_lookup": "0.23.3"
+    },
+    "huggingface-hub": {
+      "installed": "2.4.0",
+      "advisory_lookup": "2.4.0"
+    },
+    "httpx2": {
+      "installed": "2.16.0",
+      "advisory_lookup": "2.16.0"
+    },
+    "truststore": {
+      "installed": "0.10.5",
+      "advisory_lookup": "0.10.5"
+    },
+    "httpcore2": {
+      "installed": "2.16.0",
+      "advisory_lookup": "2.16.0"
+    },
+    "hf-xet": {
+      "installed": "1.8.0",
+      "advisory_lookup": "1.8.0"
+    },
+    "regex": {
+      "installed": "2026.11.7",
+      "advisory_lookup": "2026.11.7"
+    },
+    "sentence-transformers": {
+      "installed": "6.2.0",
+      "advisory_lookup": "6.2.0"
+    },
+    "scipy": {
+      "installed": "1.17.0",
+      "advisory_lookup": "1.17.0"
+    },
+    "scikit-learn": {
+      "installed": "1.8.0",
+      "advisory_lookup": "1.8.0"
+    },
+    "threadpoolctl": {
+      "installed": "3.6.0",
+      "advisory_lookup": "3.6.0"
+    },
+    "joblib": {
+      "installed": "1.5.3",
+      "advisory_lookup": "1.5.3"
+    },
+    "faiss-cpu": {
+      "installed": "1.9.0.post1",
+      "advisory_lookup": "1.9.0"
+    }
+  },
+  "note": "Installed closure on Linux/Python 3.12. Local +cpu tag removed only for advisory lookup; see installed version metadata. Not an installation lock."
+}

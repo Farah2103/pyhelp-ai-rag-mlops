@@ -1,0 +1,13 @@
+{
+  "transport": "actual TCP localhost:8010; uvicorn subprocess",
+  "health": {
+    "status": "ok",
+    "index_present": true,
+    "llm_checked": false,
+    "documentation_version": "3.11.18"
+  },
+  "health_status": 200,
+  "invalid_ask_status": 422,
+  "ui_status": 200,
+  "note": "Real LLM /ask exercised separately via FastAPI TestClient in demo_monitoring."
+}

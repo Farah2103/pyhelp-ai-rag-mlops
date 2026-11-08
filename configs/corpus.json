@@ -1,0 +1,16 @@
+{
+  "version": "3.11.18",
+  "archive_sha256": "e3cf166d4e090f36f09faf4b0c4a0d54ece3402f4a18a4c8328c946cc5e825cb",
+  "archive_prefix": "python-3.11.18-docs-text/",
+  "documents": [
+    "tutorial/introduction.txt",
+    "tutorial/controlflow.txt",
+    "tutorial/datastructures.txt",
+    "tutorial/modules.txt",
+    "tutorial/errors.txt",
+    "tutorial/venv.txt",
+    "faq/programming.txt",
+    "faq/general.txt",
+    "installing/index.txt"
+  ]
+}

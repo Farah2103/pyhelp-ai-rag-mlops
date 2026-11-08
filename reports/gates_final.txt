@@ -1,0 +1,2 @@
+Corpus/configuration/annotation integrity: PASS
+Frozen real-vector retrieval replay: PASS Recall=0.659091; floor=0.659091

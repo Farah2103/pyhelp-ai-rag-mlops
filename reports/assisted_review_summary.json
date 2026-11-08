@@ -1,0 +1,11 @@
+{
+  "review_type": "AI-assisted non-independent review, not human validation",
+  "answerable_n": 32,
+  "answered_n": 28,
+  "correctness_mean_normalized_all_answerable": 0.34375,
+  "relevance_mean_normalized_all_answerable": 0.390625,
+  "faithfulness_mean_normalized_answered": 0.5357142857142857,
+  "language_match_rate_answered": 0.6785714285714286,
+  "fully_correct_answerable_n": 7,
+  "limitations": "Ordinal rubric and subjective assisted review; no independent annotator, no confidence interval. Zero on an answerable abstention means unmet task, not a false factual statement."
+}

@@ -1,0 +1,157 @@
+[
+  {
+    "id": "q01",
+    "question": "What is the difference between / and // in Python?",
+    "language": "en",
+    "expected_behavior": "answer",
+    "reference_answer": "/ returns a float; // performs floor division.",
+    "reference_evidence": [
+      {
+        "source_path": "tutorial/introduction.txt",
+        "start": 2029,
+        "end": 2192,
+        "quote": "Division (\"/\") always returns a float.  To do *floor division* and get\nan integer result you can use the \"//\" operator; to calculate the\nremainder you can use \"%\":"
+      }
+    ],
+    "answer": "Information fiable insuffisante dans le corpus Python 3.11.18 / Insufficient reliable evidence.",
+    "references": [],
+    "status": "abstention",
+    "reason": "invalid_model_json",
+    "latency_ms": 55746.95889099985,
+    "retrieved_chunks": 5,
+    "total_latency_ms": 55747.04624700007,
+    "error": null,
+    "usage": {
+      "input_tokens": 1331,
+      "output_tokens": 240
+    },
+    "human_correctness": null,
+    "human_relevance": null,
+    "human_faithfulness": null,
+    "human_language_ok": null
+  },
+  {
+    "id": "q02",
+    "question": "Comment calculer une puissance en Python ?",
+    "language": "fr",
+    "expected_behavior": "answer",
+    "reference_answer": "Use ** for exponentiation.",
+    "reference_evidence": [
+      {
+        "source_path": "tutorial/introduction.txt",
+        "start": 2480,
+        "end": 2557,
+        "quote": "With Python, it is possible to use the \"**\" operator to calculate\npowers [1]:"
+      }
+    ],
+    "answer": "Information fiable insuffisante dans le corpus Python 3.11.18 / Insufficient reliable evidence.",
+    "references": [],
+    "status": "abstention",
+    "reason": "model_abstention_or_invalid_citations",
+    "latency_ms": 25352.858161000313,
+    "retrieved_chunks": 5,
+    "total_latency_ms": 25353.17942799975,
+    "error": null,
+    "usage": {
+      "input_tokens": 1051,
+      "output_tokens": 113
+    },
+    "human_correctness": null,
+    "human_relevance": null,
+    "human_faithfulness": null,
+    "human_language_ok": null
+  },
+  {
+    "id": "q03",
+    "question": "Can Python strings be changed in place?",
+    "language": "en",
+    "expected_behavior": "answer",
+    "reference_answer": "Strings are immutable.",
+    "reference_evidence": [
+      {
+        "source_path": "tutorial/introduction.txt",
+        "start": 10422,
+        "end": 10559,
+        "quote": "Python strings cannot be changed --- they are *immutable*. Therefore,\nassigning to an indexed position in the string results in an error:"
+      }
+    ],
+    "answer": "Information fiable insuffisante dans le corpus Python 3.11.18 / Insufficient reliable evidence.",
+    "references": [],
+    "status": "abstention",
+    "reason": "model_abstention_or_invalid_citations",
+    "latency_ms": 27194.976031999886,
+    "retrieved_chunks": 5,
+    "total_latency_ms": 27195.414454,
+    "error": null,
+    "usage": {
+      "input_tokens": 1335,
+      "output_tokens": 93
+    },
+    "human_correctness": null,
+    "human_relevance": null,
+    "human_faithfulness": null,
+    "human_language_ok": null
+  },
+  {
+    "id": "q04",
+    "question": "Comment accéder au dernier élément avec un indice négatif ?",
+    "language": "fr",
+    "expected_behavior": "answer",
+    "reference_answer": "Negative indices count from the right.",
+    "reference_evidence": [
+      {
+        "source_path": "tutorial/introduction.txt",
+        "start": 8070,
+        "end": 8141,
+        "quote": "Indices may also be negative numbers, to start counting from the\nright:"
+      }
+    ],
+    "answer": "Information fiable insuffisante dans le corpus Python 3.11.18 / Insufficient reliable evidence.",
+    "references": [],
+    "status": "abstention",
+    "reason": "invalid_model_json",
+    "latency_ms": 50411.50072500022,
+    "retrieved_chunks": 5,
+    "total_latency_ms": 50411.67064799993,
+    "error": null,
+    "usage": {
+      "input_tokens": 1563,
+      "output_tokens": 240
+    },
+    "human_correctness": null,
+    "human_relevance": null,
+    "human_faithfulness": null,
+    "human_language_ok": null
+  },
+  {
+    "id": "q05",
+    "question": "What does a for loop iterate over?",
+    "language": "en",
+    "expected_behavior": "answer",
+    "reference_answer": "A for loop iterates over sequence items in their order.",
+    "reference_evidence": [
+      {
+        "source_path": "tutorial/controlflow.txt",
+        "start": 1129,
+        "end": 1567,
+        "quote": "The \"for\" statement in Python differs a bit from what you may be used\nto in C or Pascal.  Rather than always iterating over an arithmetic\nprogression of numbers (like in Pascal), or giving the user the\nability to define both the iteration step and halting condition (as\nC), Python's \"for\" statement iterates over the items of any sequence\n(a list or a string), in the order that they appear in the sequence.\nFor example (no pun intended):"
+      }
+    ],
+    "answer": "Information fiable insuffisante dans le corpus Python 3.11.18 / Insufficient reliable evidence.",
+    "references": [],
+    "status": "abstention",
+    "reason": "model_abstention_or_invalid_citations",
+    "latency_ms": 27529.12777900019,
+    "retrieved_chunks": 5,
+    "total_latency_ms": 27529.156818000047,
+    "error": null,
+    "usage": {
+      "input_tokens": 1494,
+      "output_tokens": 79
+    },
+    "human_correctness": null,
+    "human_relevance": null,
+    "human_faithfulness": null,
+    "human_language_ok": null
+  }
+]

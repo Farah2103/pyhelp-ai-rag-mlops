@@ -1,0 +1,138 @@
+schema: '2.0'
+stages:
+  ingest:
+    cmd: python -m scripts.ingest data/source/python-3.11.18-docs-text.zip
+    deps:
+    - path: configs/corpus.json
+      hash: md5
+      md5: 39f341dd35e212acaf4c77c719899063
+      size: 443
+    - path: data/source/python-3.11.18-docs-text.zip
+      hash: md5
+      md5: 4cf1461f0cdef102a6176c89764df691
+      size: 3952601
+    - path: src/common.py
+      hash: md5
+      md5: 26bbafbc47d5e521069f1d74df6870df
+      size: 750
+    - path: src/ingestion/pipeline.py
+      hash: md5
+      md5: c7a5817ccae3bf6c50e311d210d4ece9
+      size: 5225
+    outs:
+    - path: data/processed
+      hash: md5
+      md5: c12d890111dbbe71eb1484a420275f8a.dir
+      size: 263512
+      nfiles: 10
+    - path: data/raw
+      hash: md5
+      md5: 8bf80730291c95f95715d48314ee84db.dir
+      size: 235113
+      nfiles: 9
+    - path: legal
+      hash: md5
+      md5: 12ab1ce0e8142cf1df3294354f262a41.dir
+      size: 54106
+      nfiles: 2
+  compare:
+    cmd: python -m src.evaluation.campaign
+    deps:
+    - path: configs/A.json
+      hash: md5
+      md5: 1a6270fffcbf276ae4a9db314e012308
+      size: 276
+    - path: configs/B.json
+      hash: md5
+      md5: 7f98d0b5f027fc5d9d2f9a9f61f2b152
+      size: 277
+    - path: data/evaluation/questions.json
+      hash: md5
+      md5: d01b83e04b383150e61e90a4f1de6257
+      size: 31554
+    - path: data/processed
+      hash: md5
+      md5: c12d890111dbbe71eb1484a420275f8a.dir
+      size: 263512
+      nfiles: 10
+    - path: requirements.txt
+      hash: md5
+      md5: 7bb1d6f813e6cb242719f09392465617
+      size: 385
+    - path: src/embeddings/encoder.py
+      hash: md5
+      md5: 1f9da5b983ea187f8d13a8e52801c676
+      size: 1603
+    - path: src/evaluation/campaign.py
+      hash: md5
+      md5: cb85ba4e947b3c38ed96d2b9909c7bec
+      size: 10225
+    - path: src/evaluation/metrics.py
+      hash: md5
+      md5: 4d981aaf78de2d500e1a9067f19921de
+      size: 1887
+    - path: src/retrieval/index.py
+      hash: md5
+      md5: 348b483b2ee1411d7af4457e43e99c9a
+      size: 1956
+    outs:
+    - path: artifacts/current
+      hash: md5
+      md5: 4849832f78af1f4e47b03a640b3a8fca.dir
+      size: 1054758
+      nfiles: 3
+    - path: configs/baseline.json
+      hash: md5
+      md5: 29a4136fbbbcd446d5cef249760309bf
+      size: 476
+    - path: reports/comparison.json
+      hash: md5
+      md5: 129408221432c7332420f53be34acd8b
+      size: 3217
+    - path: reports/selection.json
+      hash: md5
+      md5: 4549cb5694770d36005a47f55972254a
+      size: 3935
+  replay:
+    cmd: python -m scripts.prepare_replay
+    deps:
+    - path: artifacts/current
+      hash: md5
+      md5: 4849832f78af1f4e47b03a640b3a8fca.dir
+      size: 1054758
+      nfiles: 3
+    - path: data/evaluation/questions.json
+      hash: md5
+      md5: d01b83e04b383150e61e90a4f1de6257
+      size: 31554
+    - path: scripts/prepare_replay.py
+      hash: md5
+      md5: 61c7a28fc15b3258f04af2a8146f9381
+      size: 714
+    outs:
+    - path: artifacts/replay
+      hash: md5
+      md5: 1068a405d805f8a07bcfec715b738ba2.dir
+      size: 65267
+      nfiles: 2
+  verify:
+    cmd: python -m scripts.gates
+    deps:
+    - path: artifacts/current
+      hash: md5
+      md5: 4849832f78af1f4e47b03a640b3a8fca.dir
+      size: 1054758
+      nfiles: 3
+    - path: artifacts/replay
+      hash: md5
+      md5: 1068a405d805f8a07bcfec715b738ba2.dir
+      size: 65267
+      nfiles: 2
+    - path: configs/baseline.json
+      hash: md5
+      md5: 29a4136fbbbcd446d5cef249760309bf
+      size: 476
+    - path: scripts/gates.py
+      hash: md5
+      md5: 2d881924630e356ba612f5892d2a2870
+      size: 1866

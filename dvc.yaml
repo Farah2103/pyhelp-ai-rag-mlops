@@ -1,0 +1,53 @@
+stages:
+  ingest:
+    cmd: python -m scripts.ingest data/source/python-3.11.18-docs-text.zip
+    deps:
+      - data/source/python-3.11.18-docs-text.zip
+      - configs/corpus.json
+      - src/ingestion/pipeline.py
+      - src/common.py
+    outs:
+      - data/raw:
+          cache: false
+      - data/processed:
+          cache: false
+      - legal:
+          cache: false
+  compare:
+    cmd: python -m src.evaluation.campaign
+    deps:
+      - data/processed
+      - data/evaluation/questions.json
+      - configs/A.json
+      - configs/B.json
+      - src/retrieval/index.py
+      - src/embeddings/encoder.py
+      - src/evaluation/campaign.py
+      - src/evaluation/metrics.py
+      - requirements.txt
+    outs:
+      - artifacts/current:
+          cache: false
+      - configs/baseline.json:
+          cache: false
+    metrics:
+      - reports/comparison.json:
+          cache: false
+      - reports/selection.json:
+          cache: false
+  replay:
+    cmd: python -m scripts.prepare_replay
+    deps:
+      - artifacts/current
+      - data/evaluation/questions.json
+      - scripts/prepare_replay.py
+    outs:
+      - artifacts/replay:
+          cache: false
+  verify:
+    cmd: python -m scripts.gates
+    deps:
+      - artifacts/current
+      - artifacts/replay
+      - configs/baseline.json
+      - scripts/gates.py

@@ -1,0 +1,21 @@
+{
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "logical_cpus": 9,
+  "visible_ram_gib": 9.733646392822266,
+  "packages": {
+    "numpy": "1.26.4",
+    "faiss-cpu": "1.9.0.post1",
+    "torch": "2.6.0+cpu",
+    "transformers": "4.48.3",
+    "sentence-transformers": "3.4.1",
+    "mlflow-skinny": "2.20.3",
+    "fastapi": "0.141.1",
+    "starlette": "1.6.0",
+    "pydantic": "2.13.4",
+    "pytest": "9.0.3",
+    "dvc": "3.59.1",
+    "pathspec": "0.12.1"
+  },
+  "tested_os": "Linux only; Windows commands provided, not executed"
+}

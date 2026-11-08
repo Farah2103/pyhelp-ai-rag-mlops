@@ -1,0 +1,6 @@
+{
+  "generation_sha256": "4d578647beeb82185d370aec7fcaed881a5fe6aa0f5fdb9e2ba43bbe9b4ff07e",
+  "review_type": "AI-assisted non-independent review, not human validation",
+  "human_validation": false,
+  "rubric": "reports/grille_evaluation.md"
+}

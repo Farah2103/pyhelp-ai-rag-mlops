@@ -1,0 +1,10 @@
+numpy==1.26.4
+faiss-cpu==1.9.0.post1
+fastapi==0.141.1
+starlette==1.6.0
+httpx==0.28.1
+pydantic==2.13.4
+python-dotenv==1.2.2
+psutil==6.1.1
+pytest==9.0.3
+pytest-cov==6.0.0

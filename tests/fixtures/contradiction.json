@@ -1,0 +1,1 @@
+{"type":"synthetic-test-only","passages":["Python lists are mutable.","Python lists are immutable."],"expected":"abstention"}

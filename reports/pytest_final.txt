@@ -1,0 +1,34 @@
+...............................................                          [100%]
+=============================== warnings summary ===============================
+tests/test_ingestion.py::test_duplicate
+  /opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/zipfile/__init__.py:1625: UserWarning: Duplicate name: 'docs/a.txt'
+    return self._open_to_write(zinfo, force_zip64=force_zip64)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+
+---------- coverage: platform linux, python 3.12.14-final-0 ----------
+Name                          Stmts   Miss  Cover   Missing
+-----------------------------------------------------------
+api/__init__.py                   0      0   100%
+api/main.py                      60     12    80%   25-33, 64-66
+monitoring/__init__.py            0      0   100%
+monitoring/events.py             11      0   100%
+monitoring/summarize.py          14      2    86%   20-21
+src/__init__.py                   0      0   100%
+src/common.py                    18      1    94%   17
+src/embeddings/__init__.py        0      0   100%
+src/embeddings/encoder.py        23     23     0%   1-25
+src/evaluation/__init__.py        0      0   100%
+src/evaluation/campaign.py      110    110     0%   2-139
+src/evaluation/metrics.py        16      8    50%   16-30
+src/generation/__init__.py        0      0   100%
+src/generation/assistant.py      46      0   100%
+src/generation/providers.py      51     11    78%   25-36
+src/ingestion/__init__.py         0      0   100%
+src/ingestion/pipeline.py        78     14    82%   21, 42, 49, 52-67
+src/retrieval/__init__.py         0      0   100%
+src/retrieval/index.py           28      0   100%
+-----------------------------------------------------------
+TOTAL                           455    181    60%
+
+47 passed, 1 warning in 1.91s

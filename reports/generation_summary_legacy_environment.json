@@ -1,0 +1,17 @@
+{
+  "n": 42,
+  "mean_ms": 17742.600219833334,
+  "p95_ms": 33952.39458625025,
+  "error_rate": 0.0,
+  "observed_successful_calls_fraction": 1.0,
+  "negative_abstention_rate": 0.9,
+  "answerable_response_rate": 0.875,
+  "citation_validity_rate_among_answers": 1.0,
+  "correctness": null,
+  "faithfulness": null,
+  "external_api_calls": 0,
+  "cost_note": "Local CPU: no API bill. Electricity not measured. External pricing must be entered from account tariff.",
+  "run_id": "bb3a05c46bd04a4980191f3bf199e7e5",
+  "provider": "transformers",
+  "model": "models/qwen"
+}

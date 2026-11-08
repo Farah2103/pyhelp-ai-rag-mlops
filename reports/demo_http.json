@@ -1,0 +1,61 @@
+[
+  {
+    "http_status": 200,
+    "body": {
+      "answer": "To create a virtual environment using `venv`:",
+      "references": [
+        {
+          "chunk_id": "e6cb49f1e6ffadd98020e824",
+          "document_id": "34a2c2d71755e4db",
+          "source_path": "tutorial/venv.txt",
+          "section": "12.2. Creating Virtual Environments",
+          "version": "3.11.18",
+          "start": 1381,
+          "end": 2129,
+          "text": "12.2. Creating Virtual Environments\n===================================\n\nThe module used to create and manage virtual environments is called\n\"venv\".  \"venv\" will usually install the most recent version of Python\nthat you have available. If you have multiple versions of Python on\nyour system, you can select a specific Python version by running\n\"python3\" or whichever version you want.\n\nTo create a virtual environment, decide upon a directory where you\nwant to place it, and run the \"venv\" module as a script with the\ndirectory path:\n\n   python -m venv tutorial-env\n\nThis will create the \"tutorial-env\" directory if it doesn't exist, and\nalso create directories inside it containing a copy of the Python\ninterpreter and various supporting files.\n\n"
+        }
+      ],
+      "status": "answer",
+      "reason": "validated_citations_not_semantic_proof",
+      "latency_ms": 13175.926787000208,
+      "retrieved_chunks": 5
+    }
+  },
+  {
+    "http_status": 200,
+    "body": {
+      "answer": "Information fiable insuffisante dans le corpus Python 3.11.18 / Insufficient reliable evidence.",
+      "references": [],
+      "status": "abstention",
+      "reason": "low_retrieval_score",
+      "latency_ms": 30.66591500009963,
+      "retrieved_chunks": 5
+    }
+  },
+  {
+    "http_status": 422,
+    "body": {
+      "detail": [
+        {
+          "type": "string_too_short",
+          "loc": [
+            "body",
+            "question"
+          ],
+          "msg": "String should have at least 3 characters",
+          "input": "",
+          "ctx": {
+            "min_length": 3
+          }
+        }
+      ]
+    }
+  },
+  {
+    "http_status": 503,
+    "body": {
+      "detail": "Generation provider unavailable"
+    },
+    "fixture": "controlled provider failure"
+  }
+]

@@ -1,0 +1,8 @@
+* text=auto eol=lf
+data/raw/** -text
+legal/** -text
+*.zip binary
+*.faiss binary
+*.npy binary
+*.pdf binary
+*.png binary

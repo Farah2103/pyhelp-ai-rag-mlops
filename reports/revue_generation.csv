@@ -1,0 +1,43 @@
+id,exactitude_0_1_2,pertinence_0_1_2,fidelite_0_1_2,langue_ok,commentaire,reviewer,human_validated
+q01,0,0,NA,NA,Abstention sur question couverte ; pas d’affirmation à noter en fidélité. Analyser retrieval et format.,ChatGPT_assisted_non_independent,False
+q02,2,2,0,False,Réponse factuellement correcte mais aucun extrait cité ne présente ** ; réponse en anglais.,ChatGPT_assisted_non_independent,False
+q03,0,0,0,True,Affirme à tort que les chaînes sont modifiables ; extraits cités non probants.,ChatGPT_assisted_non_independent,False
+q04,0,0,NA,NA,Abstention sur question couverte ; pas d’affirmation à noter en fidélité. Analyser retrieval et format.,ChatGPT_assisted_non_independent,False
+q05,2,2,2,True,"Itération sur les éléments de la séquence, dans leur ordre ; soutien documentaire.",ChatGPT_assisted_non_independent,False
+q06,2,2,2,False,"Exclusion de la borne finale répond à la question, mais langue anglaise.",ChatGPT_assisted_non_independent,False
+q07,1,1,2,True,Décrit la fin normale du for ; omet break et le cas while.,ChatGPT_assisted_non_independent,False
+q08,1,1,0,False,Description vague ; ne précise pas le passage à l’itération suivante et citations non probantes.,ChatGPT_assisted_non_independent,False
+q09,2,2,2,True,"Placeholder sans effet, conforme au passage cité.",ChatGPT_assisted_non_independent,False
+q10,0,0,1,True,Tautologie ; aucune syntaxe def ni exemple malgré les exemples disponibles.,ChatGPT_assisted_non_independent,False
+q11,2,2,2,True,"Évaluation unique de la valeur par défaut, passage cité correspondant.",ChatGPT_assisted_non_independent,False
+q12,1,1,1,False,Évoque une compréhension imbriquée sans donner les carrés ; confusion avec le passage voisin.,ChatGPT_assisted_non_independent,False
+q13,2,2,2,True,append et pop décrits correctement comme pile.,ChatGPT_assisted_non_independent,False
+q14,0,0,NA,NA,Abstention sur question couverte ; pas d’affirmation à noter en fidélité. Analyser retrieval et format.,ChatGPT_assisted_non_independent,False
+q15,2,2,2,True,"Tuples immuables, listes mutables : exact et soutenu.",ChatGPT_assisted_non_independent,False
+q16,0,0,NA,NA,Abstention sur question couverte ; pas d’affirmation à noter en fidélité. Analyser retrieval et format.,ChatGPT_assisted_non_independent,False
+q17,1,1,1,True,"Conversion en set correcte, puis étape de suppression supplémentaire imprécise et non nécessaire.",ChatGPT_assisted_non_independent,False
+q18,0,0,2,True,"Décrit Python, pas un module ; affirmation vraie et sourcée mais hors question.",ChatGPT_assisted_non_independent,False
+q19,0,0,0,False,Confond garde __main__ et sortie de boucle ; aucune preuve de cette affirmation.,ChatGPT_assisted_non_independent,False
+q20,0,1,0,True,Qualifie sys.path de module et ne donne pas ses éléments d’initialisation.,ChatGPT_assisted_non_independent,False
+q21,0,0,0,False,Réponse interrompue avant toute approche ; dir sans argument ne répond pas au module demandé.,ChatGPT_assisted_non_independent,False
+q22,1,1,1,True,Description générale utile mais omet le type correspondant et le reste du try ignoré.,ChatGPT_assisted_non_independent,False
+q23,0,0,0,False,Ne montre pas raise ; affirme à tort que add_note évite de relancer une exception.,ChatGPT_assisted_non_independent,False
+q24,0,1,2,True,"Décrit try/except correctement, mais ne répond pas sur finally sans traitement.",ChatGPT_assisted_non_independent,False
+q25,0,0,1,True,Préambule terminé par deux-points ; la commande venv manque.,ChatGPT_assisted_non_independent,False
+q26,0,0,1,False,Explique création au lieu d’activation Windows et suggère une installation de version.,ChatGPT_assisted_non_independent,False
+q27,0,0,1,True,Annonce des étapes sans les fournir ; aucune commande de sauvegarde.,ChatGPT_assisted_non_independent,False
+q28,0,1,0,True,N’explique pas affectation locale et lecture avant initialisation ; cause énoncée trop générale.,ChatGPT_assisted_non_independent,False
+q29,1,1,1,True,"Mentionne mutabilité et +=, mais omet la référence partagée y=x, cause essentielle.",ChatGPT_assisted_non_independent,False
+q30,1,1,1,True,Retient une partie du choix du nom mais omet Monty Python et confond création et nommage.,ChatGPT_assisted_non_independent,False
+q31,1,1,2,False,"Commande d’exemple novas correctement sourcée, mais ne précise pas python -m pip pour l’interpréteur.",ChatGPT_assisted_non_independent,False
+q32,0,0,1,True,Annonce des étapes sans les fournir ; ni création ni installation montrées.,ChatGPT_assisted_non_independent,False
+q33,2,2,NA,NA,Abstention attendue obtenue.,ChatGPT_assisted_non_independent,False
+q34,2,2,NA,NA,Abstention attendue obtenue.,ChatGPT_assisted_non_independent,False
+q35,2,2,NA,NA,Abstention attendue obtenue.,ChatGPT_assisted_non_independent,False
+q36,2,2,NA,NA,Abstention attendue obtenue.,ChatGPT_assisted_non_independent,False
+q37,2,2,NA,NA,Abstention attendue obtenue.,ChatGPT_assisted_non_independent,False
+q38,2,2,NA,NA,Abstention attendue obtenue.,ChatGPT_assisted_non_independent,False
+q39,2,2,NA,NA,Abstention attendue obtenue.,ChatGPT_assisted_non_independent,False
+q40,2,2,NA,NA,Abstention attendue obtenue.,ChatGPT_assisted_non_independent,False
+q41,2,2,NA,NA,Abstention attendue obtenue.,ChatGPT_assisted_non_independent,False
+q42,0,0,0,False,Abstention attendue non obtenue malgré une question insuffisamment spécifiée.,ChatGPT_assisted_non_independent,False

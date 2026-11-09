@@ -17,13 +17,13 @@ stages:
       size: 750
     - path: src/ingestion/pipeline.py
       hash: md5
-      md5: c7a5817ccae3bf6c50e311d210d4ece9
-      size: 5225
+      md5: bba2713eaf881a4e108f73a271436c6d
+      size: 10596
     outs:
     - path: data/processed
       hash: md5
-      md5: c12d890111dbbe71eb1484a420275f8a.dir
-      size: 263512
+      md5: 997bb91a20a3179c81873eef12b15e65.dir
+      size: 264552
       nfiles: 10
     - path: data/raw
       hash: md5
@@ -52,13 +52,13 @@ stages:
       size: 31554
     - path: data/processed
       hash: md5
-      md5: c12d890111dbbe71eb1484a420275f8a.dir
-      size: 263512
+      md5: 997bb91a20a3179c81873eef12b15e65.dir
+      size: 264552
       nfiles: 10
     - path: requirements.txt
       hash: md5
-      md5: 7bb1d6f813e6cb242719f09392465617
-      size: 385
+      md5: 232eed38ddec4fd49964081eac2152c3
+      size: 399
     - path: src/embeddings/encoder.py
       hash: md5
       md5: 1f9da5b983ea187f8d13a8e52801c676
@@ -78,28 +78,28 @@ stages:
     outs:
     - path: artifacts/current
       hash: md5
-      md5: 4849832f78af1f4e47b03a640b3a8fca.dir
-      size: 1054758
+      md5: 3bd11a4fed1b8a7673b0eda39792ef06.dir
+      size: 1059429
       nfiles: 3
     - path: configs/baseline.json
       hash: md5
-      md5: 29a4136fbbbcd446d5cef249760309bf
-      size: 476
+      md5: 1f2b333a32d8168e72f7406f7fb85384
+      size: 484
     - path: reports/comparison.json
       hash: md5
-      md5: 129408221432c7332420f53be34acd8b
-      size: 3217
+      md5: 4c063132bf9f2a9ab8d4b3d0047f1ca4
+      size: 3320
     - path: reports/selection.json
       hash: md5
-      md5: 4549cb5694770d36005a47f55972254a
-      size: 3935
+      md5: fbb91b4b5e8862cefd25579985debacb
+      size: 4097
   replay:
     cmd: python -m scripts.prepare_replay
     deps:
     - path: artifacts/current
       hash: md5
-      md5: 4849832f78af1f4e47b03a640b3a8fca.dir
-      size: 1054758
+      md5: 3bd11a4fed1b8a7673b0eda39792ef06.dir
+      size: 1059429
       nfiles: 3
     - path: data/evaluation/questions.json
       hash: md5
@@ -112,26 +112,26 @@ stages:
     outs:
     - path: artifacts/replay
       hash: md5
-      md5: 1068a405d805f8a07bcfec715b738ba2.dir
-      size: 65267
+      md5: 293605936832dbbce65e7b1430130e4f.dir
+      size: 65314
       nfiles: 2
   verify:
     cmd: python -m scripts.gates
     deps:
     - path: artifacts/current
       hash: md5
-      md5: 4849832f78af1f4e47b03a640b3a8fca.dir
-      size: 1054758
+      md5: 3bd11a4fed1b8a7673b0eda39792ef06.dir
+      size: 1059429
       nfiles: 3
     - path: artifacts/replay
       hash: md5
-      md5: 1068a405d805f8a07bcfec715b738ba2.dir
-      size: 65267
+      md5: 293605936832dbbce65e7b1430130e4f.dir
+      size: 65314
       nfiles: 2
     - path: configs/baseline.json
       hash: md5
-      md5: 29a4136fbbbcd446d5cef249760309bf
-      size: 476
+      md5: 1f2b333a32d8168e72f7406f7fb85384
+      size: 484
     - path: scripts/gates.py
       hash: md5
       md5: 2d881924630e356ba612f5892d2a2870

@@ -9,9 +9,9 @@
     "recall": 0.0,
     "precision": 0.0,
     "all_evidence": 0.0,
-    "retrieval_ms": 15.951520000271557,
+    "retrieval_ms": 28.75960001256317,
     "guard_abstains": false,
-    "max_score": 0.6372137069702148,
+    "max_score": 0.6372137665748596,
     "retrieved": [
       {
         "chunk_id": "7d09227722aadd9084421efc",
@@ -19,7 +19,7 @@
         "section": "What is Python?",
         "start": 82,
         "end": 449,
-        "score": 0.6372137069702148
+        "score": 0.6372137665748596
       },
       {
         "chunk_id": "a8939728175a5f1f09197496",
@@ -35,7 +35,7 @@
         "section": "4.2. \"for\" Statements",
         "start": 1084,
         "end": 1468,
-        "score": 0.567395031452179
+        "score": 0.5673949122428894
       }
     ]
   },
@@ -49,7 +49,7 @@
     "recall": 1.0,
     "precision": 0.3333333333333333,
     "all_evidence": 1.0,
-    "retrieval_ms": 14.39963600023475,
+    "retrieval_ms": 19.778700021561235,
     "guard_abstains": false,
     "max_score": 0.6061462163925171,
     "retrieved": [
@@ -67,7 +67,7 @@
         "section": "3.1. Using Python as a Calculator",
         "start": 1189,
         "end": 1389,
-        "score": 0.5278297662734985
+        "score": 0.5278297066688538
       },
       {
         "chunk_id": "3b00a86cf8eb0c4f283854b9",
@@ -75,7 +75,7 @@
         "section": "Python in the real world",
         "start": 11868,
         "end": 11920,
-        "score": 0.5025750398635864
+        "score": 0.502575159072876
       }
     ]
   },
@@ -89,9 +89,9 @@
     "recall": 1.0,
     "precision": 0.3333333333333333,
     "all_evidence": 1.0,
-    "retrieval_ms": 15.680661000260443,
+    "retrieval_ms": 21.864199952688068,
     "guard_abstains": false,
-    "max_score": 0.6805583834648132,
+    "max_score": 0.680558443069458,
     "retrieved": [
       {
         "chunk_id": "83e2be8fc5342bb971ace15c",
@@ -99,7 +99,7 @@
         "section": "Is it reasonable to propose incompatible changes to Python?",
         "start": 14511,
         "end": 14907,
-        "score": 0.6805583834648132
+        "score": 0.680558443069458
       },
       {
         "chunk_id": "3c2a8e1495f131b4e7cfc148",
@@ -107,7 +107,7 @@
         "section": "3.1.2. Text",
         "start": 10342,
         "end": 10721,
-        "score": 0.6288992166519165
+        "score": 0.6288991570472717
       },
       {
         "chunk_id": "42329c09204c4acf9a0b472f",
@@ -115,7 +115,7 @@
         "section": "3.1.2. Text",
         "start": 4062,
         "end": 4446,
-        "score": 0.6114007234573364
+        "score": 0.6114007830619812
       }
     ]
   },
@@ -129,9 +129,9 @@
     "recall": 1.0,
     "precision": 0.3333333333333333,
     "all_evidence": 1.0,
-    "retrieval_ms": 15.075088999765285,
+    "retrieval_ms": 22.131500008981675,
     "guard_abstains": false,
-    "max_score": 0.5621718168258667,
+    "max_score": 0.5621716976165771,
     "retrieved": [
       {
         "chunk_id": "fd1cf8494dfc1b881e785dc7",
@@ -139,7 +139,7 @@
         "section": "3.1.2. Text",
         "start": 7989,
         "end": 8326,
-        "score": 0.5621718168258667
+        "score": 0.5621716976165771
       },
       {
         "chunk_id": "2b1e555fc2e237b49d4087ae",
@@ -147,7 +147,7 @@
         "section": "What's a negative index?",
         "start": 39712,
         "end": 40074,
-        "score": 0.5530356764793396
+        "score": 0.5530358552932739
       },
       {
         "chunk_id": "5afe2be8092b95899bc9c1cf",
@@ -169,9 +169,9 @@
     "recall": 1.0,
     "precision": 0.3333333333333333,
     "all_evidence": 1.0,
-    "retrieval_ms": 22.383173999514838,
+    "retrieval_ms": 26.12789999693632,
     "guard_abstains": false,
-    "max_score": 0.653744101524353,
+    "max_score": 0.6537441611289978,
     "retrieved": [
       {
         "chunk_id": "4247377e2cc17626c99d8315",
@@ -179,7 +179,7 @@
         "section": "4.4. \"break\" and \"continue\" Statements, and \"else\" Clauses on Loops",
         "start": 4626,
         "end": 5000,
-        "score": 0.653744101524353
+        "score": 0.6537441611289978
       },
       {
         "chunk_id": "ec0b4a27f1cded848f5bbd2c",
@@ -195,7 +195,7 @@
         "section": "4.2. \"for\" Statements",
         "start": 1084,
         "end": 1468,
-        "score": 0.5849434733390808
+        "score": 0.5849435925483704
       }
     ]
   },
@@ -209,9 +209,9 @@
     "recall": 0.0,
     "precision": 0.0,
     "all_evidence": 0.0,
-    "retrieval_ms": 19.64102100009768,
+    "retrieval_ms": 27.273200044874102,
     "guard_abstains": false,
-    "max_score": 0.5911970138549805,
+    "max_score": 0.5911969542503357,
     "retrieved": [
       {
         "chunk_id": "619f7049d54f5d9f21d80294",
@@ -219,7 +219,7 @@
         "section": "Why do lambdas defined in a loop with different values all return the same result?",
         "start": 6380,
         "end": 6754,
-        "score": 0.5911970138549805
+        "score": 0.5911969542503357
       },
       {
         "chunk_id": "c628c820ed67cbd4e4f09a06",
@@ -235,7 +235,7 @@
         "section": "Why do lambdas defined in a loop with different values all return the same result?",
         "start": 7270,
         "end": 7668,
-        "score": 0.5903878211975098
+        "score": 0.5903878808021545
       }
     ]
   },
@@ -249,7 +249,7 @@
     "recall": 1.0,
     "precision": 0.3333333333333333,
     "all_evidence": 1.0,
-    "retrieval_ms": 13.343329999770503,
+    "retrieval_ms": 26.777599996421486,
     "guard_abstains": false,
     "max_score": 0.726933479309082,
     "retrieved": [
@@ -267,7 +267,7 @@
         "section": "4.4. \"break\" and \"continue\" Statements, and \"else\" Clauses on Loops",
         "start": 4338,
         "end": 4706,
-        "score": 0.6614264845848083
+        "score": 0.6614265441894531
       },
       {
         "chunk_id": "9aec490e1f197c8e63966f8c",
@@ -275,7 +275,7 @@
         "section": "4.4. \"break\" and \"continue\" Statements, and \"else\" Clauses on Loops",
         "start": 5545,
         "end": 5898,
-        "score": 0.56791090965271
+        "score": 0.5679110884666443
       }
     ]
   },
@@ -289,9 +289,9 @@
     "recall": 0.0,
     "precision": 0.0,
     "all_evidence": 0.0,
-    "retrieval_ms": 14.960888999667077,
+    "retrieval_ms": 25.333600002340972,
     "guard_abstains": false,
-    "max_score": 0.4062722325325012,
+    "max_score": 0.406272292137146,
     "retrieved": [
       {
         "chunk_id": "7996d0fb7c89107305b780dc",
@@ -299,7 +299,7 @@
         "section": "8.7. Defining Clean-up Actions",
         "start": 15185,
         "end": 15398,
-        "score": 0.4062722325325012
+        "score": 0.406272292137146
       },
       {
         "chunk_id": "2980f329ead53f4ee6b1c4e5",
@@ -307,7 +307,7 @@
         "section": "4. More Control Flow Tools",
         "start": 0,
         "end": 170,
-        "score": 0.40426480770111084
+        "score": 0.4042649269104004
       },
       {
         "chunk_id": "6e1e5d68ee5583698ebfbf74",
@@ -315,7 +315,7 @@
         "section": "8.8. Predefined Clean-up Actions",
         "start": 16312,
         "end": 16492,
-        "score": 0.40258556604385376
+        "score": 0.40258562564849854
       }
     ]
   },
@@ -329,9 +329,9 @@
     "recall": 0.0,
     "precision": 0.0,
     "all_evidence": 0.0,
-    "retrieval_ms": 12.087777000488131,
+    "retrieval_ms": 20.83300001686439,
     "guard_abstains": false,
-    "max_score": 0.5592357516288757,
+    "max_score": 0.5592359304428101,
     "retrieved": [
       {
         "chunk_id": "7d09227722aadd9084421efc",
@@ -339,7 +339,7 @@
         "section": "What is Python?",
         "start": 82,
         "end": 449,
-        "score": 0.5592357516288757
+        "score": 0.5592359304428101
       },
       {
         "chunk_id": "51a08371dfc7526e8e85dc25",
@@ -355,7 +355,7 @@
         "section": "What is delegation?",
         "start": 52390,
         "end": 52764,
-        "score": 0.5220001935958862
+        "score": 0.5220003128051758
       }
     ]
   },
@@ -369,7 +369,7 @@
     "recall": 1.0,
     "precision": 0.3333333333333333,
     "all_evidence": 1.0,
-    "retrieval_ms": 12.357081999653019,
+    "retrieval_ms": 21.171700034756213,
     "guard_abstains": false,
     "max_score": 0.7944658994674683,
     "retrieved": [
@@ -395,7 +395,7 @@
         "section": "4.8. More on Defining Functions",
         "start": 17976,
         "end": 18166,
-        "score": 0.6879477500915527
+        "score": 0.6879478096961975
       }
     ]
   },
@@ -409,9 +409,9 @@
     "recall": 1.0,
     "precision": 0.3333333333333333,
     "all_evidence": 1.0,
-    "retrieval_ms": 16.412645999480446,
+    "retrieval_ms": 19.707500003278255,
     "guard_abstains": false,
-    "max_score": 0.7101813554763794,
+    "max_score": 0.7101812958717346,
     "retrieved": [
       {
         "chunk_id": "75ffa97d0e4b219342675695",
@@ -419,7 +419,7 @@
         "section": "4.8.1. Default Argument Values",
         "start": 18166,
         "end": 18528,
-        "score": 0.7101813554763794
+        "score": 0.7101812958717346
       },
       {
         "chunk_id": "f490de8b24644ef14f773c33",
@@ -427,7 +427,7 @@
         "section": "4.8.5. Unpacking Argument Lists",
         "start": 30724,
         "end": 31068,
-        "score": 0.6824072599411011
+        "score": 0.6824071407318115
       },
       {
         "chunk_id": "c9c23a68af1efe4de6dec68d",
@@ -435,7 +435,7 @@
         "section": "4.8.1. Default Argument Values",
         "start": 19647,
         "end": 20033,
-        "score": 0.6537078619003296
+        "score": 0.65370774269104
       }
     ]
   },
@@ -449,9 +449,9 @@
     "recall": 0.0,
     "precision": 0.0,
     "all_evidence": 0.0,
-    "retrieval_ms": 26.837688000341586,
+    "retrieval_ms": 20.506399974692613,
     "guard_abstains": false,
-    "max_score": 0.6774044036865234,
+    "max_score": 0.6774040460586548,
     "retrieved": [
       {
         "chunk_id": "b8605fa61d98a9c30328083f",
@@ -459,7 +459,7 @@
         "section": "5.1.3. List Comprehensions",
         "start": 5233,
         "end": 5590,
-        "score": 0.6774044036865234
+        "score": 0.6774040460586548
       },
       {
         "chunk_id": "9d70e2965ab92d0c6f9fd9ea",
@@ -467,7 +467,7 @@
         "section": "5.1.3. List Comprehensions",
         "start": 4969,
         "end": 5313,
-        "score": 0.6531041264533997
+        "score": 0.653104305267334
       },
       {
         "chunk_id": "6cf318ad4e5168d0afbe0fd3",
@@ -475,7 +475,7 @@
         "section": "5.1.4. Nested List Comprehensions",
         "start": 8060,
         "end": 8448,
-        "score": 0.626968264579773
+        "score": 0.6269683837890625
       }
     ]
   },
@@ -489,9 +489,9 @@
     "recall": 1.0,
     "precision": 0.6666666666666666,
     "all_evidence": 1.0,
-    "retrieval_ms": 15.723312000773149,
+    "retrieval_ms": 18.832200032193214,
     "guard_abstains": false,
-    "max_score": 0.7375161647796631,
+    "max_score": 0.7375160455703735,
     "retrieved": [
       {
         "chunk_id": "fa6c57dceb5244f6dc39bab2",
@@ -499,7 +499,7 @@
         "section": "5.1.1. Using Lists as Stacks",
         "start": 3347,
         "end": 3736,
-        "score": 0.7375161647796631
+        "score": 0.7375160455703735
       },
       {
         "chunk_id": "ddb14494b5028474f5f95aef",
@@ -507,7 +507,7 @@
         "section": "5.1.1. Using Lists as Stacks",
         "start": 3656,
         "end": 3940,
-        "score": 0.6029709577560425
+        "score": 0.6029711961746216
       },
       {
         "chunk_id": "9d70e2965ab92d0c6f9fd9ea",
@@ -515,7 +515,7 @@
         "section": "5.1.3. List Comprehensions",
         "start": 4969,
         "end": 5313,
-        "score": 0.5942858457565308
+        "score": 0.5942859649658203
       }
     ]
   },
@@ -529,7 +529,7 @@
     "recall": 0.0,
     "precision": 0.0,
     "all_evidence": 0.0,
-    "retrieval_ms": 15.122148999580531,
+    "retrieval_ms": 20.712199970148504,
     "guard_abstains": false,
     "max_score": 0.656211256980896,
     "retrieved": [
@@ -547,7 +547,7 @@
         "section": "How do I create a multidimensional list?",
         "start": 43149,
         "end": 43520,
-        "score": 0.6248988509178162
+        "score": 0.6248987913131714
       },
       {
         "chunk_id": "9d70e2965ab92d0c6f9fd9ea",
@@ -569,9 +569,9 @@
     "recall": 1.0,
     "precision": 0.3333333333333333,
     "all_evidence": 1.0,
-    "retrieval_ms": 11.769867000111844,
+    "retrieval_ms": 21.240499976556748,
     "guard_abstains": false,
-    "max_score": 0.7528390884399414,
+    "max_score": 0.7528390288352966,
     "retrieved": [
       {
         "chunk_id": "e82b813216845b7dbec3b4a1",
@@ -579,7 +579,7 @@
         "section": "5.3. Tuples and Sequences",
         "start": 10411,
         "end": 10801,
-        "score": 0.7528390884399414
+        "score": 0.7528390288352966
       },
       {
         "chunk_id": "490f90b897d1fdea8991ce1f",
@@ -595,7 +595,7 @@
         "section": "How do I convert between tuples and lists?",
         "start": 38938,
         "end": 39296,
-        "score": 0.6907448768615723
+        "score": 0.6907447576522827
       }
     ]
   },
@@ -609,9 +609,9 @@
     "recall": 0.0,
     "precision": 0.0,
     "all_evidence": 0.0,
-    "retrieval_ms": 14.320173999294639,
+    "retrieval_ms": 25.331899989396334,
     "guard_abstains": false,
-    "max_score": 0.676692008972168,
+    "max_score": 0.6766921281814575,
     "retrieved": [
       {
         "chunk_id": "93b531d2bdcf1de7efe682a6",
@@ -619,7 +619,7 @@
         "section": "5.5. Dictionaries",
         "start": 16408,
         "end": 16786,
-        "score": 0.676692008972168
+        "score": 0.6766921281814575
       },
       {
         "chunk_id": "cc93c98a6087228a5b62fc49",
@@ -627,7 +627,7 @@
         "section": "5.5. Dictionaries",
         "start": 15848,
         "end": 16227,
-        "score": 0.6434842348098755
+        "score": 0.6434844732284546
       },
       {
         "chunk_id": "6dcb18811233cf564fd916d4",
@@ -649,9 +649,9 @@
     "recall": 0.0,
     "precision": 0.0,
     "all_evidence": 0.0,
-    "retrieval_ms": 15.234057999805373,
+    "retrieval_ms": 20.98250004928559,
     "guard_abstains": false,
-    "max_score": 0.6671882271766663,
+    "max_score": 0.667188286781311,
     "retrieved": [
       {
         "chunk_id": "7b9ab8d8dc3267112752d901",
@@ -659,7 +659,7 @@
         "section": "How do you remove duplicates from a list?",
         "start": 40578,
         "end": 40962,
-        "score": 0.6671882271766663
+        "score": 0.667188286781311
       },
       {
         "chunk_id": "de29eccd4bf4cbaf240193f2",
@@ -667,7 +667,7 @@
         "section": "How do you remove multiple items from a list",
         "start": 41349,
         "end": 41726,
-        "score": 0.6510671377182007
+        "score": 0.6510671973228455
       },
       {
         "chunk_id": "b4fa3a79ea084409f4b87b5e",
@@ -675,7 +675,7 @@
         "section": "How do you remove duplicates from a list?",
         "start": 41176,
         "end": 41349,
-        "score": 0.5133332014083862
+        "score": 0.513333261013031
       }
     ]
   },
@@ -689,9 +689,9 @@
     "recall": 0.0,
     "precision": 0.0,
     "all_evidence": 0.0,
-    "retrieval_ms": 26.100079000570986,
+    "retrieval_ms": 19.544599985238165,
     "guard_abstains": false,
-    "max_score": 0.8000513911247253,
+    "max_score": 0.8000515103340149,
     "retrieved": [
       {
         "chunk_id": "7d09227722aadd9084421efc",
@@ -699,7 +699,7 @@
         "section": "What is Python?",
         "start": 82,
         "end": 449,
-        "score": 0.8000513911247253
+        "score": 0.8000515103340149
       },
       {
         "chunk_id": "f27e902b7c29f59f23e2e5fd",
@@ -715,7 +715,7 @@
         "section": "6. Modules",
         "start": 527,
         "end": 873,
-        "score": 0.7520628571510315
+        "score": 0.7520629167556763
       }
     ]
   },
@@ -729,9 +729,9 @@
     "recall": 0.0,
     "precision": 0.0,
     "all_evidence": 0.0,
-    "retrieval_ms": 16.271262999907776,
+    "retrieval_ms": 23.04469997761771,
     "guard_abstains": false,
-    "max_score": 0.43834424018859863,
+    "max_score": 0.43834438920021057,
     "retrieved": [
       {
         "chunk_id": "b12975d1de987b37ebcd8279",
@@ -739,7 +739,7 @@
         "section": "General Questions",
         "start": 34,
         "end": 72,
-        "score": 0.43834424018859863
+        "score": 0.43834438920021057
       },
       {
         "chunk_id": "ec0b4a27f1cded848f5bbd2c",
@@ -747,7 +747,7 @@
         "section": "4.4. \"break\" and \"continue\" Statements, and \"else\" Clauses on Loops",
         "start": 4338,
         "end": 4706,
-        "score": 0.4268060326576233
+        "score": 0.42680612206459045
       },
       {
         "chunk_id": "f37dab3089029f88e185ac4a",
@@ -769,7 +769,7 @@
     "recall": 1.0,
     "precision": 0.6666666666666666,
     "all_evidence": 1.0,
-    "retrieval_ms": 12.924529999509105,
+    "retrieval_ms": 22.128599986899644,
     "guard_abstains": false,
     "max_score": 0.7284891605377197,
     "retrieved": [
@@ -787,7 +787,7 @@
         "section": "6.1.2. The Module Search Path",
         "start": 6768,
         "end": 7126,
-        "score": 0.7047673463821411
+        "score": 0.7047671675682068
       },
       {
         "chunk_id": "7ad26607bff4fe20ea03dcc5",
@@ -795,7 +795,7 @@
         "section": "6.2. Standard Modules",
         "start": 10636,
         "end": 10997,
-        "score": 0.6326744556427002
+        "score": 0.6326745748519897
       }
     ]
   },
@@ -809,7 +809,7 @@
     "recall": 0.0,
     "precision": 0.0,
     "all_evidence": 0.0,
-    "retrieval_ms": 12.501131999670179,
+    "retrieval_ms": 25.163999991491437,
     "guard_abstains": false,
     "max_score": 0.7247309684753418,
     "retrieved": [
@@ -827,7 +827,7 @@
         "section": "How do I find the current module name?",
         "start": 70566,
         "end": 70925,
-        "score": 0.718289852142334
+        "score": 0.7182899117469788
       },
       {
         "chunk_id": "e4218de1c06b44b2a16a8daf",
@@ -849,7 +849,7 @@
     "recall": 1.0,
     "precision": 0.6666666666666666,
     "all_evidence": 1.0,
-    "retrieval_ms": 13.884898000469548,
+    "retrieval_ms": 27.330699958838522,
     "guard_abstains": false,
     "max_score": 0.763886570930481,
     "retrieved": [
@@ -867,7 +867,7 @@
         "section": "8.3. Handling Exceptions",
         "start": 3686,
         "end": 4038,
-        "score": 0.7588977813720703
+        "score": 0.7588975429534912
       },
       {
         "chunk_id": "d821d3137743fddf2ced2999",
@@ -889,7 +889,7 @@
     "recall": 0.0,
     "precision": 0.0,
     "all_evidence": 0.0,
-    "retrieval_ms": 14.552917999935744,
+    "retrieval_ms": 22.051799984183162,
     "guard_abstains": false,
     "max_score": 0.6656907796859741,
     "retrieved": [
@@ -907,7 +907,7 @@
         "section": "8.10. Enriching Exceptions with Notes",
         "start": 19656,
         "end": 20001,
-        "score": 0.6602575182914734
+        "score": 0.6602574586868286
       },
       {
         "chunk_id": "9387733584458a80d8f967fe",
@@ -915,7 +915,7 @@
         "section": "8.3. Handling Exceptions",
         "start": 6865,
         "end": 7256,
-        "score": 0.6450231075286865
+        "score": 0.6450230479240417
       }
     ]
   },
@@ -929,9 +929,9 @@
     "recall": 0.0,
     "precision": 0.0,
     "all_evidence": 0.0,
-    "retrieval_ms": 20.466912999836495,
+    "retrieval_ms": 24.49979999801144,
     "guard_abstains": false,
-    "max_score": 0.7634991407394409,
+    "max_score": 0.7634990215301514,
     "retrieved": [
       {
         "chunk_id": "d8a47db6230c9cccec044ad3",
@@ -939,7 +939,7 @@
         "section": "8.7. Defining Clean-up Actions",
         "start": 13340,
         "end": 13738,
-        "score": 0.7634991407394409
+        "score": 0.7634990215301514
       },
       {
         "chunk_id": "a781c482e7fea7f0205e36a0",
@@ -947,7 +947,7 @@
         "section": "8.3. Handling Exceptions",
         "start": 3686,
         "end": 4038,
-        "score": 0.7184267044067383
+        "score": 0.7184265851974487
       },
       {
         "chunk_id": "bd930052ab4560224b4e4854",
@@ -955,7 +955,7 @@
         "section": "8.7. Defining Clean-up Actions",
         "start": 13058,
         "end": 13420,
-        "score": 0.6998634934425354
+        "score": 0.6998635530471802
       }
     ]
   },
@@ -969,9 +969,9 @@
     "recall": 0.0,
     "precision": 0.0,
     "all_evidence": 0.0,
-    "retrieval_ms": 21.441462999973737,
+    "retrieval_ms": 19.36330000171438,
     "guard_abstains": false,
-    "max_score": 0.8207259178161621,
+    "max_score": 0.8207257986068726,
     "retrieved": [
       {
         "chunk_id": "6d6eced8dcbe13000c34969b",
@@ -979,7 +979,7 @@
         "section": "12.2. Creating Virtual Environments",
         "start": 1381,
         "end": 1768,
-        "score": 0.8207259178161621
+        "score": 0.8207257986068726
       },
       {
         "chunk_id": "d0d0b4cca12c44383c11d2ad",
@@ -995,7 +995,7 @@
         "section": "Key terms",
         "start": 1273,
         "end": 1633,
-        "score": 0.7732661366462708
+        "score": 0.773266077041626
       }
     ]
   },
@@ -1009,7 +1009,7 @@
     "recall": 0.0,
     "precision": 0.0,
     "all_evidence": 0.0,
-    "retrieval_ms": 17.780303000108688,
+    "retrieval_ms": 21.516900043934584,
     "guard_abstains": false,
     "max_score": 0.6673750281333923,
     "retrieved": [
@@ -1027,7 +1027,7 @@
         "section": "12. Virtual Environments and Packages",
         "start": 0,
         "end": 78,
-        "score": 0.6560845375061035
+        "score": 0.6560846567153931
       },
       {
         "chunk_id": "d0d0b4cca12c44383c11d2ad",
@@ -1035,7 +1035,7 @@
         "section": "Key terms",
         "start": 1553,
         "end": 1908,
-        "score": 0.6523951292037964
+        "score": 0.6523950099945068
       }
     ]
   },
@@ -1049,9 +1049,9 @@
     "recall": 1.0,
     "precision": 0.3333333333333333,
     "all_evidence": 1.0,
-    "retrieval_ms": 19.269366999651538,
+    "retrieval_ms": 25.51459998358041,
     "guard_abstains": false,
-    "max_score": 0.6685659289360046,
+    "max_score": 0.6685658693313599,
     "retrieved": [
       {
         "chunk_id": "0b3bb2442f6a382d822c54d6",
@@ -1059,7 +1059,7 @@
         "section": "12.3. Managing Packages with pip",
         "start": 5803,
         "end": 6202,
-        "score": 0.6685659289360046
+        "score": 0.6685658693313599
       },
       {
         "chunk_id": "4f3e7e633a0479199351015f",
@@ -1075,7 +1075,7 @@
         "section": "12.3. Managing Packages with pip",
         "start": 4273,
         "end": 4650,
-        "score": 0.5307412147521973
+        "score": 0.5307410955429077
       }
     ]
   },
@@ -1089,9 +1089,9 @@
     "recall": 1.0,
     "precision": 0.3333333333333333,
     "all_evidence": 1.0,
-    "retrieval_ms": 14.783982000153628,
+    "retrieval_ms": 25.498900038655847,
     "guard_abstains": false,
-    "max_score": 0.7455474138259888,
+    "max_score": 0.7455475330352783,
     "retrieved": [
       {
         "chunk_id": "c3b970f9cba33415f6d562cf",
@@ -1099,7 +1099,7 @@
         "section": "Why am I getting an UnboundLocalError when the variable has a value?",
         "start": 3585,
         "end": 3968,
-        "score": 0.7455474138259888
+        "score": 0.7455475330352783
       },
       {
         "chunk_id": "2256da8ec43faec6fd482601",
@@ -1107,7 +1107,7 @@
         "section": "Why am I getting an UnboundLocalError when the variable has a value?",
         "start": 4467,
         "end": 4854,
-        "score": 0.6919676065444946
+        "score": 0.6919674873352051
       },
       {
         "chunk_id": "e5ac03c2c0b86e0d1129a0cd",
@@ -1115,7 +1115,7 @@
         "section": "What are the rules for local and global variables in Python?",
         "start": 5260,
         "end": 5608,
-        "score": 0.6798192858695984
+        "score": 0.6798192262649536
       }
     ]
   },
@@ -1129,7 +1129,7 @@
     "recall": 1.0,
     "precision": 0.6666666666666666,
     "all_evidence": 1.0,
-    "retrieval_ms": 18.523584999456943,
+    "retrieval_ms": 22.950600017793477,
     "guard_abstains": false,
     "max_score": 0.8110340237617493,
     "retrieved": [
@@ -1147,7 +1147,7 @@
         "section": "Why did changing list 'y' also change list 'x'?",
         "start": 15102,
         "end": 15468,
-        "score": 0.6068440079689026
+        "score": 0.6068440675735474
       },
       {
         "chunk_id": "1e82381ea75667d9adefd39e",
@@ -1169,7 +1169,7 @@
     "recall": 1.0,
     "precision": 0.3333333333333333,
     "all_evidence": 1.0,
-    "retrieval_ms": 63.13601999954699,
+    "retrieval_ms": 18.622700008563697,
     "guard_abstains": false,
     "max_score": 0.8191187977790833,
     "retrieved": [
@@ -1209,9 +1209,9 @@
     "recall": 0.0,
     "precision": 0.0,
     "all_evidence": 0.0,
-    "retrieval_ms": 19.544692000636132,
+    "retrieval_ms": 20.38209995953366,
     "guard_abstains": false,
-    "max_score": 0.7096871137619019,
+    "max_score": 0.7096870541572571,
     "retrieved": [
       {
         "chunk_id": "4f3e7e633a0479199351015f",
@@ -1219,7 +1219,7 @@
         "section": "12.3. Managing Packages with pip",
         "start": 3685,
         "end": 4051,
-        "score": 0.7096871137619019
+        "score": 0.7096870541572571
       },
       {
         "chunk_id": "1b497a33835dd303637829de",
@@ -1227,7 +1227,7 @@
         "section": "Pip not installed",
         "start": 7124,
         "end": 7341,
-        "score": 0.6931700706481934
+        "score": 0.6931700110435486
       },
       {
         "chunk_id": "fbd48c887d836776d0df13b0",
@@ -1235,7 +1235,7 @@
         "section": "12.3. Managing Packages with pip",
         "start": 3402,
         "end": 3765,
-        "score": 0.6804760694503784
+        "score": 0.6804759502410889
       }
     ]
   },
@@ -1249,9 +1249,9 @@
     "recall": 0.0,
     "precision": 0.0,
     "all_evidence": 0.0,
-    "retrieval_ms": 21.1402579998321,
+    "retrieval_ms": 21.333999990019947,
     "guard_abstains": false,
-    "max_score": 0.5319323539733887,
+    "max_score": 0.5319324135780334,
     "retrieved": [
       {
         "chunk_id": "126100540f14db37481fcefd",
@@ -1259,7 +1259,7 @@
         "section": "12.1. Introduction",
         "start": 651,
         "end": 989,
-        "score": 0.5319323539733887
+        "score": 0.5319324135780334
       },
       {
         "chunk_id": "b24f8e6b9b87e20e19c75612",
@@ -1275,7 +1275,7 @@
         "section": "Basic usage",
         "start": 4029,
         "end": 4393,
-        "score": 0.5105938911437988
+        "score": 0.5105937719345093
       }
     ]
   },
@@ -1289,7 +1289,7 @@
     "recall": null,
     "precision": null,
     "all_evidence": null,
-    "retrieval_ms": 19.661428999825148,
+    "retrieval_ms": 21.061900013592094,
     "guard_abstains": false,
     "max_score": 0.35030263662338257,
     "retrieved": [
@@ -1307,7 +1307,7 @@
         "section": "Have any significant projects been done in Python?",
         "start": 13662,
         "end": 13999,
-        "score": 0.2516401410102844
+        "score": 0.25164008140563965
       },
       {
         "chunk_id": "1eb5da99e0845706fb681c22",
@@ -1315,7 +1315,7 @@
         "section": "General Python FAQ",
         "start": 0,
         "end": 40,
-        "score": 0.25055554509162903
+        "score": 0.2505555748939514
       }
     ]
   },
@@ -1329,9 +1329,9 @@
     "recall": null,
     "precision": null,
     "all_evidence": null,
-    "retrieval_ms": 17.5011209994409,
+    "retrieval_ms": 21.83859999058768,
     "guard_abstains": true,
-    "max_score": 0.18221691250801086,
+    "max_score": 0.18221688270568848,
     "retrieved": [
       {
         "chunk_id": "600d9638c795919d6dd63e99",
@@ -1339,7 +1339,7 @@
         "section": "Why was Python created in the first place?",
         "start": 3411,
         "end": 3793,
-        "score": 0.18221691250801086
+        "score": 0.18221688270568848
       },
       {
         "chunk_id": "f36139600e259ea87a534d2c",
@@ -1347,7 +1347,7 @@
         "section": "Why was Python created in the first place?",
         "start": 3713,
         "end": 4084,
-        "score": 0.1684167981147766
+        "score": 0.16841664910316467
       },
       {
         "chunk_id": "860114787947164129418b0e",
@@ -1355,7 +1355,7 @@
         "section": "How do I specify hexadecimal and octal integers?",
         "start": 27309,
         "end": 27691,
-        "score": 0.144472137093544
+        "score": 0.14447206258773804
       }
     ]
   },
@@ -1369,7 +1369,7 @@
     "recall": null,
     "precision": null,
     "all_evidence": null,
-    "retrieval_ms": 13.842755999576184,
+    "retrieval_ms": 23.26580003136769,
     "guard_abstains": true,
     "max_score": 0.2655404210090637,
     "retrieved": [
@@ -1387,7 +1387,7 @@
         "section": "How does the Python version numbering scheme work?",
         "start": 5592,
         "end": 5959,
-        "score": 0.24810642004013062
+        "score": 0.24810631573200226
       },
       {
         "chunk_id": "70bccf05de1c9d31fffa2414",
@@ -1395,7 +1395,7 @@
         "section": "How does the Python version numbering scheme work?",
         "start": 6460,
         "end": 6819,
-        "score": 0.23541384935379028
+        "score": 0.23541367053985596
       }
     ]
   },
@@ -1409,9 +1409,9 @@
     "recall": null,
     "precision": null,
     "all_evidence": null,
-    "retrieval_ms": 12.934587999552605,
+    "retrieval_ms": 25.79909999622032,
     "guard_abstains": false,
-    "max_score": 0.3165680468082428,
+    "max_score": 0.31656792759895325,
     "retrieved": [
       {
         "chunk_id": "df574dc095ea90af3102b02e",
@@ -1419,7 +1419,7 @@
         "section": "6.4. Packages",
         "start": 16075,
         "end": 16431,
-        "score": 0.3165680468082428
+        "score": 0.31656792759895325
       },
       {
         "chunk_id": "e5a070f410bc51b1105c81c0",
@@ -1427,7 +1427,7 @@
         "section": "12. Virtual Environments and Packages",
         "start": 0,
         "end": 78,
-        "score": 0.31093502044677734
+        "score": 0.3109351098537445
       },
       {
         "chunk_id": "f76ba021ef7f8b1e1da8389d",
@@ -1435,7 +1435,7 @@
         "section": "12.3. Managing Packages with pip",
         "start": 5488,
         "end": 5883,
-        "score": 0.30593737959861755
+        "score": 0.3059374690055847
       }
     ]
   },
@@ -1449,7 +1449,7 @@
     "recall": null,
     "precision": null,
     "all_evidence": null,
-    "retrieval_ms": 16.910422000364633,
+    "retrieval_ms": 22.725399991031736,
     "guard_abstains": false,
     "max_score": 0.41970354318618774,
     "retrieved": [
@@ -1475,7 +1475,7 @@
         "section": "How can I have modules that mutually import each other?",
         "start": 71977,
         "end": 72330,
-        "score": 0.36937814950942993
+        "score": 0.3693781793117523
       }
     ]
   },
@@ -1489,9 +1489,9 @@
     "recall": null,
     "precision": null,
     "all_evidence": null,
-    "retrieval_ms": 26.24644699972123,
+    "retrieval_ms": 21.948200010228902,
     "guard_abstains": true,
-    "max_score": 0.569786548614502,
+    "max_score": 0.5697866678237915,
     "retrieved": [
       {
         "chunk_id": "e0a5c816110f135f39360628",
@@ -1499,7 +1499,7 @@
         "section": "Installing Python Modules",
         "start": 0,
         "end": 375,
-        "score": 0.569786548614502
+        "score": 0.5697866678237915
       },
       {
         "chunk_id": "b1ea8d1f3f662ebefea9948e",
@@ -1507,7 +1507,7 @@
         "section": "6.1.3. \"Compiled\" Python files",
         "start": 7635,
         "end": 8030,
-        "score": 0.5273104906082153
+        "score": 0.5273105502128601
       },
       {
         "chunk_id": "30bcba4ba9907856dfc47052",
@@ -1515,7 +1515,7 @@
         "section": "What is Python?",
         "start": 638,
         "end": 959,
-        "score": 0.5154861211776733
+        "score": 0.5154862403869629
       }
     ]
   },
@@ -1529,7 +1529,7 @@
     "recall": null,
     "precision": null,
     "all_evidence": null,
-    "retrieval_ms": 17.214428999977827,
+    "retrieval_ms": 18.529499997384846,
     "guard_abstains": false,
     "max_score": 0.44374173879623413,
     "retrieved": [
@@ -1547,7 +1547,7 @@
         "section": "4.8.1. Default Argument Values",
         "start": 18448,
         "end": 18816,
-        "score": 0.3524076044559479
+        "score": 0.35240745544433594
       },
       {
         "chunk_id": "2f940bb400a93b1d4df801fe",
@@ -1555,7 +1555,7 @@
         "section": "Performance",
         "start": 35377,
         "end": 35403,
-        "score": 0.3468492031097412
+        "score": 0.346849262714386
       }
     ]
   },
@@ -1569,7 +1569,7 @@
     "recall": null,
     "precision": null,
     "all_evidence": null,
-    "retrieval_ms": 16.42299000013736,
+    "retrieval_ms": 25.31190001172945,
     "guard_abstains": false,
     "max_score": 0.5859907865524292,
     "retrieved": [
@@ -1587,7 +1587,7 @@
         "section": "8.2. Exceptions",
         "start": 1331,
         "end": 1731,
-        "score": 0.5544986724853516
+        "score": 0.5544986128807068
       },
       {
         "chunk_id": "245a17bcf4cb5abde2f9b4c4",
@@ -1595,7 +1595,7 @@
         "section": "Why am I getting an UnboundLocalError when the variable has a value?",
         "start": 3888,
         "end": 4275,
-        "score": 0.5363421440124512
+        "score": 0.5363420248031616
       }
     ]
   },
@@ -1609,9 +1609,9 @@
     "recall": null,
     "precision": null,
     "all_evidence": null,
-    "retrieval_ms": 12.952900000527734,
+    "retrieval_ms": 20.60610003536567,
     "guard_abstains": true,
-    "max_score": 0.46575063467025757,
+    "max_score": 0.46575072407722473,
     "retrieved": [
       {
         "chunk_id": "c2f69864d20cc711c3ff0aa9",
@@ -1619,7 +1619,7 @@
         "section": "6.1. More on Modules",
         "start": 4149,
         "end": 4483,
-        "score": 0.46575063467025757
+        "score": 0.46575072407722473
       },
       {
         "chunk_id": "ef37eef1265d376d4f039dd1",
@@ -1627,7 +1627,7 @@
         "section": "5.5. Dictionaries",
         "start": 16147,
         "end": 16488,
-        "score": 0.4520890414714813
+        "score": 0.45208895206451416
       },
       {
         "chunk_id": "0419968a853eb19f4f5aeb5d",
@@ -1635,7 +1635,7 @@
         "section": "6.3. The \"dir()\" Function",
         "start": 12023,
         "end": 12400,
-        "score": 0.39823591709136963
+        "score": 0.3982360363006592
       }
     ]
   },
@@ -1649,9 +1649,9 @@
     "recall": null,
     "precision": null,
     "all_evidence": null,
-    "retrieval_ms": 14.56703900021239,
+    "retrieval_ms": 18.871799984481186,
     "guard_abstains": false,
-    "max_score": 0.5484607219696045,
+    "max_score": 0.5484609603881836,
     "retrieved": [
       {
         "chunk_id": "ae8fd73d32e5dafd9d9967b1",
@@ -1659,7 +1659,7 @@
         "section": "Common installation issues",
         "start": 6521,
         "end": 6577,
-        "score": 0.5484607219696045
+        "score": 0.5484609603881836
       },
       {
         "chunk_id": "539defe1227c88cbd8bb9bb4",
@@ -1667,7 +1667,7 @@
         "section": "8.9. Raising and Handling Multiple Unrelated Exceptions",
         "start": 17337,
         "end": 17706,
-        "score": 0.38001298904418945
+        "score": 0.3800129294395447
       },
       {
         "chunk_id": "091e8a310092ccedc00b53e8",

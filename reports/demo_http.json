@@ -2,7 +2,7 @@
   {
     "http_status": 200,
     "body": {
-      "answer": "To create a virtual environment using `venv`:",
+      "answer": "Pour créer un environnement virtuel, utilisez le module `venv` en l'exécutant comme un script avec le chemin du répertoire souhaité. Par exemple, la commande `python -m venv tutorial-env` créera un répertoire nommé \"tutorial-env\" contenant une copie de l'interpréteur Python et les fichiers de support.",
       "references": [
         {
           "chunk_id": "e6cb49f1e6ffadd98020e824",
@@ -17,7 +17,7 @@
       ],
       "status": "answer",
       "reason": "validated_citations_not_semantic_proof",
-      "latency_ms": 13175.926787000208,
+      "latency_ms": 2883.324599999469,
       "retrieved_chunks": 5
     }
   },
@@ -28,7 +28,7 @@
       "references": [],
       "status": "abstention",
       "reason": "low_retrieval_score",
-      "latency_ms": 30.66591500009963,
+      "latency_ms": 35.510500019881874,
       "retrieved_chunks": 5
     }
   },

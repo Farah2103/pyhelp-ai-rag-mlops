@@ -4,15 +4,15 @@
   "http_errors": 2,
   "server_errors": 1,
   "observed_non_5xx_fraction": 0.75,
-  "mean_ms": 6263.685567500261,
-  "p95_ms": 21272.330031750553,
+  "mean_ms": 4888.017599994782,
+  "p95_ms": 16589.494455032393,
   "statuses": {
     "answer": 1,
     "abstention": 1,
     "http_error": 1,
     "provider_error": 1
   },
-  "max_rss_mb": 1972.28125,
+  "max_rss_mb": 1176.63671875,
   "mean_retrieved_chunks": 2.5,
   "privacy": "No questions, answers, keys or user identity recorded. Abstentions linked by request ID only."
 }

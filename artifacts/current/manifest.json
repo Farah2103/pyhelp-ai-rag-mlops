@@ -9,10 +9,10 @@
     "min_score": 0.39999999999999997,
     "max_context_chars": 6000
   },
-  "corpus_sha256": "294a269cbafb54f112ee8230bee1518fa53d34a095a4d920c380b84aca3d7aee",
+  "corpus_sha256": "8a67a26ce4f08574d173f6a5510490223ee3d9fa6687b56ce252098e2d7c4c3e",
   "chunk_count": 423,
   "dimension": 384,
   "metric": "cosine / normalized inner product",
-  "index_sha256": "6bb88bcfadaddb8001ac2465821745f38e9c521bfc08c80ffe6eab8182c63592",
-  "chunks_sha256": "bef0a1a3bc9c39ca6b6a5354bfc0e56d049bb97144294445c371a4db4a48b7d3"
+  "index_sha256": "5a606459e56bdd1468ab914c21c91f0983824e9e7d1c6f897e4fce9bdaf80bf5",
+  "chunks_sha256": "b290fc857013ee5facfae55e639892c564edb77830f730ee63b1073549693ae7"
 }

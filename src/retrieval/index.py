@@ -2,7 +2,7 @@ import json
 from pathlib import Path
 import faiss
 import numpy as np
-from src.common import digest, read_json, write_json
+from src.common import digest, read_json, write_json, json_sha256_matches
 from src.ingestion.pipeline import chunk_documents
 
 def build(root, cfg, encoder, output):
@@ -23,7 +23,9 @@ class Retriever:
     def __init__(self, folder, encoder):
         folder = Path(folder); self.meta = read_json(folder / "manifest.json")
         for file, key in [("index.faiss", "index_sha256"), ("chunks.json", "chunks_sha256")]:
-            if digest((folder / file).read_bytes()) != self.meta[key]: raise ValueError("Corrupt artifact")
+            path = folder / file
+            valid = json_sha256_matches(path, self.meta[key]) if file.endswith(".json") else digest(path.read_bytes()) == self.meta[key]
+            if not valid: raise ValueError("Corrupt artifact")
         self.index = faiss.read_index(str(folder / "index.faiss"))
         self.chunks = read_json(folder / "chunks.json"); self.encoder = encoder
         if self.index.ntotal != len(self.chunks): raise ValueError("Index metadata mismatch")

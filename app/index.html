@@ -1,5 +1,421 @@
-<!doctype html><html lang="fr"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>PyHelp AI</title>
-<style>body{font:17px system-ui;background:#f4f6fa;color:#18304b;max-width:850px;margin:50px auto;padding:20px}textarea{width:95%;padding:14px;font:inherit;border:1px solid #a3b3c5;border-radius:8px}button{background:#17605a;color:white;padding:12px 25px;border:0;border-radius:6px;cursor:pointer}article{white-space:pre-wrap;background:white;padding:25px;margin-top:20px;border-radius:10px}small{display:block;margin:12px 0}pre{white-space:pre-wrap}</style>
-<h1>PyHelp AI</h1><p>Support documentaire Python 3.11.18 · Français / English</p><small>Les réponses peuvent être inexactes. Vérifiez les extraits cités. Aucune exécution de code.</small>
-<form id="form"><textarea id="q" rows="4" maxlength="2000" required placeholder="Comment créer un environnement virtuel ?"></textarea><p><button id="send">Poser la question</button></p></form><article id="answer" aria-live="polite">Prêt.</article><section id="sources"></section>
-<script>document.querySelector('#form').onsubmit=async e=>{e.preventDefault();let b=document.querySelector('#send'),a=document.querySelector('#answer'),s=document.querySelector('#sources');b.disabled=true;s.replaceChildren();a.textContent='Recherche et génération…';try{let r=await fetch('/ask',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({question:document.querySelector('#q').value})});let x=await r.json();if(!r.ok)throw Error(typeof x.detail==='string'?x.detail:JSON.stringify(x.detail));a.textContent=x.answer+'\n\n'+x.status+' · '+x.latency_ms.toFixed(0)+' ms';for(let ref of x.references){let d=document.createElement('details'),title=document.createElement('summary'),p=document.createElement('pre');title.textContent=ref.source_path+' · '+ref.section+' · '+ref.chunk_id;p.textContent=ref.text;d.append(title,p);s.append(d)}}catch(e){a.textContent='Erreur : '+e.message}finally{b.disabled=false}};</script></html>
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f8fb">
+  <title>PyHelp AI — Assistant Python</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #edf2f7;
+      --surface: #ffffff;
+      --text: #192738;
+      --muted: #6b7b8d;
+      --line: #e3eaf1;
+      --accent: #128678;
+      --accent-dark: #086b62;
+      --sidebar: #13263a;
+      --sidebar-text: #e9f2f7;
+      --shadow: 0 22px 70px rgba(25, 50, 75, .11);
+    }
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+    body { margin: 0; padding: 22px; background: var(--bg); color: var(--text); font: 15px/1.55 Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif; }
+    button, textarea { font: inherit; }
+    button { cursor: pointer; }
+    button:focus-visible, textarea:focus-visible, summary:focus-visible { outline: 3px solid #6bd3c8; outline-offset: 3px; }
+    .app { display: grid; grid-template-columns: 278px minmax(0, 1fr); height: min(940px, calc(100dvh - 44px)); min-height: 540px; max-width: 1500px; margin: auto; overflow: hidden; background: var(--surface); border: 1px solid #dce5ee; border-radius: 20px; box-shadow: var(--shadow); }
+    .sidebar { display: flex; flex-direction: column; min-width: 0; padding: 27px 17px 18px; color: var(--sidebar-text); background: linear-gradient(165deg, #142b40 0%, #102133 85%); }
+    .brand { display: flex; align-items: center; gap: 12px; padding: 0 10px 28px; }
+    .brand-icon { width: 42px; height: 42px; display: grid; place-items: center; flex: none; border-radius: 13px; color: #effffb; font-size: 17px; font-weight: 800; letter-spacing: -.08em; background: linear-gradient(145deg, #1faf9e, #0d726a); box-shadow: 0 7px 24px #0a141b45; }
+    .brand strong { display: block; font-size: 19px; line-height: 1.2; letter-spacing: -.045em; }
+    .brand span { display: block; color: #a8bcca; font-size: 12px; margin-top: 3px; }
+    .new-chat { display: flex; align-items: center; justify-content: center; gap: 9px; width: 100%; padding: 12px 16px; border: 1px solid #476478; border-radius: 12px; color: #f3fffd; background: #ffffff0b; font-weight: 650; transition: .2s; }
+    .new-chat:hover { background: #ffffff1a; border-color: #8fc5c0; }
+    .sidebar-label { margin: 34px 12px 11px; color: #91a7b9; font-size: 11px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
+    .guide { margin: 2px 7px 0; padding: 16px 14px; border: 1px solid #3e5968; border-radius: 13px; background: #ffffff0b; }
+    .guide p { color: #d9e7ee; font-size: 13px; line-height: 1.55; margin: 0 0 14px; }
+    .guide p:last-child { margin-bottom: 0; }
+    .guide strong { color: #a9e3d9; display: block; font-size: 12px; letter-spacing: .02em; margin-bottom: 3px; }
+    .guide small { color: #a8bdc9; line-height: 1.5; font-size: 12px; }
+    .sidebar-bottom { margin-top: auto; padding: 18px 12px 2px; border-top: 1px solid #ffffff1a; color: #a0b7c6; font-size: 12px; }
+    .sidebar-bottom strong { color: #e4f4f4; font-weight: 600; }
+    .main { min-height: 0; display: flex; flex-direction: column; background: #f9fbfd; }
+    .topbar { min-height: 77px; display: flex; align-items: center; justify-content: space-between; gap: 15px; padding: 16px 31px; border-bottom: 1px solid var(--line); background: #fff; }
+    .topbar h1 { font-size: 16px; line-height: 1.3; margin: 0; font-weight: 750; letter-spacing: -.025em; }
+    .topbar p { margin: 3px 0 0; color: var(--muted); font-size: 12px; }
+    .top-actions { display: flex; align-items: center; gap: 11px; }
+    .status { display: flex; align-items: center; gap: 7px; color: #507168; border: 1px solid #d3ebe2; background: #f1faf5; border-radius: 100px; padding: 6px 10px; white-space: nowrap; font-size: 12px; font-weight: 650; }
+    .status-dot { height: 7px; width: 7px; border-radius: 50%; background: #15a675; box-shadow: 0 0 0 3px #bfeada; }
+    .mobile-new { display: none; align-items: center; gap: 6px; border: 1px solid var(--line); background: white; border-radius: 10px; padding: 7px 11px; color: var(--text); font-weight: 650; }
+    .messages { flex: 1; min-height: 0; overflow-y: auto; overscroll-behavior: contain; scroll-behavior: smooth; padding: 28px clamp(18px, 5vw, 70px) 40px; }
+    .conversation { max-width: 810px; margin: 0 auto; }
+    .welcome { display: flex; flex-direction: column; align-items: center; text-align: center; max-width: 760px; margin: clamp(22px, 10vh, 106px) auto 0; }
+    .welcome-icon { width: 68px; height: 68px; display: grid; place-items: center; border-radius: 20px; color: var(--accent); background: linear-gradient(150deg,#e0f7f2,#f1faf8); border: 1px solid #d0ede5; box-shadow: 0 12px 29px #1675680c; }
+    .welcome h2 { margin: 23px 0 9px; font-size: clamp(25px, 3vw, 34px); line-height: 1.2; letter-spacing: -.055em; font-weight: 800; }
+    .welcome p { margin: 0; max-width: 530px; color: var(--muted); font-size: 15px; }
+    .trust-notes { display: flex; gap: 9px; justify-content: center; flex-wrap: wrap; margin-top: 28px; }
+    .trust-note { padding: 9px 13px; border: 1px solid var(--line); border-radius: 999px; background: white; color: #586d7f; font-size: 12px; }
+    .trust-note::before { content: '✓'; color: var(--accent); font-weight: 700; margin-right: 7px; }
+    .message { display: flex; gap: 12px; margin-bottom: 28px; align-items: flex-start; animation: show .22s ease-out; }
+    @keyframes show { from { opacity: 0; transform: translateY(6px) } to { opacity: 1; transform: translateY(0) } }
+    .avatar { width: 34px; height: 34px; flex: 0 0 34px; display: grid; place-items: center; border-radius: 11px; font-size: 12px; font-weight: 800; }
+    .message.assistant .avatar { background: #d8f4ed; color: #07796d; }
+    .message.user .avatar { background: #dfebf5; color: #335a7a; }
+    .message-column { min-width: 0; flex: 1; }
+    .message-name { margin: 2px 0 8px; color: #32475b; font-size: 13px; font-weight: 750; }
+    .bubble { overflow-wrap: anywhere; border: 1px solid var(--line); padding: 16px 19px; border-radius: 15px; background: #fff; box-shadow: 0 3px 13px #1d3d5308; font-size: 14px; }
+    .message.user .bubble { background: #edf5f8; border-color: #dbe8ef; white-space: pre-wrap; }
+    .bubble p { margin: 0 0 12px; white-space: pre-wrap; }
+    .bubble p:last-child, .bubble ul:last-child, .bubble ol:last-child, .bubble pre:last-child { margin-bottom: 0; }
+    .bubble h2, .bubble h3, .bubble h4 { margin: 18px 0 8px; line-height: 1.3; font-size: 17px; }
+    .bubble h2:first-child, .bubble h3:first-child { margin-top: 0; }
+    .bubble ul, .bubble ol { padding-left: 21px; margin: 0 0 12px; }
+    .bubble li { margin: 5px 0; }
+    .bubble pre, .ref-text { overflow-x: auto; padding: 13px 15px; background: #142638; color: #edf7ff; border-radius: 10px; font: 12.5px/1.65 ui-monospace, SFMono-Regular, Consolas, monospace; tab-size: 4; white-space: pre; }
+    .bubble code { padding: 2px 5px; border-radius: 5px; background: #eaf1f5; color: #075f58; font: .9em ui-monospace, SFMono-Regular, Consolas, monospace; }
+    .bubble pre code { padding: 0; color: inherit; background: none; }
+    .message-meta { display: flex; align-items: center; flex-wrap: wrap; gap: 12px; margin: 9px 0 0 4px; font-size: 12px; color: #84919f; }
+    .copy { border: 0; background: transparent; color: #657d90; font-size: 12px; padding: 3px 0; }
+    .copy:hover { color: var(--accent); }
+    .sources-wrap { margin-top: 12px; }
+    .sources-wrap > details { border: 1px solid #dfe9ee; background: #fff; border-radius: 12px; overflow: hidden; }
+    .sources-wrap summary { cursor: pointer; list-style: none; padding: 13px 15px; font-size: 12px; font-weight: 750; color: #266b67; }
+    .sources-wrap summary::-webkit-details-marker { display: none; }
+    .sources-wrap summary::before { content: '▸'; display: inline-block; margin-right: 8px; transition: transform .15s; }
+    .sources-wrap details[open] > summary::before { transform: rotate(90deg); }
+    .ref-list { padding: 0 13px 13px; display: grid; gap: 8px; }
+    .ref-item { border: 1px solid var(--line); border-radius: 8px; overflow: hidden; }
+    .ref-item summary { padding: 10px 12px; font-weight: 500; color: #41576b; overflow-wrap: anywhere; }
+    .ref-item .ref-text { margin: 0 9px 9px; font-size: 11.5px; white-space: pre-wrap; overflow-wrap: anywhere; }
+    .typing { display: flex; align-items: center; gap: 5px; min-height: 22px; }
+    .typing i { width: 7px; height: 7px; background: #43a699; border-radius: 50%; animation: pulse 1.1s infinite; }
+    .typing i:nth-child(2) { animation-delay: .15s; }
+    .typing i:nth-child(3) { animation-delay: .3s; }
+    @keyframes pulse { 0%, 75%, 100% { opacity: .3; transform: translateY(0); } 35% { opacity: 1; transform: translateY(-4px); } }
+    .error { border-color: #f0cece; background: #fff6f6; color: #a83f3f; }
+    .composer-area { flex: none; padding: 18px clamp(18px, 5vw, 70px) 16px; border-top: 1px solid var(--line); background: #fff; }
+    .composer-inner { max-width: 810px; margin: 0 auto; }
+    .composer { display: flex; align-items: end; gap: 12px; padding: 10px 10px 10px 17px; border: 1px solid #cbd9e3; border-radius: 17px; background: #fff; box-shadow: 0 4px 20px #2a48560b; transition: border-color .15s, box-shadow .15s; }
+    .composer:focus-within { border-color: #66b9ad; box-shadow: 0 0 0 3px #a7e5db4f; }
+    #question { width: 100%; resize: none; min-height: 46px; max-height: 160px; padding: 10px 0 5px; outline: 0; background: transparent; border: none; color: var(--text); line-height: 1.5; overflow-y: auto; }
+    #question::placeholder { color: #99a8b7; }
+    #send { width: 45px; height: 45px; flex: 0 0 45px; border: 0; border-radius: 12px; display: grid; place-items: center; color: white; background: var(--accent); transition: background .15s, transform .15s; }
+    #send:hover:not(:disabled) { background: var(--accent-dark); transform: translateY(-1px); }
+    #send:disabled { opacity: .45; cursor: not-allowed; }
+    .composer-info { margin: 9px 4px 0; display: flex; align-items: center; justify-content: space-between; gap: 12px; color: #8795a3; font-size: 11px; }
+    .composer-info span:last-child { white-space: nowrap; }
+    .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+    @media (max-width: 850px) {
+      body { padding: 0; }
+      .app { height: 100dvh; min-height: 0; border: none; border-radius: 0; display: block; }
+      .sidebar { display: none; }
+      .main { height: 100%; }
+      .mobile-new { display: flex; }
+      .topbar { padding: 13px 18px; min-height: 70px; }
+      .messages { padding: 22px 18px 35px; }
+      .composer-area { padding: 12px 15px 13px; }
+      .welcome { margin-top: clamp(25px, 7vh, 70px); }
+    }
+    @media (max-width: 520px) {
+      .status { display: none; }
+      .trust-notes { gap: 7px; margin-top: 22px; }
+      .trust-note { font-size: 11px; }
+      .welcome h2 { font-size: 26px; }
+      .composer-info { font-size: 10px; }
+      .composer-info span:first-child { max-width: 64%; }
+      .message { gap: 9px; }
+      .bubble { padding: 14px; }
+      .avatar { flex-basis: 30px; width: 30px; height: 30px; }
+    }
+    @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; scroll-behavior: auto !important; } }
+  </style>
+</head>
+<body>
+<div class="app">
+  <aside class="sidebar" aria-label="Navigation et guide">
+    <div class="brand">
+      <div class="brand-icon" aria-hidden="true">&lt;/&gt;</div>
+      <div><strong>PyHelp AI</strong><span>Documentation Python 3.11.18</span></div>
+    </div>
+    <button class="new-chat" type="button" data-new-chat><span aria-hidden="true">＋</span> Nouvelle conversation</button>
+    <div class="sidebar-label">Comment utiliser PyHelp AI</div>
+    <div class="guide">
+      <p><strong>1. Posez votre question</strong><small>Interrogez la documentation Python indexée par le projet.</small></p>
+      <p><strong>2. Consultez les extraits</strong><small>Les références disponibles apparaissent sous la réponse.</small></p>
+      <p><strong>3. Vérifiez le résultat</strong><small>Si les sources sont insuffisantes, l'assistant peut s'abstenir.</small></p>
+    </div>
+    <div class="sidebar-bottom"><strong>Assistant documentaire RAG</strong><br>Aucune question prédéfinie non vérifiée. Consultez les sources citées.</div>
+  </aside>
+
+  <main class="main">
+    <header class="topbar">
+      <div><h1>Assistant Python</h1><p>Posez vos questions en français ou en anglais.</p></div>
+      <div class="top-actions">
+        <div class="status"><span class="status-dot" aria-hidden="true"></span> Prêt à répondre</div>
+        <button class="mobile-new" type="button" data-new-chat aria-label="Nouvelle conversation">＋ Nouveau</button>
+      </div>
+    </header>
+
+    <section id="messages" class="messages" aria-label="Conversation" aria-live="polite" aria-relevant="additions text">
+      <div id="conversation" class="conversation">
+        <div class="welcome" id="welcome">
+          <div class="welcome-icon" aria-hidden="true">
+            <svg width="33" height="33" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m8 8-4 4 4 4M16 8l4 4-4 4M14 4l-4 16"/></svg>
+          </div>
+          <h2>Comment puis-je vous aider ?</h2>
+          <p>Explorez le corpus de documentation Python 3.11.18 indexé par le projet. Une réponse est fournie lorsque les passages retrouvés sont suffisamment fiables.</p>
+          <div class="trust-notes" aria-label="Fonctionnement de l'assistant">
+            <span class="trust-note">Réponses fondées sur le corpus</span>
+            <span class="trust-note">Sources consultables</span>
+            <span class="trust-note">Abstention en cas de doute</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="composer-area">
+      <div class="composer-inner">
+        <form id="form" autocomplete="off">
+          <div class="composer">
+            <label for="question" class="sr-only">Votre question Python</label>
+            <textarea id="question" rows="1" maxlength="2000" required placeholder="Posez votre question sur Python…" aria-describedby="composer-help"></textarea>
+            <button id="send" type="submit" disabled aria-label="Envoyer la question" title="Envoyer">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5m-7 7 7-7 7 7"/></svg>
+            </button>
+          </div>
+        </form>
+        <div class="composer-info" id="composer-help"><span>Les réponses peuvent être inexactes. Aucune exécution de code.</span><span>Entrée : envoyer · Maj + Entrée : ligne</span></div>
+      </div>
+    </div>
+  </main>
+</div>
+
+<script>
+(() => {
+  'use strict';
+  const form = document.getElementById('form');
+  const input = document.getElementById('question');
+  const send = document.getElementById('send');
+  const conversation = document.getElementById('conversation');
+  const messageScroller = document.getElementById('messages');
+  const welcome = document.getElementById('welcome');
+  const welcomeMarkup = welcome.outerHTML;
+  let activeController = null;
+  let busy = false;
+
+  const scrollToBottom = () => { messageScroller.scrollTop = messageScroller.scrollHeight; };
+  const autoResize = () => {
+    input.style.height = 'auto';
+    input.style.height = Math.min(input.scrollHeight, 160) + 'px';
+  };
+  const updateSend = () => { send.disabled = busy || !input.value.trim(); };
+  const setBusy = value => { busy = value; input.disabled = value; updateSend(); };
+
+  function createMessage(role) {
+    document.getElementById('welcome')?.remove();
+    const root = document.createElement('article');
+    root.className = `message ${role}`;
+
+    const avatar = document.createElement('div');
+    avatar.className = 'avatar';
+    avatar.textContent = role === 'user' ? 'VO' : 'AI';
+    avatar.setAttribute('aria-hidden', 'true');
+
+    const column = document.createElement('div');
+    column.className = 'message-column';
+    const name = document.createElement('div');
+    name.className = 'message-name';
+    name.textContent = role === 'user' ? 'Vous' : 'PyHelp AI';
+    const bubble = document.createElement('div');
+    bubble.className = 'bubble';
+    column.append(name, bubble);
+    root.append(avatar, column);
+    conversation.append(root);
+    scrollToBottom();
+    return { root, bubble, column };
+  }
+
+  // Petit rendu Markdown sans dépendance externe. Tout texte dynamique est inséré
+  // via textContent : la réponse du modèle n'est jamais exécutée comme du HTML.
+  function addInline(parent, text) {
+    const pattern = /(`[^`\n]+`|\*\*[^*\n]+\*\*)/g;
+    let pos = 0, match;
+    while ((match = pattern.exec(text)) !== null) {
+      if (match.index > pos) parent.append(document.createTextNode(text.slice(pos, match.index)));
+      const token = match[0];
+      const node = document.createElement(token.startsWith('`') ? 'code' : 'strong');
+      node.textContent = token.startsWith('`') ? token.slice(1, -1) : token.slice(2, -2);
+      parent.append(node);
+      pos = pattern.lastIndex;
+    }
+    if (pos < text.length) parent.append(document.createTextNode(text.slice(pos)));
+  }
+
+  function renderMarkdown(target, answer) {
+    target.replaceChildren();
+    const lines = String(answer ?? '').replace(/\r\n?/g, '\n').split('\n');
+    let paragraph = [], list = null, code = null;
+    function flushParagraph() {
+      if (!paragraph.length) return;
+      const p = document.createElement('p');
+      addInline(p, paragraph.join('\n'));
+      target.append(p);
+      paragraph = [];
+    }
+    function closeList() { list = null; }
+    function flushCode() {
+      if (!code) return;
+      const pre = document.createElement('pre');
+      const element = document.createElement('code');
+      element.textContent = code.join('\n');
+      pre.append(element); target.append(pre); code = null;
+    }
+    for (const line of lines) {
+      if (/^\s*```/.test(line)) {
+        flushParagraph(); closeList();
+        if (code) flushCode(); else code = [];
+        continue;
+      }
+      if (code) { code.push(line); continue; }
+      if (!line.trim()) { flushParagraph(); closeList(); continue; }
+      const heading = line.match(/^\s*(#{1,3})\s+(.+)$/);
+      if (heading) {
+        flushParagraph(); closeList();
+        const h = document.createElement('h' + Math.min(heading[1].length + 1, 4));
+        addInline(h, heading[2]); target.append(h); continue;
+      }
+      const item = line.match(/^\s*([-*]|\d+\.)\s+(.+)$/);
+      if (item) {
+        flushParagraph();
+        const tag = /^\d/.test(item[1]) ? 'ol' : 'ul';
+        if (!list || list.tagName.toLowerCase() !== tag) {
+          list = document.createElement(tag); target.append(list);
+        }
+        const li = document.createElement('li');
+        addInline(li, item[2]); list.append(li); continue;
+      }
+      closeList(); paragraph.push(line);
+    }
+    flushParagraph(); flushCode();
+  }
+
+  function addReferences(column, references) {
+    if (!Array.isArray(references) || !references.length) return;
+    const wrap = document.createElement('div');
+    wrap.className = 'sources-wrap';
+    const mainDetails = document.createElement('details');
+    const summary = document.createElement('summary');
+    summary.textContent = `Sources documentaires (${references.length})`;
+    mainDetails.append(summary);
+    const list = document.createElement('div');
+    list.className = 'ref-list';
+    references.forEach((ref, index) => {
+      const details = document.createElement('details');
+      details.className = 'ref-item';
+      const title = document.createElement('summary');
+      const source = [ref?.source_path, ref?.section, ref?.chunk_id]
+        .filter(v => v !== null && v !== undefined && String(v).trim() !== '')
+        .map(String).join(' · ');
+      title.textContent = source || `Source ${index + 1}`;
+      const excerpt = document.createElement('pre');
+      excerpt.className = 'ref-text';
+      excerpt.textContent = String(ref?.text ?? 'Aucun extrait disponible.');
+      details.append(title, excerpt); list.append(details);
+    });
+    mainDetails.append(list); wrap.append(mainDetails); column.append(wrap);
+  }
+
+  function addMeta(column, result) {
+    const meta = document.createElement('div');
+    meta.className = 'message-meta';
+    const status = typeof result.status === 'string' ? result.status : '';
+    const latency = Number(result.latency_ms);
+    const parts = [status];
+    if (result.latency_ms !== null && result.latency_ms !== undefined && Number.isFinite(latency)) {
+      parts.push(`${Math.round(latency)} ms`);
+    }
+    const info = document.createElement('span');
+    info.textContent = parts.filter(Boolean).join(' · ');
+    const copy = document.createElement('button');
+    copy.type = 'button'; copy.className = 'copy'; copy.textContent = 'Copier la réponse';
+    copy.addEventListener('click', async () => {
+      try {
+        await navigator.clipboard.writeText(String(result.answer ?? ''));
+        copy.textContent = 'Copié !';
+        setTimeout(() => { copy.textContent = 'Copier la réponse'; }, 1800);
+      } catch { copy.textContent = 'Copie indisponible'; }
+    });
+    if (info.textContent) meta.append(info);
+    meta.append(copy); column.append(meta);
+  }
+
+  function newChat() {
+    if (activeController) { activeController.abort(); activeController = null; }
+    setBusy(false);
+    conversation.replaceChildren();
+    conversation.insertAdjacentHTML('afterbegin', welcomeMarkup);
+    input.value = ''; autoResize(); updateSend(); input.focus(); scrollToBottom();
+  }
+
+  form.addEventListener('submit', async event => {
+    event.preventDefault();
+    const question = input.value.trim();
+    if (!question || busy) return;
+    const yours = createMessage('user');
+    yours.bubble.textContent = question;
+    input.value = ''; autoResize();
+    setBusy(true);
+    const assistant = createMessage('assistant');
+    assistant.bubble.innerHTML = '<div class="typing" role="status" aria-label="Recherche et génération en cours"><i></i><i></i><i></i></div>';
+    const controller = new AbortController();
+    activeController = controller;
+
+    try {
+      // Contrat de l'API existant : { question } -> { answer, status, latency_ms, references }
+      const response = await fetch('/ask', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ question }),
+        signal: controller.signal
+      });
+      const result = await response.json().catch(() => { throw new Error('Réponse du serveur invalide (JSON attendu).'); });
+      if (!response.ok) {
+        const detail = result?.detail;
+        throw new Error(typeof detail === 'string' ? detail : detail ? JSON.stringify(detail) : `HTTP ${response.status}`);
+      }
+      if (controller.signal.aborted) return;
+      renderMarkdown(assistant.bubble, result.answer ?? 'Aucune réponse reçue.');
+      addReferences(assistant.column, result.references);
+      addMeta(assistant.column, result);
+    } catch (error) {
+      if (controller.signal.aborted) return;
+      assistant.bubble.classList.add('error');
+      assistant.bubble.textContent = 'Impossible de récupérer la réponse : ' + (error?.message || 'Erreur inconnue.');
+    } finally {
+      if (activeController === controller) {
+        activeController = null;
+        setBusy(false);
+        input.focus();
+      }
+      scrollToBottom();
+    }
+  });
+
+  input.addEventListener('input', () => { autoResize(); updateSend(); });
+  input.addEventListener('keydown', event => {
+    if (event.key === 'Enter' && !event.shiftKey && !event.isComposing) {
+      event.preventDefault();
+      if (!busy && input.value.trim()) form.requestSubmit();
+    }
+  });
+  document.addEventListener('click', event => {
+    const reset = event.target.closest('[data-new-chat]');
+    if (reset) { newChat(); return; }
+  });
+  autoResize(); updateSend();
+})();
+</script>
+</body>
+</html>

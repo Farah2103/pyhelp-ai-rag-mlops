@@ -2,7 +2,7 @@
   {
     "http_status": 200,
     "body": {
-      "answer": "Pour créer un environnement virtuel, utilisez le module `venv` en l'exécutant comme un script avec le chemin du répertoire souhaité. Par exemple, la commande `python -m venv tutorial-env` créera un répertoire nommé \"tutorial-env\" contenant une copie de l'interpréteur Python et les fichiers de support.",
+      "answer": "To create a virtual environment using venv, decide on a directory (e.g., \".venv\"), and run the command: python -m venv <directory_name>. This creates a self-contained Python installation with additional packages. Once created, activate it using the appropriate script for your OS (e.g., tutorial-env/bin/activate on Unix/MacOS).",
       "references": [
         {
           "chunk_id": "e6cb49f1e6ffadd98020e824",
@@ -13,11 +13,21 @@
           "start": 1381,
           "end": 2129,
           "text": "12.2. Creating Virtual Environments\n===================================\n\nThe module used to create and manage virtual environments is called\n\"venv\".  \"venv\" will usually install the most recent version of Python\nthat you have available. If you have multiple versions of Python on\nyour system, you can select a specific Python version by running\n\"python3\" or whichever version you want.\n\nTo create a virtual environment, decide upon a directory where you\nwant to place it, and run the \"venv\" module as a script with the\ndirectory path:\n\n   python -m venv tutorial-env\n\nThis will create the \"tutorial-env\" directory if it doesn't exist, and\nalso create directories inside it containing a copy of the Python\ninterpreter and various supporting files.\n\n"
+        },
+        {
+          "chunk_id": "c54a392d7f583b158acb1e46",
+          "document_id": "34a2c2d71755e4db",
+          "source_path": "tutorial/venv.txt",
+          "section": "12.2. Creating Virtual Environments",
+          "version": "3.11.18",
+          "start": 2009,
+          "end": 2807,
+          "text": "exist, and\nalso create directories inside it containing a copy of the Python\ninterpreter and various supporting files.\n\nA common directory location for a virtual environment is \".venv\". This\nname keeps the directory typically hidden in your shell and thus out\nof the way while giving it a name that explains why the directory\nexists. It also prevents clashing with \".env\" environment variable\ndefinition files that some tooling supports.\n\nOnce you've created a virtual environment, you may activate it.\n\nOn Windows, run:\n\n   tutorial-env\\Scripts\\activate.bat\n\nOn Unix or MacOS, run:\n\n   source tutorial-env/bin/activate\n\n(This script is written for the bash shell.  If you use the **csh** or\n**fish** shells, there are alternate \"activate.csh\" and\n\"activate.fish\" scripts you should use instead.)\n\n"
         }
       ],
       "status": "answer",
       "reason": "validated_citations_not_semantic_proof",
-      "latency_ms": 2883.324599999469,
+      "latency_ms": 9907.312700059265,
       "retrieved_chunks": 5
     }
   },
@@ -28,7 +38,7 @@
       "references": [],
       "status": "abstention",
       "reason": "low_retrieval_score",
-      "latency_ms": 35.510500019881874,
+      "latency_ms": 33.79130002576858,
       "retrieved_chunks": 5
     }
   },

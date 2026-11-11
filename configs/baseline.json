@@ -1,6 +1,6 @@
 {
   "config": "B",
-  "corpus_sha256": "8a67a26ce4f08574d173f6a5510490223ee3d9fa6687b56ce252098e2d7c4c3e",
+  "corpus_sha256": "294a269cbafb54f112ee8230bee1518fa53d34a095a4d920c380b84aca3d7aee",
   "questions_sha256": "e7640f0386d85d4bca418eba924d398ceaa2be40a2558e9250e1aa4f50f1da7a",
   "embedding_revision": "e8f8c211226b894fcb81acc59f3b34ba3efd5f42",
   "test_recall": 0.6590909090909091,

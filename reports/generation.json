@@ -16,18 +16,18 @@
     "answer": "Information fiable insuffisante dans le corpus Python 3.11.18 / Insufficient reliable evidence.",
     "references": [],
     "status": "abstention",
-    "reason": "invalid_model_json",
-    "latency_ms": 22012.838712999837,
+    "reason": "model_abstention_or_invalid_citations",
+    "latency_ms": 16251.334000029601,
     "retrieved_chunks": 5,
-    "total_latency_ms": 22013.300513000104,
+    "total_latency_ms": 16251.379600027576,
     "error": null,
     "usage": {
       "input_tokens": 1309,
-      "output_tokens": 60
+      "output_tokens": 18
     },
-    "cpu_seconds": 40.734602573000004,
-    "rss_mb": 2007.84375,
-    "raw_model_output": "{\n    \"status\": \"answer\",\n    \"answer\": \"The main differences between '/' and '//' in Python are:',\n    \"citations\": [\n        \"S1\",\n        \"S2\",\n        \"S3\",\n        \"S4\",\n        \"S5\"\n    ]\n}",
+    "cpu_seconds": 0.59375,
+    "rss_mb": 1228.7578125,
+    "raw_model_output": "{\"status\":\"abstention\",\"answer\":\"Insufficient evidence.\",\"citations\":[]}",
     "human_correctness": null,
     "human_relevance": null,
     "human_faithfulness": null,
@@ -47,42 +47,21 @@
         "quote": "With Python, it is possible to use the \"**\" operator to calculate\npowers [1]:"
       }
     ],
-    "answer": "To calculate a power in Python, use the exponent operator `**`.",
-    "references": [
-      {
-        "chunk_id": "ec72ad291fffcc80c3b5e117",
-        "document_id": "7b14fb6d66c9e627",
-        "source_path": "tutorial/introduction.txt",
-        "section": "3.1. Using Python as a Calculator",
-        "version": "3.11.18",
-        "start": 1189,
-        "end": 1389,
-        "text": "3.1. Using Python as a Calculator\n=================================\n\nLet's try some simple Python commands.  Start the interpreter and wait\nfor the primary prompt, \">>>\".  (It shouldn't take long.)\n\n\n"
-      },
-      {
-        "chunk_id": "cf46e623c2968cde8b68ea38",
-        "document_id": "7b14fb6d66c9e627",
-        "source_path": "tutorial/introduction.txt",
-        "section": "3.1.1. Numbers",
-        "version": "3.11.18",
-        "start": 3389,
-        "end": 4062,
-        "text": "calculator, it is somewhat easier to continue calculations, for\nexample:\n\n   >>> tax = 12.5 / 100\n   >>> price = 100.50\n   >>> price * tax\n   12.5625\n   >>> price + _\n   113.0625\n   >>> round(_, 2)\n   113.06\n\nThis variable should be treated as read-only by the user.  Don't\nexplicitly assign a value to it --- you would create an independent\nlocal variable with the same name masking the built-in variable with\nits magic behavior.\n\nIn addition to \"int\" and \"float\", Python supports other types of\nnumbers, such as \"Decimal\" and \"Fraction\". Python also has built-in\nsupport for complex numbers, and uses the \"j\" or \"J\" suffix to\nindicate the imaginary part (e.g. \"3+5j\").\n\n\n"
-      }
-    ],
-    "status": "answer",
-    "reason": "validated_citations_not_semantic_proof",
-    "latency_ms": 15100.113193999277,
+    "answer": "Information fiable insuffisante dans le corpus Python 3.11.18 / Insufficient reliable evidence.",
+    "references": [],
+    "status": "abstention",
+    "reason": "model_abstention_or_invalid_citations",
+    "latency_ms": 6980.127800023183,
     "retrieved_chunks": 5,
-    "total_latency_ms": 15100.186375000703,
+    "total_latency_ms": 6980.161900050007,
     "error": null,
     "usage": {
       "input_tokens": 1034,
-      "output_tokens": 52
+      "output_tokens": 18
     },
-    "cpu_seconds": 29.554725077999997,
-    "rss_mb": 2063.47265625,
-    "raw_model_output": "```json\n{\n    \"status\": \"answer\",\n    \"answer\": \"To calculate a power in Python, use the exponent operator `**`.\",\n    \"citations\": [\n        \"S1\",\n        \"S2\"\n    ]\n}\n```",
+    "cpu_seconds": 0.65625,
+    "rss_mb": 1229.09765625,
+    "raw_model_output": "{\"status\":\"abstention\",\"answer\":\"Insufficient evidence.\",\"citations\":[]}",
     "human_correctness": null,
     "human_relevance": null,
     "human_faithfulness": null,
@@ -102,52 +81,21 @@
         "quote": "Python strings cannot be changed --- they are *immutable*. Therefore,\nassigning to an indexed position in the string results in an error:"
       }
     ],
-    "answer": "Yes, Python strings can be changed in place.",
-    "references": [
-      {
-        "chunk_id": "ef99ea90b78542cbf7991d88",
-        "document_id": "59efdda0294e085d",
-        "source_path": "faq/general.txt",
-        "section": "Is it reasonable to propose incompatible changes to Python?",
-        "version": "3.11.18",
-        "start": 14511,
-        "end": 15259,
-        "text": "Is it reasonable to propose incompatible changes to Python?\n-----------------------------------------------------------\n\nIn general, no.  There are already millions of lines of Python code\naround the world, so any change in the language that invalidates more\nthan a very small fraction of existing programs has to be frowned\nupon.  Even if you can provide a conversion program, there's still the\nproblem of updating all documentation; many books have been written\nabout Python, and we don't want to invalidate them all at a single\nstroke.\n\nProviding a gradual upgrade path is necessary if a feature has to be\nchanged. **PEP 5** describes the procedure followed for introducing\nbackward-incompatible changes while minimizing disruption for users.\n\n\n"
-      },
-      {
-        "chunk_id": "1d24b9ed401e45e7b52f8ce4",
-        "document_id": "7db8120c5e3a870c",
-        "source_path": "faq/programming.txt",
-        "section": "When I edit an imported module and reimport it, the changes don't show up.  Why does this happen?",
-        "version": "3.11.18",
-        "start": 73214,
-        "end": 73952,
-        "text": "When I edit an imported module and reimport it, the changes don't show up.  Why does this happen?\n-------------------------------------------------------------------------------------------------\n\nFor reasons of efficiency as well as consistency, Python only reads\nthe module file on the first time a module is imported.  If it didn't,\nin a program consisting of many modules where each one imports the\nsame basic module, the basic module would be parsed and re-parsed many\ntimes.  To force re-reading of a changed module, do this:\n\n   import importlib\n   import modname\n   importlib.reload(modname)\n\nWarning: this technique is not 100% fool-proof.  In particular,\nmodules containing statements like\n\n   from modname import some_objects\n\n"
-      },
-      {
-        "chunk_id": "3f5a0afd7f225994a0ae22d5",
-        "document_id": "7b14fb6d66c9e627",
-        "source_path": "tutorial/introduction.txt",
-        "section": "3.1.2. Text",
-        "version": "3.11.18",
-        "start": 4062,
-        "end": 4822,
-        "text": "3.1.2. Text\n-----------\n\nPython can manipulate text (represented by type \"str\", so-called\n\"strings\") as well as numbers.  This includes characters \"\"!\"\", words\n\"\"rabbit\"\", names \"\"Paris\"\", sentences \"\"Got your back.\"\", etc. \"\"Yay!\n:)\"\". They can be enclosed in single quotes (\"'...'\") or double quotes\n(\"\"...\"\") with the same result [2].\n\n>>> 'spam eggs'  # single quotes\n'spam eggs'\n>>> \"Paris rabbit got your back :)! Yay!\"  # double quotes\n'Paris rabbit got your back :)! Yay!'\n>>> '1975'  # digits and numerals enclosed in quotes are also strings\n'1975'\n\nTo quote a quote, we need to \"escape\" it, by preceding it with \"\\\".\nAlternatively, we can use the other type of quotation marks:\n\n   >>> 'doesn\\'t'  # use \\' to escape the single quote...\n   \"doesn't\"\n"
-      }
-    ],
-    "status": "answer",
-    "reason": "validated_citations_not_semantic_proof",
-    "latency_ms": 18360.813956999664,
+    "answer": "Information fiable insuffisante dans le corpus Python 3.11.18 / Insufficient reliable evidence.",
+    "references": [],
+    "status": "abstention",
+    "reason": "model_abstention_or_invalid_citations",
+    "latency_ms": 7962.576100020669,
     "retrieved_chunks": 5,
-    "total_latency_ms": 18360.87327899986,
+    "total_latency_ms": 7962.623800034635,
     "error": null,
     "usage": {
       "input_tokens": 1314,
-      "output_tokens": 48
+      "output_tokens": 18
     },
-    "cpu_seconds": 35.48891032,
-    "rss_mb": 2029.21484375,
-    "raw_model_output": "{\n    \"status\": \"answer\",\n    \"answer\": \"Yes, Python strings can be changed in place.\",\n    \"citations\": [\n        \"S1\",\n        \"S2\",\n        \"S3\"\n    ]\n}",
+    "cpu_seconds": 0.640625,
+    "rss_mb": 1229.9921875,
+    "raw_model_output": "{\"status\":\"abstention\",\"answer\":\"Insufficient evidence.\",\"citations\":[]}",
     "human_correctness": null,
     "human_relevance": null,
     "human_faithfulness": null,
@@ -167,21 +115,32 @@
         "quote": "Indices may also be negative numbers, to start counting from the\nright:"
       }
     ],
-    "answer": "Information fiable insuffisante dans le corpus Python 3.11.18 / Insufficient reliable evidence.",
-    "references": [],
-    "status": "abstention",
-    "reason": "model_abstention_or_invalid_citations",
-    "latency_ms": 35378.42513899977,
+    "answer": "Pour accéder au dernier élément avec un indice négatif, utilisez -1. Par exemple, `word[-1]` donne le dernier caractère de la chaîne `word`.",
+    "references": [
+      {
+        "chunk_id": "c0bc944d8986058d3a2e058d",
+        "document_id": "7b14fb6d66c9e627",
+        "source_path": "tutorial/introduction.txt",
+        "section": "3.1.2. Text",
+        "version": "3.11.18",
+        "start": 7950,
+        "end": 8717,
+        "text": " >>> word = 'Python'\n   >>> word[0]  # character in position 0\n   'P'\n   >>> word[5]  # character in position 5\n   'n'\n\nIndices may also be negative numbers, to start counting from the\nright:\n\n   >>> word[-1]  # last character\n   'n'\n   >>> word[-2]  # second-last character\n   'o'\n   >>> word[-6]\n   'P'\n\nNote that since -0 is the same as 0, negative indices start from -1.\n\nIn addition to indexing, *slicing* is also supported.  While indexing\nis used to obtain individual characters, *slicing* allows you to\nobtain substring:\n\n   >>> word[0:2]  # characters from position 0 (included) to 2 (excluded)\n   'Py'\n   >>> word[2:5]  # characters from position 2 (included) to 5 (excluded)\n   'tho'\n\nSlice indices have useful defaults; an omitted first index defaults to\n"
+      }
+    ],
+    "status": "answer",
+    "reason": "validated_citations_not_semantic_proof",
+    "latency_ms": 20325.12559997849,
     "retrieved_chunks": 5,
-    "total_latency_ms": 35378.45457000003,
+    "total_latency_ms": 20325.18050004728,
     "error": null,
     "usage": {
       "input_tokens": 1540,
-      "output_tokens": 109
+      "output_tokens": 57
     },
-    "cpu_seconds": 69.22902793700001,
-    "rss_mb": 2048.94140625,
-    "raw_model_output": "{\n  \"status\": \"answer\",\n  \"answer\": \"To access the last element using a negative index, use `word[-1]`.\",\n  \"citations\": [\n    {\n      \"chunk_id\": \"S1\",\n      \"source\": \"faq/programming.txt\",\n      \"section\": \"Negative Indexes\"\n    },\n    {\n      \"chunk_id\": \"S2\",\n      \"source\": \"tutorial/introduction.txt\",\n      \"section\": \"3.1.2. Text\"\n    }\n  ]\n}",
+    "cpu_seconds": 0.6875,
+    "rss_mb": 1230.3359375,
+    "raw_model_output": "{\"status\":\"answer\",\"answer\":\"Pour accéder au dernier élément avec un indice négatif, utilisez -1. Par exemple, `word[-1]` donne le dernier caractère de la chaîne `word`.\", \"citations\":[\"S2\"]}",
     "human_correctness": null,
     "human_relevance": null,
     "human_faithfulness": null,
@@ -201,32 +160,32 @@
         "quote": "The \"for\" statement in Python differs a bit from what you may be used\nto in C or Pascal.  Rather than always iterating over an arithmetic\nprogression of numbers (like in Pascal), or giving the user the\nability to define both the iteration step and halting condition (as\nC), Python's \"for\" statement iterates over the items of any sequence\n(a list or a string), in the order that they appear in the sequence.\nFor example (no pun intended):"
       }
     ],
-    "answer": "A `for` loop iterates over the items of any sequence (such as a list or a string) in the order that they appear.",
+    "answer": "A for loop in Python iterates over the items of any sequence (such as a list or a string) in the order they appear in the sequence.",
     "references": [
       {
-        "chunk_id": "faa22552226898972982b2d4",
+        "chunk_id": "f7574df1cd17425805681c4e",
         "document_id": "3c62cfa3bb5c4c96",
         "source_path": "tutorial/controlflow.txt",
-        "section": "4.4. \"break\" and \"continue\" Statements, and \"else\" Clauses on Loops",
+        "section": "4.2. \"for\" Statements",
         "version": "3.11.18",
-        "start": 4338,
-        "end": 5115,
-        "text": "4.4. \"break\" and \"continue\" Statements, and \"else\" Clauses on Loops\n===================================================================\n\nThe \"break\" statement breaks out of the innermost enclosing \"for\" or\n\"while\" loop.\n\nA \"for\" or \"while\" loop can include an \"else\" clause.\n\nIn a \"for\" loop, the \"else\" clause is executed after the loop reaches\nits final iteration.\n\nIn a \"while\" loop, it's executed after the loop's condition becomes\nfalse.\n\nIn either kind of loop, the \"else\" clause is **not** executed if the\nloop was terminated by a \"break\".\n\nThis is exemplified in the following \"for\" loop, which searches for\nprime numbers:\n\n   >>> for n in range(2, 10):\n   ...     for x in range(2, n):\n   ...         if n % x == 0:\n   ...             print(n, 'equals', x, '*', n//x)\n"
+        "start": 1084,
+        "end": 1879,
+        "text": "4.2. \"for\" Statements\n=====================\n\nThe \"for\" statement in Python differs a bit from what you may be used\nto in C or Pascal.  Rather than always iterating over an arithmetic\nprogression of numbers (like in Pascal), or giving the user the\nability to define both the iteration step and halting condition (as\nC), Python's \"for\" statement iterates over the items of any sequence\n(a list or a string), in the order that they appear in the sequence.\nFor example (no pun intended):\n\n   >>> # Measure some strings:\n   ... words = ['cat', 'window', 'defenestrate']\n   >>> for w in words:\n   ...     print(w, len(w))\n   ...\n   cat 3\n   window 6\n   defenestrate 12\n\nCode that modifies a collection while iterating over that same\ncollection can be tricky to get right.  Instead, it is usually more\n"
       }
     ],
     "status": "answer",
     "reason": "validated_citations_not_semantic_proof",
-    "latency_ms": 20726.174469000398,
+    "latency_ms": 19265.022700070404,
     "retrieved_chunks": 5,
-    "total_latency_ms": 20726.31131700018,
+    "total_latency_ms": 19265.155399916694,
     "error": null,
     "usage": {
       "input_tokens": 1468,
-      "output_tokens": 57
+      "output_tokens": 45
     },
-    "cpu_seconds": 40.808193816,
-    "rss_mb": 2037.3671875,
-    "raw_model_output": "{\n    \"status\": \"answer\",\n    \"answer\": \"A `for` loop iterates over the items of any sequence (such as a list or a string) in the order that they appear.\",\n    \"citations\": [\n        \"S1\"\n    ]\n}",
+    "cpu_seconds": 0.71875,
+    "rss_mb": 1229.82421875,
+    "raw_model_output": "{\"status\":\"answer\",\"answer\":\"A for loop in Python iterates over the items of any sequence (such as a list or a string) in the order they appear in the sequence.\",\"citations\":[\"S2\"]}",
     "human_correctness": null,
     "human_relevance": null,
     "human_faithfulness": null,
@@ -246,7 +205,7 @@
         "quote": "The given end point is never part of the generated sequence;\n\"range(10)\" generates 10 values, the legal indices for items of a\nsequence of length 10.  It is possible to let the range start at\nanother number, or to specify a different increment (even negative;\nsometimes this is called the 'step'):"
       }
     ],
-    "answer": "Range function does not include the specified value.",
+    "answer": "Non, range(5) ne comprend pas la valeur 5. Il génère les valeurs de 0 à 4, excluant la borne supérieure.",
     "references": [
       {
         "chunk_id": "3d53ea612c80b6517f88b671",
@@ -261,17 +220,17 @@
     ],
     "status": "answer",
     "reason": "validated_citations_not_semantic_proof",
-    "latency_ms": 24823.30769300006,
+    "latency_ms": 16538.85899996385,
     "retrieved_chunks": 5,
-    "total_latency_ms": 24824.765929000023,
+    "total_latency_ms": 16538.93809998408,
     "error": null,
     "usage": {
       "input_tokens": 1674,
-      "output_tokens": 37
+      "output_tokens": 48
     },
-    "cpu_seconds": 47.93766187099999,
-    "rss_mb": 2066.13671875,
-    "raw_model_output": "{\n  \"status\": \"answer\",\n  \"answer\": \"Range function does not include the specified value.\",\n  \"citations\": [\n    \"S1\"\n  ]\n}",
+    "cpu_seconds": 0.90625,
+    "rss_mb": 1231.4453125,
+    "raw_model_output": "{\"status\":\"answer\",\"answer\":\"Non, range(5) ne comprend pas la valeur 5. Il génère les valeurs de 0 à 4, excluant la borne supérieure.\",\"citations\":[\"S1\"]}",
     "human_correctness": null,
     "human_relevance": null,
     "human_faithfulness": null,
@@ -291,7 +250,7 @@
         "quote": "In either kind of loop, the \"else\" clause is **not** executed if the\nloop was terminated by a \"break\"."
       }
     ],
-    "answer": "The `else` clause executes after the loop reaches its final iteration.",
+    "answer": "The else clause on a loop is executed after the loop completes its iterations without being terminated by a break statement. In a for loop, it runs after the final iteration; in a while loop, it runs after the condition becomes false. If the loop is terminated by a break, the else clause is not executed.",
     "references": [
       {
         "chunk_id": "faa22552226898972982b2d4",
@@ -306,17 +265,17 @@
     ],
     "status": "answer",
     "reason": "validated_citations_not_semantic_proof",
-    "latency_ms": 27236.39490200003,
+    "latency_ms": 13372.475299984217,
     "retrieved_chunks": 5,
-    "total_latency_ms": 27239.674050000758,
+    "total_latency_ms": 13372.513000038452,
     "error": null,
     "usage": {
       "input_tokens": 1529,
-      "output_tokens": 42
+      "output_tokens": 77
     },
-    "cpu_seconds": 52.11857401100002,
-    "rss_mb": 2059.74609375,
-    "raw_model_output": "{\n    \"status\": \"answer\",\n    \"answer\": \"The `else` clause executes after the loop reaches its final iteration.\",\n    \"citations\": [\n        \"S1\"\n    ]\n}",
+    "cpu_seconds": 0.734375,
+    "rss_mb": 1231.9609375,
+    "raw_model_output": "{\"status\":\"answer\",\"answer\":\"The else clause on a loop is executed after the loop completes its iterations without being terminated by a break statement. In a for loop, it runs after the final iteration; in a while loop, it runs after the condition becomes false. If the loop is terminated by a break, the else clause is not executed.\",\"citations\":[\"S1\"]}",
     "human_correctness": null,
     "human_relevance": null,
     "human_faithfulness": null,
@@ -336,52 +295,32 @@
         "quote": "The \"continue\" statement, also borrowed from C, continues with the\nnext iteration of the loop:"
       }
     ],
-    "answer": "Continue statements in loops allow control flow between different parts of the loop.",
+    "answer": "Dans une boucle, `continue` permet de sauter à la prochaine itération sans exécuter le reste du bloc de code actuel.",
     "references": [
       {
-        "chunk_id": "2980f329ead53f4ee6b1c4e5",
+        "chunk_id": "faa22552226898972982b2d4",
         "document_id": "3c62cfa3bb5c4c96",
         "source_path": "tutorial/controlflow.txt",
-        "section": "4. More Control Flow Tools",
+        "section": "4.4. \"break\" and \"continue\" Statements, and \"else\" Clauses on Loops",
         "version": "3.11.18",
-        "start": 0,
-        "end": 170,
-        "text": "4. More Control Flow Tools\n**************************\n\nAs well as the \"while\" statement just introduced, Python uses a few\nmore that we will encounter in this chapter.\n\n\n"
-      },
-      {
-        "chunk_id": "414579e2a48d839da8f1c0ba",
-        "document_id": "a337544bc5e94c94",
-        "source_path": "tutorial/errors.txt",
-        "section": "8.7. Defining Clean-up Actions",
-        "version": "3.11.18",
-        "start": 15145,
-        "end": 15398,
-        "text": "re-raised after the \"finally\" clause has\nbeen executed.\n\nIn real world applications, the \"finally\" clause is useful for\nreleasing external resources (such as files or network connections),\nregardless of whether the use of the resource was successful.\n\n\n"
-      },
-      {
-        "chunk_id": "f46122db33d117068f1f91b3",
-        "document_id": "a337544bc5e94c94",
-        "source_path": "tutorial/errors.txt",
-        "section": "8.8. Predefined Clean-up Actions",
-        "version": "3.11.18",
-        "start": 16051,
-        "end": 16492,
-        "text": "tatement allows objects\nlike files to be used in a way that ensures they are always cleaned up\npromptly and correctly.\n\n   with open(\"myfile.txt\") as f:\n       for line in f:\n           print(line, end=\"\")\n\nAfter the statement is executed, the file *f* is always closed, even\nif a problem was encountered while processing the lines. Objects\nwhich, like files, provide predefined clean-up actions will indicate\nthis in their documentation.\n\n\n"
+        "start": 4338,
+        "end": 5115,
+        "text": "4.4. \"break\" and \"continue\" Statements, and \"else\" Clauses on Loops\n===================================================================\n\nThe \"break\" statement breaks out of the innermost enclosing \"for\" or\n\"while\" loop.\n\nA \"for\" or \"while\" loop can include an \"else\" clause.\n\nIn a \"for\" loop, the \"else\" clause is executed after the loop reaches\nits final iteration.\n\nIn a \"while\" loop, it's executed after the loop's condition becomes\nfalse.\n\nIn either kind of loop, the \"else\" clause is **not** executed if the\nloop was terminated by a \"break\".\n\nThis is exemplified in the following \"for\" loop, which searches for\nprime numbers:\n\n   >>> for n in range(2, 10):\n   ...     for x in range(2, n):\n   ...         if n % x == 0:\n   ...             print(n, 'equals', x, '*', n//x)\n"
       }
     ],
     "status": "answer",
     "reason": "validated_citations_not_semantic_proof",
-    "latency_ms": 17976.394458999494,
+    "latency_ms": 7175.601600087248,
     "retrieved_chunks": 5,
-    "total_latency_ms": 17976.551364000443,
+    "total_latency_ms": 7175.634899991564,
     "error": null,
     "usage": {
       "input_tokens": 1035,
-      "output_tokens": 56
+      "output_tokens": 47
     },
-    "cpu_seconds": 34.92639526300002,
-    "rss_mb": 2079.7578125,
-    "raw_model_output": "```json\n{\n    \"status\": \"answer\",\n    \"answer\": \"Continue statements in loops allow control flow between different parts of the loop.\",\n    \"citations\": [\n        \"S1\",\n        \"S2\",\n        \"S3\"\n    ]\n}\n```",
+    "cpu_seconds": 0.609375,
+    "rss_mb": 1232.703125,
+    "raw_model_output": "{\"status\":\"answer\",\"answer\":\"Dans une boucle, `continue` permet de sauter à la prochaine itération sans exécuter le reste du bloc de code actuel.\",\"citations\":[\"S5\"]}",
     "human_correctness": null,
     "human_relevance": null,
     "human_faithfulness": null,
@@ -401,28 +340,8 @@
         "quote": "The \"pass\" statement does nothing. It can be used when a statement is\nrequired syntactically but the program requires no action. For\nexample:"
       }
     ],
-    "answer": "The 'pass' statement does nothing and can be used when a statement is required syntactically but the program requires no action.",
+    "answer": "The \"pass\" statement in Python does nothing. It is used when a statement is required syntactically but no action is needed. It can be used for creating minimal classes, as a placeholder for function or conditional bodies, or to keep thinking at a more abstract level while developing code. The \"pass\" is silently ignored by the interpreter.",
     "references": [
-      {
-        "chunk_id": "0b58f5bc9a4c8d36daabe4bb",
-        "document_id": "59efdda0294e085d",
-        "source_path": "faq/general.txt",
-        "section": "What is Python?",
-        "version": "3.11.18",
-        "start": 82,
-        "end": 868,
-        "text": "What is Python?\n---------------\n\nPython is an interpreted, interactive, object-oriented programming\nlanguage.  It incorporates modules, exceptions, dynamic typing, very\nhigh level dynamic data types, and classes.  It supports multiple\nprogramming paradigms beyond object-oriented programming, such as\nprocedural and functional programming. Python combines remarkable\npower with very clear syntax. It has interfaces to many system calls\nand libraries, as well as to various window systems, and is extensible\nin C or C++.  It is also usable as an extension language for\napplications that need a programmable interface. Finally, Python is\nportable: it runs on many Unix variants including Linux and macOS, and\non Windows.\n\nTo find out more, start with The Python Tutorial.  The Beginner's\n"
-      },
-      {
-        "chunk_id": "b1fb52365f0477d9a28c6765",
-        "document_id": "3c62cfa3bb5c4c96",
-        "source_path": "tutorial/controlflow.txt",
-        "section": "4.8.3. Special parameters",
-        "version": "3.11.18",
-        "start": 23630,
-        "end": 24416,
-        "text": "4.8.3. Special parameters\n-------------------------\n\nBy default, arguments may be passed to a Python function either by\nposition or explicitly by keyword. For readability and performance, it\nmakes sense to restrict the way arguments can be passed so that a\ndeveloper need only look at the function definition to determine if\nitems are passed by position, by position or keyword, or by keyword.\n\nA function definition may look like:\n\n   def f(pos1, pos2, /, pos_or_kwd, *, kwd1, kwd2):\n         -----------    ----------     ----------\n           |             |                  |\n           |        Positional or keyword   |\n           |                                - Keyword only\n            -- Positional only\n\nwhere \"/\" and \"*\" are optional. If used, these symbols indicate the\n"
-      },
       {
         "chunk_id": "cbcd6be56ebd4541d6d9ab5c",
         "document_id": "3c62cfa3bb5c4c96",
@@ -432,41 +351,21 @@
         "start": 6386,
         "end": 7065,
         "text": "4.5. \"pass\" Statements\n======================\n\nThe \"pass\" statement does nothing. It can be used when a statement is\nrequired syntactically but the program requires no action. For\nexample:\n\n   >>> while True:\n   ...     pass  # Busy-wait for keyboard interrupt (Ctrl+C)\n   ...\n\nThis is commonly used for creating minimal classes:\n\n   >>> class MyEmptyClass:\n   ...     pass\n   ...\n\nAnother place \"pass\" can be used is as a place-holder for a function\nor conditional body when you are working on new code, allowing you to\nkeep thinking at a more abstract level.  The \"pass\" is silently\nignored:\n\n   >>> def initlog(*args):\n   ...     pass   # Remember to implement this!\n   ...\n\n\n"
-      },
-      {
-        "chunk_id": "ce1bd2e6dd855b78eb84f967",
-        "document_id": "59efdda0294e085d",
-        "source_path": "faq/general.txt",
-        "section": "What is Python good for?",
-        "version": "3.11.18",
-        "start": 4539,
-        "end": 5322,
-        "text": "What is Python good for?\n------------------------\n\nPython is a high-level general-purpose programming language that can\nbe applied to many different classes of problems.\n\nThe language comes with a large standard library that covers areas\nsuch as string processing (regular expressions, Unicode, calculating\ndifferences between files), internet protocols (HTTP, FTP, SMTP, XML-\nRPC, POP, IMAP), software engineering (unit testing, logging,\nprofiling, parsing Python code), and operating system interfaces\n(system calls, filesystems, TCP/IP sockets).  Look at the table of\ncontents for The Python Standard Library to get an idea of what's\navailable.  A wide variety of third-party extensions are also\navailable.  Consult the Python Package Index to find packages of\ninterest to you.\n\n\n"
-      },
-      {
-        "chunk_id": "1eb5da99e0845706fb681c22",
-        "document_id": "59efdda0294e085d",
-        "source_path": "faq/general.txt",
-        "section": "General Python FAQ",
-        "version": "3.11.18",
-        "start": 0,
-        "end": 40,
-        "text": "General Python FAQ\n******************\n\n\n"
       }
     ],
     "status": "answer",
     "reason": "validated_citations_not_semantic_proof",
-    "latency_ms": 23375.630797000667,
+    "latency_ms": 9417.3746999586,
     "retrieved_chunks": 5,
-    "total_latency_ms": 23375.70205600059,
+    "total_latency_ms": 9417.39780001808,
     "error": null,
     "usage": {
       "input_tokens": 1107,
-      "output_tokens": 74
+      "output_tokens": 83
     },
-    "cpu_seconds": 46.46513656399998,
-    "rss_mb": 2040.765625,
-    "raw_model_output": "{\n  \"status\": \"answer\",\n  \"answer\": \"The 'pass' statement does nothing and can be used when a statement is required syntactically but the program requires no action.\",\n  \"citations\": [\n    \"S1\",\n    \"S2\",\n    \"S3\",\n    \"S4\",\n    \"S5\"\n  ]\n}",
+    "cpu_seconds": 0.625,
+    "rss_mb": 1233.67578125,
+    "raw_model_output": "{\"status\":\"answer\",\"answer\":\"The \\\"pass\\\" statement in Python does nothing. It is used when a statement is required syntactically but no action is needed. It can be used for creating minimal classes, as a placeholder for function or conditional bodies, or to keep thinking at a more abstract level while developing code. The \\\"pass\\\" is silently ignored by the interpreter.\",\"citations\":[\"S3\"]}",
     "human_correctness": null,
     "human_relevance": null,
     "human_faithfulness": null,
@@ -486,7 +385,7 @@
         "quote": "The keyword \"def\" introduces a function *definition*.  It must be\nfollowed by the function name and the parenthesized list of formal\nparameters. The statements that form the body of the function start at\nthe next line, and must be indented."
       }
     ],
-    "answer": "La définition d'une fonction est généralement donnée en utilisant la notation de définition de fonctions.",
+    "answer": "Pour définir une fonction avec `def`, on utilise la syntaxe suivante : `def nom_fonction(paramètres) :` suivi d'un bloc d'instructions indénté. Par exemple : `def standard_arg(arg): print(arg)`.",
     "references": [
       {
         "chunk_id": "13e3d0c802e6b85092d62839",
@@ -497,61 +396,21 @@
         "start": 25682,
         "end": 26433,
         "text": "4.8.3.4. Function Examples\n~~~~~~~~~~~~~~~~~~~~~~~~~~\n\nConsider the following example function definitions paying close\nattention to the markers \"/\" and \"*\":\n\n   >>> def standard_arg(arg):\n   ...     print(arg)\n   ...\n   >>> def pos_only_arg(arg, /):\n   ...     print(arg)\n   ...\n   >>> def kwd_only_arg(*, arg):\n   ...     print(arg)\n   ...\n   >>> def combined_example(pos_only, /, standard, *, kwd_only):\n   ...     print(pos_only, standard, kwd_only)\n\nThe first function definition, \"standard_arg\", the most familiar form,\nplaces no restrictions on the calling convention and arguments may be\npassed by position or keyword:\n\n   >>> standard_arg(2)\n   2\n\n   >>> standard_arg(arg=2)\n   2\n\nThe second function \"pos_only_arg\" is restricted to only use\n"
-      },
-      {
-        "chunk_id": "7b2a56bda96f323d8265e689",
-        "document_id": "3c62cfa3bb5c4c96",
-        "source_path": "tutorial/controlflow.txt",
-        "section": "4.8.3.5. Recap",
-        "version": "3.11.18",
-        "start": 28590,
-        "end": 29362,
-        "text": "4.8.3.5. Recap\n~~~~~~~~~~~~~~\n\nThe use case will determine which parameters to use in the function\ndefinition:\n\n   def f(pos1, pos2, /, pos_or_kwd, *, kwd1, kwd2):\n\nAs guidance:\n\n* Use positional-only if you want the name of the parameters to not be\n  available to the user. This is useful when parameter names have no\n  real meaning, if you want to enforce the order of the arguments when\n  the function is called or if you need to take some positional\n  parameters and arbitrary keywords.\n\n* Use keyword-only when names have meaning and the function definition\n  is more understandable by being explicit with names or you want to\n  prevent users relying on the position of the argument being passed.\n\n* For an API, use positional-only to prevent breaking API changes if\n"
-      },
-      {
-        "chunk_id": "c25961c8f8394b735f35e7a0",
-        "document_id": "3c62cfa3bb5c4c96",
-        "source_path": "tutorial/controlflow.txt",
-        "section": "4.8. More on Defining Functions",
-        "version": "3.11.18",
-        "start": 17976,
-        "end": 18166,
-        "text": "4.8. More on Defining Functions\n===============================\n\nIt is also possible to define functions with a variable number of\narguments. There are three forms, which can be combined.\n\n\n"
-      },
-      {
-        "chunk_id": "4b654782c335b2b5c3e5e838",
-        "document_id": "3c62cfa3bb5c4c96",
-        "source_path": "tutorial/controlflow.txt",
-        "section": "4.7. Defining Functions",
-        "version": "3.11.18",
-        "start": 15844,
-        "end": 16621,
-        "text": "s the function:\n\n   >>> fib\n   <function fib at 10042ed0>\n   >>> f = fib\n   >>> f(100)\n   0 1 1 2 3 5 8 13 21 34 55 89\n\nComing from other languages, you might object that \"fib\" is not a\nfunction but a procedure since it doesn't return a value.  In fact,\neven functions without a \"return\" statement do return a value, albeit\na rather boring one.  This value is called \"None\" (it's a built-in\nname).  Writing the value \"None\" is normally suppressed by the\ninterpreter if it would be the only value written. You can see it if\nyou really want to using \"print()\":\n\n   >>> fib(0)\n   >>> print(fib(0))\n   None\n\nIt is simple to write a function that returns a list of the numbers of\nthe Fibonacci series, instead of printing it:\n\n   >>> def fib2(n):  # return Fibonacci series up to n\n"
-      },
-      {
-        "chunk_id": "17c2a92ab5ee2f436fb32e67",
-        "document_id": "3c62cfa3bb5c4c96",
-        "source_path": "tutorial/controlflow.txt",
-        "section": "4.7. Defining Functions",
-        "version": "3.11.18",
-        "start": 15192,
-        "end": 15964,
-        "text": "(arguments) to a function call are introduced in\nthe local symbol table of the called function when it is called; thus,\narguments are passed using *call by value* (where the *value* is\nalways an object *reference*, not the value of the object). [1] When a\nfunction calls another function, or calls itself recursively, a new\nlocal symbol table is created for that call.\n\nA function definition associates the function name with the function\nobject in the current symbol table.  The interpreter recognizes the\nobject pointed to by that name as a user-defined function.  Other\nnames can also point to that same function object and can also be used\nto access the function:\n\n   >>> fib\n   <function fib at 10042ed0>\n   >>> f = fib\n   >>> f(100)\n   0 1 1 2 3 5 8 13 21 34 55 89\n\n"
       }
     ],
     "status": "answer",
     "reason": "validated_citations_not_semantic_proof",
-    "latency_ms": 28093.323203000182,
+    "latency_ms": 18462.69130008295,
     "retrieved_chunks": 5,
-    "total_latency_ms": 28093.349866000608,
+    "total_latency_ms": 18462.726400000975,
     "error": null,
     "usage": {
       "input_tokens": 1328,
-      "output_tokens": 72
+      "output_tokens": 69
     },
-    "cpu_seconds": 53.59152924699998,
-    "rss_mb": 2071.0390625,
-    "raw_model_output": "{\n    \"status\": \"answer\",\n    \"answer\": \"La définition d'une fonction est généralement donnée en utilisant la notation de définition de fonctions.\",\n    \"citations\": [\n        \"S1\",\n        \"S2\",\n        \"S3\",\n        \"S4\",\n        \"S5\"\n    ]\n}",
+    "cpu_seconds": 0.625,
+    "rss_mb": 1234.44921875,
+    "raw_model_output": "{\"status\":\"answer\",\"answer\":\"Pour définir une fonction avec `def`, on utilise la syntaxe suivante : `def nom_fonction(paramètres) :` suivi d'un bloc d'instructions indénté. Par exemple : `def standard_arg(arg): print(arg)`.\", \"citations\":[\"S1\"]}",
     "human_correctness": null,
     "human_relevance": null,
     "human_faithfulness": null,
@@ -571,7 +430,7 @@
         "quote": "**Important warning:**  The default value is evaluated only once. This\nmakes a difference when the default is a mutable object such as a\nlist, dictionary, or instances of most classes.  For example, the\nfollowing function accumulates the arguments passed to it on\nsubsequent calls:"
       }
     ],
-    "answer": "The default value is evaluated only once, making a difference when the default is a mutable object such as a list, dictionary, or instances of most classes.",
+    "answer": "No, default function arguments are evaluated only once when the function is defined, not on each call. This behavior can lead to unexpected results if the default is a mutable object, such as a list or dictionary, unless explicitly handled to avoid sharing between calls.",
     "references": [
       {
         "chunk_id": "dc1bd2e352636c6b41dcb4d6",
@@ -586,17 +445,17 @@
     ],
     "status": "answer",
     "reason": "validated_citations_not_semantic_proof",
-    "latency_ms": 21922.093132000555,
+    "latency_ms": 18241.828899946995,
     "retrieved_chunks": 5,
-    "total_latency_ms": 21922.161307999886,
+    "total_latency_ms": 18241.87060003169,
     "error": null,
     "usage": {
       "input_tokens": 1369,
-      "output_tokens": 59
+      "output_tokens": 65
     },
-    "cpu_seconds": 43.00158942799999,
-    "rss_mb": 2059.79296875,
-    "raw_model_output": "{\n  \"status\": \"answer\",\n  \"answer\": \"The default value is evaluated only once, making a difference when the default is a mutable object such as a list, dictionary, or instances of most classes.\",\n  \"citations\": [\n    \"S1\"\n  ]\n}",
+    "cpu_seconds": 0.6875,
+    "rss_mb": 1235.37109375,
+    "raw_model_output": "{\"status\":\"answer\",\"answer\":\"No, default function arguments are evaluated only once when the function is defined, not on each call. This behavior can lead to unexpected results if the default is a mutable object, such as a list or dictionary, unless explicitly handled to avoid sharing between calls.\",\"citations\":[\"S1\"]}",
     "human_correctness": null,
     "human_relevance": null,
     "human_faithfulness": null,
@@ -616,28 +475,8 @@
         "quote": "   squares = [x**2 for x in range(10)]"
       }
     ],
-    "answer": "To create a list of squares without side effects, you can use a nested list comprehension.",
+    "answer": "Pour créer une liste de carrés par compréhension, utilisez la syntaxe suivante : `squares = [x**2 for x in range(10)]`.",
     "references": [
-      {
-        "chunk_id": "43304ac56dbc698e9cc8866b",
-        "document_id": "833713645c836e5b",
-        "source_path": "tutorial/datastructures.txt",
-        "section": "5.1.3. List Comprehensions",
-        "version": "3.11.18",
-        "start": 4969,
-        "end": 5764,
-        "text": "5.1.3. List Comprehensions\n--------------------------\n\nList comprehensions provide a concise way to create lists. Common\napplications are to make new lists where each element is the result of\nsome operations applied to each member of another sequence or\niterable, or to create a subsequence of those elements that satisfy a\ncertain condition.\n\nFor example, assume we want to create a list of squares, like:\n\n   >>> squares = []\n   >>> for x in range(10):\n   ...     squares.append(x**2)\n   ...\n   >>> squares\n   [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]\n\nNote that this creates (or overwrites) a variable named \"x\" that still\nexists after the loop completes.  We can calculate the list of squares\nwithout any side effects using:\n\n   squares = list(map(lambda x: x**2, range(10)))\n\nor, equivalently:\n\n"
-      },
-      {
-        "chunk_id": "f67e696f6ab8822ff01b14ec",
-        "document_id": "833713645c836e5b",
-        "source_path": "tutorial/datastructures.txt",
-        "section": "5.1.4. Nested List Comprehensions",
-        "version": "3.11.18",
-        "start": 8060,
-        "end": 8827,
-        "text": "5.1.4. Nested List Comprehensions\n---------------------------------\n\nThe initial expression in a list comprehension can be any arbitrary\nexpression, including another list comprehension.\n\nConsider the following example of a 3x4 matrix implemented as a list\nof 3 lists of length 4:\n\n   >>> matrix = [\n   ...     [1, 2, 3, 4],\n   ...     [5, 6, 7, 8],\n   ...     [9, 10, 11, 12],\n   ... ]\n\nThe following list comprehension will transpose rows and columns:\n\n   >>> [[row[i] for row in matrix] for i in range(4)]\n   [[1, 5, 9], [2, 6, 10], [3, 7, 11], [4, 8, 12]]\n\nAs we saw in the previous section, the inner list comprehension is\nevaluated in the context of the \"for\" that follows it, so this example\nis equivalent to:\n\n   >>> transposed = []\n   >>> for i in range(4):\n"
-      },
       {
         "chunk_id": "6cf6db1aacd5090d032f91bc",
         "document_id": "833713645c836e5b",
@@ -651,17 +490,17 @@
     ],
     "status": "answer",
     "reason": "validated_citations_not_semantic_proof",
-    "latency_ms": 22268.672543999855,
+    "latency_ms": 20687.368199927732,
     "retrieved_chunks": 5,
-    "total_latency_ms": 22268.72195299984,
+    "total_latency_ms": 20687.40870000329,
     "error": null,
     "usage": {
       "input_tokens": 1647,
-      "output_tokens": 60
+      "output_tokens": 54
     },
-    "cpu_seconds": 43.75963129399997,
-    "rss_mb": 2097.20703125,
-    "raw_model_output": "```json\n{\n    \"status\": \"answer\",\n    \"answer\": \"To create a list of squares without side effects, you can use a nested list comprehension.\",\n    \"citations\": [\n        \"S1\",\n        \"S2\",\n        \"S3\"\n    ]\n}\n```",
+    "cpu_seconds": 0.6875,
+    "rss_mb": 1236.4921875,
+    "raw_model_output": "{\"status\":\"answer\",\"answer\":\"Pour créer une liste de carrés par compréhension, utilisez la syntaxe suivante : `squares = [x**2 for x in range(10)]`.\", \"citations\":[\"S3\"]}",
     "human_correctness": null,
     "human_relevance": null,
     "human_faithfulness": null,
@@ -681,7 +520,7 @@
         "quote": "The list methods make it very easy to use a list as a stack, where the\nlast element added is the first element retrieved (\"last-in, first-\nout\").  To add an item to the top of the stack, use \"append()\".  To\nretrieve an item from the top of the stack, use \"pop()\" without an\nexplicit index.  For example:"
       }
     ],
-    "answer": "To use a list as a stack, append an item to the top of the list and retrieve the last item using pop().",
+    "answer": "To use a list as a stack, use `append()` to add items to the end and `pop()` without an explicit index to remove the last item. This follows the \"last-in, first-out\" principle. Example: `stack.append(6)` adds an item, and `stack.pop()` retrieves it.",
     "references": [
       {
         "chunk_id": "8647f9ff11056771e08cb005",
@@ -692,31 +531,21 @@
         "start": 3347,
         "end": 3940,
         "text": "5.1.1. Using Lists as Stacks\n----------------------------\n\nThe list methods make it very easy to use a list as a stack, where the\nlast element added is the first element retrieved (\"last-in, first-\nout\").  To add an item to the top of the stack, use \"append()\".  To\nretrieve an item from the top of the stack, use \"pop()\" without an\nexplicit index.  For example:\n\n   >>> stack = [3, 4, 5]\n   >>> stack.append(6)\n   >>> stack.append(7)\n   >>> stack\n   [3, 4, 5, 6, 7]\n   >>> stack.pop()\n   7\n   >>> stack\n   [3, 4, 5, 6]\n   >>> stack.pop()\n   6\n   >>> stack.pop()\n   5\n   >>> stack\n   [3, 4]\n\n\n"
-      },
-      {
-        "chunk_id": "f5da8d0beff8d152547cf362",
-        "document_id": "7db8120c5e3a870c",
-        "source_path": "faq/programming.txt",
-        "section": "How do you make an array in Python?",
-        "version": "3.11.18",
-        "start": 41874,
-        "end": 42630,
-        "text": "How do you make an array in Python?\n-----------------------------------\n\nUse a list:\n\n   [\"this\", 1, \"is\", \"an\", \"array\"]\n\nLists are equivalent to C or Pascal arrays in their time complexity;\nthe primary difference is that a Python list can contain objects of\nmany different types.\n\nThe \"array\" module also provides methods for creating arrays of fixed\ntypes with compact representations, but they are slower to index than\nlists.  Also note that NumPy and other third party packages define\narray-like structures with various characteristics as well.\n\nTo get Lisp-style linked lists, you can emulate *cons cells* using\ntuples:\n\n   lisp_list = (\"like\",  (\"this\",  (\"example\", None) ) )\n\nIf mutability is desired, you could use lists instead of tuples.  Here\n"
       }
     ],
     "status": "answer",
     "reason": "validated_citations_not_semantic_proof",
-    "latency_ms": 22910.56479799954,
+    "latency_ms": 13815.766499959864,
     "retrieved_chunks": 5,
-    "total_latency_ms": 22910.689499,
+    "total_latency_ms": 13815.80360000953,
     "error": null,
     "usage": {
       "input_tokens": 1492,
-      "output_tokens": 63
+      "output_tokens": 78
     },
-    "cpu_seconds": 44.95231852500001,
-    "rss_mb": 2091.32421875,
-    "raw_model_output": "```json\n{\n    \"status\": \"answer\",\n    \"answer\": \"To use a list as a stack, append an item to the top of the list and retrieve the last item using pop().\",\n    \"citations\": [\n        \"S1\",\n        \"S2\"\n    ]\n}\n```",
+    "cpu_seconds": 0.640625,
+    "rss_mb": 1163.48046875,
+    "raw_model_output": "{\"status\":\"answer\",\"answer\":\"To use a list as a stack, use `append()` to add items to the end and `pop()` without an explicit index to remove the last item. This follows the \\\"last-in, first-out\\\" principle. Example: `stack.append(6)` adds an item, and `stack.pop()` retrieves it.\",\"citations\":[\"S1\"]}",
     "human_correctness": null,
     "human_relevance": null,
     "human_faithfulness": null,
@@ -736,21 +565,32 @@
         "quote": "It is also possible to use a list as a queue, where the first element\nadded is the first element retrieved (\"first-in, first-out\"); however,\nlists are not efficient for this purpose.  While appends and pops from\nthe end of list are fast, doing inserts or pops from the beginning of\na list is slow (because all of the other elements have to be shifted\nby one)."
       }
     ],
-    "answer": "Information fiable insuffisante dans le corpus Python 3.11.18 / Insufficient reliable evidence.",
-    "references": [],
-    "status": "abstention",
-    "reason": "model_abstention_or_invalid_citations",
-    "latency_ms": 29031.966657999874,
+    "answer": "Une liste est inefficace comme file car les insertions ou suppressions au début de la liste sont lentes, car elles nécessitent le décalage de tous les autres éléments. Pour une file efficace, il est préférable d'utiliser une structure comme `collections.deque` qui permet des opérations rapides aux deux extrémités.",
+    "references": [
+      {
+        "chunk_id": "5fa94e012ab01757e9be7334",
+        "document_id": "833713645c836e5b",
+        "source_path": "tutorial/datastructures.txt",
+        "section": "5.1.2. Using Lists as Queues",
+        "version": "3.11.18",
+        "start": 3940,
+        "end": 4684,
+        "text": "5.1.2. Using Lists as Queues\n----------------------------\n\nIt is also possible to use a list as a queue, where the first element\nadded is the first element retrieved (\"first-in, first-out\"); however,\nlists are not efficient for this purpose.  While appends and pops from\nthe end of list are fast, doing inserts or pops from the beginning of\na list is slow (because all of the other elements have to be shifted\nby one).\n\nTo implement a queue, use \"collections.deque\" which was designed to\nhave fast appends and pops from both ends.  For example:\n\n   >>> from collections import deque\n   >>> queue = deque([\"Eric\", \"John\", \"Michael\"])\n   >>> queue.append(\"Terry\")           # Terry arrives\n   >>> queue.append(\"Graham\")          # Graham arrives\n"
+      }
+    ],
+    "status": "answer",
+    "reason": "validated_citations_not_semantic_proof",
+    "latency_ms": 22156.191600020975,
     "retrieved_chunks": 5,
-    "total_latency_ms": 29032.460180999806,
+    "total_latency_ms": 22156.228400068358,
     "error": null,
     "usage": {
       "input_tokens": 1629,
-      "output_tokens": 72
+      "output_tokens": 91
     },
-    "cpu_seconds": 56.812318000999994,
-    "rss_mb": 2098.51171875,
-    "raw_model_output": "```json\n{\n    \"status\": \"abstention\",\n    \"answer\": \"Lists are inefficient for implementing queues because they are not optimized for quick append and pop operations.\",\n    \"citations\": [\n        \"S1\",\n        \"S2\",\n        \"S3\",\n        \"S4\",\n        \"S5\"\n    ]\n}\n```",
+    "cpu_seconds": 0.6875,
+    "rss_mb": 997.03125,
+    "raw_model_output": "{\"status\":\"answer\",\"answer\":\"Une liste est inefficace comme file car les insertions ou suppressions au début de la liste sont lentes, car elles nécessitent le décalage de tous les autres éléments. Pour une file efficace, il est préférable d'utiliser une structure comme `collections.deque` qui permet des opérations rapides aux deux extrémités.\",\"citations\":[\"S2\"]}",
     "human_correctness": null,
     "human_relevance": null,
     "human_faithfulness": null,
@@ -770,7 +610,7 @@
         "quote": "Though tuples may seem similar to lists, they are often used in\ndifferent situations and for different purposes. Tuples are\n*immutable*, and usually contain a heterogeneous sequence of elements\nthat are accessed via unpacking (see later in this section) or\nindexing (or even by attribute in the case of \"namedtuples\"). Lists\nare *mutable*, and their elements are usually homogeneous and are\naccessed by iterating over the list."
       }
     ],
-    "answer": "Tuples are immutable, while lists are mutable.",
+    "answer": "Tuples are immutable, meaning their elements cannot be changed after creation, while lists are mutable, allowing modifications to their elements. This difference makes tuples suitable for fixed collections and lists for dynamic ones.",
     "references": [
       {
         "chunk_id": "52b8a819fa294d5832f5e10a",
@@ -793,39 +633,29 @@
         "text": "the individual items of a tuple, however it\nis possible to create tuples which contain mutable objects, such as\nlists.\n\nThough tuples may seem similar to lists, they are often used in\ndifferent situations and for different purposes. Tuples are\n*immutable*, and usually contain a heterogeneous sequence of elements\nthat are accessed via unpacking (see later in this section) or\nindexing (or even by attribute in the case of \"namedtuples\"). Lists\nare *mutable*, and their elements are usually homogeneous and are\naccessed by iterating over the list.\n\nA special problem is the construction of tuples containing 0 or 1\nitems: the syntax has some extra quirks to accommodate these.  Empty\ntuples are constructed by an empty pair of parentheses; a tuple with\n"
       },
       {
-        "chunk_id": "e3f07b9ec542dcbb4706b479",
-        "document_id": "7db8120c5e3a870c",
-        "source_path": "faq/programming.txt",
-        "section": "How do I convert between tuples and lists?",
+        "chunk_id": "67f4ad7f9b9190efa128fd88",
+        "document_id": "833713645c836e5b",
+        "source_path": "tutorial/datastructures.txt",
+        "section": "5.3. Tuples and Sequences",
         "version": "3.11.18",
-        "start": 38938,
-        "end": 39712,
-        "text": "How do I convert between tuples and lists?\n------------------------------------------\n\nThe type constructor \"tuple(seq)\" converts any sequence (actually, any\niterable) into a tuple with the same items in the same order.\n\nFor example, \"tuple([1, 2, 3])\" yields \"(1, 2, 3)\" and \"tuple('abc')\"\nyields \"('a', 'b', 'c')\".  If the argument is a tuple, it does not\nmake a copy but returns the same object, so it is cheap to call\n\"tuple()\" when you aren't sure that an object is already a tuple.\n\nThe type constructor \"list(seq)\" converts any sequence or iterable\ninto a list with the same items in the same order.  For example,\n\"list((1, 2, 3))\" yields \"[1, 2, 3]\" and \"list('abc')\" yields \"['a',\n'b', 'c']\".  If the argument is a list, it makes a copy just like\n\"seq[:]\" would.\n\n\n"
-      },
-      {
-        "chunk_id": "defc94ed7a99959c7d0f5316",
-        "document_id": "7db8120c5e3a870c",
-        "source_path": "faq/programming.txt",
-        "section": "Sequences (Tuples/Lists)",
-        "version": "3.11.18",
-        "start": 38886,
-        "end": 38938,
-        "text": "Sequences (Tuples/Lists)\n========================\n\n\n"
+        "start": 11054,
+        "end": 11815,
+        "text": "1, 'hello!'), (1, 2, 3, 4, 5))\n   >>> # Tuples are immutable:\n   ... t[0] = 88888\n   Traceback (most recent call last):\n     File \"<stdin>\", line 1, in <module>\n   TypeError: 'tuple' object does not support item assignment\n   >>> # but they can contain mutable objects:\n   ... v = ([1, 2, 3], [3, 2, 1])\n   >>> v\n   ([1, 2, 3], [3, 2, 1])\n\nAs you see, on output tuples are always enclosed in parentheses, so\nthat nested tuples are interpreted correctly; they may be input with\nor without surrounding parentheses, although often parentheses are\nnecessary anyway (if the tuple is part of a larger expression).  It is\nnot possible to assign to the individual items of a tuple, however it\nis possible to create tuples which contain mutable objects, such as\nlists.\n\n"
       }
     ],
     "status": "answer",
     "reason": "validated_citations_not_semantic_proof",
-    "latency_ms": 29861.469499000123,
+    "latency_ms": 18067.3043000279,
     "retrieved_chunks": 5,
-    "total_latency_ms": 29861.62875500031,
+    "total_latency_ms": 18067.36409990117,
     "error": null,
     "usage": {
       "input_tokens": 1360,
-      "output_tokens": 53
+      "output_tokens": 59
     },
-    "cpu_seconds": 52.82962486100007,
-    "rss_mb": 2084.7890625,
-    "raw_model_output": "{\n    \"status\": \"answer\",\n    \"answer\": \"Tuples are immutable, while lists are mutable.\",\n    \"citations\": [\n        \"S1\",\n        \"S2\",\n        \"S3\",\n        \"S4\"\n    ]\n}",
+    "cpu_seconds": 0.734375,
+    "rss_mb": 831.515625,
+    "raw_model_output": "{\"status\":\"answer\",\"answer\":\"Tuples are immutable, meaning their elements cannot be changed after creation, while lists are mutable, allowing modifications to their elements. This difference makes tuples suitable for fixed collections and lists for dynamic ones.\",\"citations\":[\"S1\",\"S2\",\"S5\"]}",
     "human_correctness": null,
     "human_relevance": null,
     "human_faithfulness": null,
@@ -845,21 +675,32 @@
         "quote": "When looping through dictionaries, the key and corresponding value can\nbe retrieved at the same time using the \"items()\" method."
       }
     ],
-    "answer": "Information fiable insuffisante dans le corpus Python 3.11.18 / Insufficient reliable evidence.",
-    "references": [],
-    "status": "abstention",
-    "reason": "model_abstention_or_invalid_citations",
-    "latency_ms": 42274.843836999935,
+    "answer": "Pour parcourir les clés et valeurs d’un dictionnaire, utilisez la méthode `items()` qui retourne des paires clé-valeur. Exemple : `for k, v in knights.items(): print(k, v)`.",
+    "references": [
+      {
+        "chunk_id": "ad4b74a54114237f4da3e512",
+        "document_id": "833713645c836e5b",
+        "source_path": "tutorial/datastructures.txt",
+        "section": "5.6. Looping Techniques",
+        "version": "3.11.18",
+        "start": 17690,
+        "end": 18458,
+        "text": "5.6. Looping Techniques\n=======================\n\nWhen looping through dictionaries, the key and corresponding value can\nbe retrieved at the same time using the \"items()\" method.\n\n   >>> knights = {'gallahad': 'the pure', 'robin': 'the brave'}\n   >>> for k, v in knights.items():\n   ...     print(k, v)\n   ...\n   gallahad the pure\n   robin the brave\n\nWhen looping through a sequence, the position index and corresponding\nvalue can be retrieved at the same time using the \"enumerate()\"\nfunction.\n\n   >>> for i, v in enumerate(['tic', 'tac', 'toe']):\n   ...     print(i, v)\n   ...\n   0 tic\n   1 tac\n   2 toe\n\nTo loop over two or more sequences at the same time, the entries can\nbe paired with the \"zip()\" function.\n\n   >>> questions = ['name', 'quest', 'favorite color']\n"
+      }
+    ],
+    "status": "answer",
+    "reason": "validated_citations_not_semantic_proof",
+    "latency_ms": 28611.417699954472,
     "retrieved_chunks": 5,
-    "total_latency_ms": 42274.90404499986,
+    "total_latency_ms": 28611.515199998394,
     "error": null,
     "usage": {
       "input_tokens": 1627,
-      "output_tokens": 196
+      "output_tokens": 66
     },
-    "cpu_seconds": 82.68044693499996,
-    "rss_mb": 2101.84375,
-    "raw_model_output": "```json\n{\n    \"status\": \"answer\",\n    \"answer\": \"Découvrir les clés et les valeurs d'un dictionnaire est une tâche simple mais délicate. Il faut être vigilant pour éviter les erreurs de saisie incorrectes ou la confusion avec des méthodes comme `list()` qui ne retourne pas le contenu du dictionnaire.\",\n    \"citations\": [\n        {\n            \"chunk_id\": \"S1\",\n            \"source\": \"tutorial/datastructures.txt\",\n            \"section\": \"5.5. Dictionaries\"\n        },\n        {\n            \"chunk_id\": \"S2\",\n            \"source\": \"tutorial/datastructures.txt\",\n            \"section\": \"5.5. Dictionaries\"\n        },\n        {\n            \"chunk_id\": \"S3\",\n            \"source\": \"tutorial/datastructures.txt\",\n            \"section\": \"5.6. Looping Techniques\"\n        }\n    ]\n}\n```",
+    "cpu_seconds": 0.734375,
+    "rss_mb": 438.2734375,
+    "raw_model_output": "{\"status\":\"answer\",\"answer\":\"Pour parcourir les clés et valeurs d’un dictionnaire, utilisez la méthode `items()` qui retourne des paires clé-valeur. Exemple : `for k, v in knights.items(): print(k, v)`.\",\"citations\":[\"S3\"]}",
     "human_correctness": null,
     "human_relevance": null,
     "human_faithfulness": null,
@@ -879,7 +720,7 @@
         "quote": "Python also includes a data type for *sets*.  A set is an unordered\ncollection with no duplicate elements.  Basic uses include membership\ntesting and eliminating duplicate entries.  Set objects also support\nmathematical operations like union, intersection, difference, and\nsymmetric difference."
       }
     ],
-    "answer": "To remove duplicates from a list, first convert the list into a set, which automatically removes duplicates. Then, iterate through the sorted list and delete duplicates as you go.",
+    "answer": "To remove duplicates using a set, convert the list to a set, which automatically removes duplicates, and then back to a list using `mylist = list(set(mylist))`. This works only if all elements are hashable. Alternatively, use `set()` directly on the list to create a set with unique elements.",
     "references": [
       {
         "chunk_id": "359118f40a9a2d92c7b715f6",
@@ -892,26 +733,6 @@
         "text": "How do you remove duplicates from a list?\n-----------------------------------------\n\nSee the Python Cookbook for a long discussion of many ways to do this:\n\n   https://code.activestate.com/recipes/52560/\n\nIf you don't mind reordering the list, sort it and then scan from the\nend of the list, deleting duplicates as you go:\n\n   if mylist:\n       mylist.sort()\n       last = mylist[-1]\n       for i in range(len(mylist)-2, -1, -1):\n           if last == mylist[i]:\n               del mylist[i]\n           else:\n               last = mylist[i]\n\nIf all elements of the list may be used as set keys (i.e. they are all\n*hashable*) this is often faster\n\n   mylist = list(set(mylist))\n\nThis converts the list into a set, thereby removing duplicates, and\nthen back into a list.\n\n\n"
       },
       {
-        "chunk_id": "9f61dcfd0b3e8e59cc3267e8",
-        "document_id": "7db8120c5e3a870c",
-        "source_path": "faq/programming.txt",
-        "section": "How do you remove multiple items from a list",
-        "version": "3.11.18",
-        "start": 41349,
-        "end": 41874,
-        "text": "How do you remove multiple items from a list\n--------------------------------------------\n\nAs with removing duplicates, explicitly iterating in reverse with a\ndelete condition is one possibility.  However, it is easier and faster\nto use slice replacement with an implicit or explicit forward\niteration. Here are three variations.:\n\n   mylist[:] = filter(keep_function, mylist)\n   mylist[:] = (x for x in mylist if keep_condition)\n   mylist[:] = [x for x in mylist if keep_condition]\n\nThe list comprehension may be fastest.\n\n\n"
-      },
-      {
-        "chunk_id": "c3ec672f390c573e74d60177",
-        "document_id": "833713645c836e5b",
-        "source_path": "tutorial/datastructures.txt",
-        "section": "5.4. Sets",
-        "version": "3.11.18",
-        "start": 13977,
-        "end": 14723,
-        "text": ">> print(basket)                      # show that duplicates have been removed\n   {'orange', 'banana', 'pear', 'apple'}\n   >>> 'orange' in basket                 # fast membership testing\n   True\n   >>> 'crabgrass' in basket\n   False\n\n   >>> # Demonstrate set operations on unique letters from two words\n   ...\n   >>> a = set('abracadabra')\n   >>> b = set('alacazam')\n   >>> a                                  # unique letters in a\n   {'a', 'r', 'b', 'c', 'd'}\n   >>> a - b                              # letters in a but not in b\n   {'r', 'd', 'b'}\n   >>> a | b                              # letters in a or b or both\n   {'a', 'c', 'r', 'd', 'b', 'm', 'z', 'l'}\n   >>> a & b                              # letters in both a and b\n   {'a', 'c'}\n"
-      },
-      {
         "chunk_id": "5240f7ffa7daea1207433ccd",
         "document_id": "833713645c836e5b",
         "source_path": "tutorial/datastructures.txt",
@@ -920,31 +741,21 @@
         "start": 13327,
         "end": 14097,
         "text": "5.4. Sets\n=========\n\nPython also includes a data type for *sets*.  A set is an unordered\ncollection with no duplicate elements.  Basic uses include membership\ntesting and eliminating duplicate entries.  Set objects also support\nmathematical operations like union, intersection, difference, and\nsymmetric difference.\n\nCurly braces or the \"set()\" function can be used to create sets.\nNote: to create an empty set you have to use \"set()\", not \"{}\"; the\nlatter creates an empty dictionary, a data structure that we discuss\nin the next section.\n\nHere is a brief demonstration:\n\n   >>> basket = {'apple', 'orange', 'apple', 'pear', 'orange', 'banana'}\n   >>> print(basket)                      # show that duplicates have been removed\n   {'orange', 'banana', 'pear', 'apple'}\n"
-      },
-      {
-        "chunk_id": "03578b090134e4b29fb920dc",
-        "document_id": "833713645c836e5b",
-        "source_path": "tutorial/datastructures.txt",
-        "section": "5.3. Tuples and Sequences",
-        "version": "3.11.18",
-        "start": 12996,
-        "end": 13327,
-        "text": "ropriately enough, *sequence unpacking* and works\nfor any sequence on the right-hand side.  Sequence unpacking requires\nthat there are as many variables on the left side of the equals sign\nas there are elements in the sequence.  Note that multiple assignment\nis really just a combination of tuple packing and sequence unpacking.\n\n\n"
       }
     ],
     "status": "answer",
     "reason": "validated_citations_not_semantic_proof",
-    "latency_ms": 22375.159463999807,
+    "latency_ms": 15056.94489995949,
     "retrieved_chunks": 5,
-    "total_latency_ms": 22375.21844099956,
+    "total_latency_ms": 15056.98669992853,
     "error": null,
     "usage": {
       "input_tokens": 1245,
-      "output_tokens": 82
+      "output_tokens": 81
     },
-    "cpu_seconds": 43.88657789000001,
-    "rss_mb": 2085.09765625,
-    "raw_model_output": "{\n    \"status\": \"answer\",\n    \"answer\": \"To remove duplicates from a list, first convert the list into a set, which automatically removes duplicates. Then, iterate through the sorted list and delete duplicates as you go.\",\n    \"citations\": [\n        \"S1\",\n        \"S2\",\n        \"S3\",\n        \"S4\",\n        \"S5\"\n    ]\n}",
+    "cpu_seconds": 0.546875,
+    "rss_mb": 181.7109375,
+    "raw_model_output": "{\"status\":\"answer\",\"answer\":\"To remove duplicates using a set, convert the list to a set, which automatically removes duplicates, and then back to a list using `mylist = list(set(mylist))`. This works only if all elements are hashable. Alternatively, use `set()` directly on the list to create a set with unique elements.\",\"citations\":[\"S1\",\"S4\"]}",
     "human_correctness": null,
     "human_relevance": null,
     "human_faithfulness": null,
@@ -964,7 +775,7 @@
         "quote": "A module is a file containing Python definitions and statements.  The\nfile name is the module name with the suffix \".py\" appended.  Within a\nmodule, the module's name (as a string) is available as the value of\nthe global variable \"__name__\".  For instance, use your favorite text\neditor to create a file called \"fibo.py\" in the current directory with\nthe following contents:"
       }
     ],
-    "answer": "Python is a high-level general-purpose programming language that can be applied to many different classes of problems.",
+    "answer": "A Python module is a file containing Python code that defines functions, classes, and variables. Modules can be imported into other Python scripts to reuse code. They help organize code into manageable units and avoid naming conflicts. Some modules are built into Python, while others are part of the standard library or installed separately.",
     "references": [
       {
         "chunk_id": "0b58f5bc9a4c8d36daabe4bb",
@@ -995,41 +806,21 @@
         "start": 15522,
         "end": 16292,
         "text": "6.4. Packages\n=============\n\nPackages are a way of structuring Python's module namespace by using\n\"dotted module names\".  For example, the module name \"A.B\" designates\na submodule named \"B\" in a package named \"A\".  Just like the use of\nmodules saves the authors of different modules from having to worry\nabout each other's global variable names, the use of dotted module\nnames saves the authors of multi-module packages like NumPy or Pillow\nfrom having to worry about each other's module names.\n\nSuppose you want to design a collection of modules (a \"package\") for\nthe uniform handling of sound files and sound data.  There are many\ndifferent sound file formats (usually recognized by their extension,\nfor example: \".wav\", \".aiff\", \".au\"), so you may need to create and\n"
-      },
-      {
-        "chunk_id": "1279f3bbb4457ab032073e06",
-        "document_id": "cd5021fcd496f81a",
-        "source_path": "installing/index.txt",
-        "section": "Installing Python Modules",
-        "version": "3.11.18",
-        "start": 0,
-        "end": 791,
-        "text": "Installing Python Modules\n*************************\n\nEmail:\n   distutils-sig@python.org\n\nAs a popular open source development project, Python has an active\nsupporting community of contributors and users that also make their\nsoftware available for other Python developers to use under open\nsource license terms.\n\nThis allows Python users to share and collaborate effectively,\nbenefiting from the solutions others have already created to common\n(and sometimes even rare!) problems, as well as potentially\ncontributing their own solutions to the common pool.\n\nThis guide covers the installation part of the process. For a guide to\ncreating and sharing your own Python projects, refer to the Python\npackaging user guide.\n\nNote:\n\n  For corporate and other institutional users, be aware that many\n"
-      },
-      {
-        "chunk_id": "ce1bd2e6dd855b78eb84f967",
-        "document_id": "59efdda0294e085d",
-        "source_path": "faq/general.txt",
-        "section": "What is Python good for?",
-        "version": "3.11.18",
-        "start": 4539,
-        "end": 5322,
-        "text": "What is Python good for?\n------------------------\n\nPython is a high-level general-purpose programming language that can\nbe applied to many different classes of problems.\n\nThe language comes with a large standard library that covers areas\nsuch as string processing (regular expressions, Unicode, calculating\ndifferences between files), internet protocols (HTTP, FTP, SMTP, XML-\nRPC, POP, IMAP), software engineering (unit testing, logging,\nprofiling, parsing Python code), and operating system interfaces\n(system calls, filesystems, TCP/IP sockets).  Look at the table of\ncontents for The Python Standard Library to get an idea of what's\navailable.  A wide variety of third-party extensions are also\navailable.  Consult the Python Package Index to find packages of\ninterest to you.\n\n\n"
       }
     ],
     "status": "answer",
     "reason": "validated_citations_not_semantic_proof",
-    "latency_ms": 19006.693311000163,
+    "latency_ms": 18261.295499978587,
     "retrieved_chunks": 5,
-    "total_latency_ms": 19006.80239200028,
+    "total_latency_ms": 18261.331100016832,
     "error": null,
     "usage": {
       "input_tokens": 1250,
-      "output_tokens": 68
+      "output_tokens": 81
     },
-    "cpu_seconds": 37.521722593999925,
-    "rss_mb": 2087.82421875,
-    "raw_model_output": "{\n    \"status\": \"answer\",\n    \"answer\": \"Python is a high-level general-purpose programming language that can be applied to many different classes of problems.\",\n    \"citations\": [\n        \"S1\",\n        \"S2\",\n        \"S3\",\n        \"S4\",\n        \"S5\"\n    ]\n}",
+    "cpu_seconds": 0.515625,
+    "rss_mb": 184.14453125,
+    "raw_model_output": "{\"status\":\"answer\",\"answer\":\"A Python module is a file containing Python code that defines functions, classes, and variables. Modules can be imported into other Python scripts to reuse code. They help organize code into manageable units and avoid naming conflicts. Some modules are built into Python, while others are part of the standard library or installed separately.\",\"citations\":[\"S1\",\"S2\",\"S3\"]}",
     "human_correctness": null,
     "human_relevance": null,
     "human_faithfulness": null,
@@ -1049,42 +840,21 @@
         "quote": "When you run a Python module with\n\n   python fibo.py <arguments>\n\nthe code in the module will be executed, just as if you imported it,\nbut with the \"__name__\" set to \"\"__main__\"\".  That means that by\nadding this code at the end of your module:\n\n   if __name__ == \"__main__\":\n       import sys\n       fib(int(sys.argv[1]))\n\nyou can make the file usable as a script as well as an importable\nmodule, because the code that parses the command line only runs if the\nmodule is executed as the \"main\" file:\n\n   $ python fibo.py 50\n   0 1 1 2 3 5 8 13 21 34\n\nIf the module is imported, the code is not run:\n\n   >>> import fibo\n   >>>\n\nThis is often used either to provide a convenient user interface to a\nmodule, or for testing purposes (running the module as a script\nexecutes a test suite).\n\n\n"
       }
     ],
-    "answer": "It allows you to break out of loops without explicitly using `return` statements.",
-    "references": [
-      {
-        "chunk_id": "b12975d1de987b37ebcd8279",
-        "document_id": "7db8120c5e3a870c",
-        "source_path": "faq/programming.txt",
-        "section": "General Questions",
-        "version": "3.11.18",
-        "start": 34,
-        "end": 72,
-        "text": "General Questions\n=================\n\n\n"
-      },
-      {
-        "chunk_id": "faa22552226898972982b2d4",
-        "document_id": "3c62cfa3bb5c4c96",
-        "source_path": "tutorial/controlflow.txt",
-        "section": "4.4. \"break\" and \"continue\" Statements, and \"else\" Clauses on Loops",
-        "version": "3.11.18",
-        "start": 4338,
-        "end": 5115,
-        "text": "4.4. \"break\" and \"continue\" Statements, and \"else\" Clauses on Loops\n===================================================================\n\nThe \"break\" statement breaks out of the innermost enclosing \"for\" or\n\"while\" loop.\n\nA \"for\" or \"while\" loop can include an \"else\" clause.\n\nIn a \"for\" loop, the \"else\" clause is executed after the loop reaches\nits final iteration.\n\nIn a \"while\" loop, it's executed after the loop's condition becomes\nfalse.\n\nIn either kind of loop, the \"else\" clause is **not** executed if the\nloop was terminated by a \"break\".\n\nThis is exemplified in the following \"for\" loop, which searches for\nprime numbers:\n\n   >>> for n in range(2, 10):\n   ...     for x in range(2, n):\n   ...         if n % x == 0:\n   ...             print(n, 'equals', x, '*', n//x)\n"
-      }
-    ],
-    "status": "answer",
-    "reason": "validated_citations_not_semantic_proof",
-    "latency_ms": 17331.690428999536,
+    "answer": "Information fiable insuffisante dans le corpus Python 3.11.18 / Insufficient reliable evidence.",
+    "references": [],
+    "status": "abstention",
+    "reason": "model_abstention_or_invalid_citations",
+    "latency_ms": 15645.597700029612,
     "retrieved_chunks": 5,
-    "total_latency_ms": 17331.80215700031,
+    "total_latency_ms": 15645.62389999628,
     "error": null,
     "usage": {
       "input_tokens": 1247,
-      "output_tokens": 49
+      "output_tokens": 18
     },
-    "cpu_seconds": 33.94661324799995,
-    "rss_mb": 2088.90625,
-    "raw_model_output": "{\n    \"status\": \"answer\",\n    \"answer\": \"It allows you to break out of loops without explicitly using `return` statements.\",\n    \"citations\": [\n        \"S1\",\n        \"S2\"\n    ]\n}",
+    "cpu_seconds": 0.6875,
+    "rss_mb": 184.81640625,
+    "raw_model_output": "{\"status\":\"abstention\",\"answer\":\"Insufficient evidence.\",\"citations\":[]}",
     "human_correctness": null,
     "human_relevance": null,
     "human_faithfulness": null,
@@ -1104,18 +874,8 @@
         "quote": "The Module Search Path\n-----------------------------\n\nWhen a module named \"spam\" is imported, the interpreter first searches\nfor a built-in module with that name. These module names are listed in\n\"sys.builtin_module_names\". If not found, it then searches for a file\nnamed \"spam.py\" in a list of directories given by the variable\n\"sys.path\".  \"sys.path\" is initialized from these locations:\n\n* The directory containing the input script (or the current directory\n  when no file is specified).\n\n* \"PYTHONPATH\" (a list of directory names, with the same syntax as the\n  shell variable \"PATH\").\n\n* The installation-dependent default (by convention including a \"site-\n  packages\" directory, handled by the \"site\" module).\n\nMore details are at The initialization of the sys.path module search\npath.\n\nNote:\n\n  On file systems which support symlinks, the directory containing the\n  input script is calculated after the symlink is followed. In other\n  words the directory containing the symlink is **not** added to the\n  module search path.\n\nAfter initialization, Python programs can modify \"sys.path\".  The\ndirectory containing the script being run is placed at the beginning\nof the search path, ahead of the standard library path. This means\nthat scripts in that directory will be loaded instead of modules of\nthe same name in the library directory. This is an error unless the\nreplacement is intended.  See section Standard Modules for more\ninformation.\n\n\n"
       }
     ],
-    "answer": "The `sys.path` module allows Python to locate and load modules dynamically.",
+    "answer": "The module search path `sys.path` is initialized from three sources: the directory containing the input script (or the current directory when no file is specified), the `PYTHONPATH` environment variable, and the installation-dependent default (typically including a `site-packages` directory handled by the `site` module).",
     "references": [
-      {
-        "chunk_id": "4b84fb9f15c6bd8358e1f61c",
-        "document_id": "a93925347dcb39a4",
-        "source_path": "tutorial/modules.txt",
-        "section": "6.1.2. The Module Search Path",
-        "version": "3.11.18",
-        "start": 6859,
-        "end": 7635,
-        "text": " directory, handled by the \"site\" module).\n\nMore details are at The initialization of the sys.path module search\npath.\n\nNote:\n\n  On file systems which support symlinks, the directory containing the\n  input script is calculated after the symlink is followed. In other\n  words the directory containing the symlink is **not** added to the\n  module search path.\n\nAfter initialization, Python programs can modify \"sys.path\".  The\ndirectory containing the script being run is placed at the beginning\nof the search path, ahead of the standard library path. This means\nthat scripts in that directory will be loaded instead of modules of\nthe same name in the library directory. This is an error unless the\nreplacement is intended.  See section Standard Modules for more\ninformation.\n\n\n"
-      },
       {
         "chunk_id": "38e4b1e1a54593ecd1ca18ad",
         "document_id": "a93925347dcb39a4",
@@ -1125,51 +885,21 @@
         "start": 6180,
         "end": 6979,
         "text": "6.1.2. The Module Search Path\n-----------------------------\n\nWhen a module named \"spam\" is imported, the interpreter first searches\nfor a built-in module with that name. These module names are listed in\n\"sys.builtin_module_names\". If not found, it then searches for a file\nnamed \"spam.py\" in a list of directories given by the variable\n\"sys.path\".  \"sys.path\" is initialized from these locations:\n\n* The directory containing the input script (or the current directory\n  when no file is specified).\n\n* \"PYTHONPATH\" (a list of directory names, with the same syntax as the\n  shell variable \"PATH\").\n\n* The installation-dependent default (by convention including a \"site-\n  packages\" directory, handled by the \"site\" module).\n\nMore details are at The initialization of the sys.path module search\npath.\n\n"
-      },
-      {
-        "chunk_id": "fc4bedf2fe0d8b80d22fd8c1",
-        "document_id": "a93925347dcb39a4",
-        "source_path": "tutorial/modules.txt",
-        "section": "6.3. The \"dir()\" Function",
-        "version": "3.11.18",
-        "start": 12504,
-        "end": 13262,
-        "text": "'last_traceback', 'last_type', 'last_value',\n    'maxsize', 'maxunicode', 'meta_path', 'modules', 'path', 'path_hooks',\n    'path_importer_cache', 'platform', 'prefix', 'ps1', 'ps2', 'pycache_prefix',\n    'set_asyncgen_hooks', 'set_coroutine_origin_tracking_depth', 'setdlopenflags',\n    'setprofile', 'setrecursionlimit', 'setswitchinterval', 'settrace', 'stderr',\n    'stdin', 'stdout', 'thread_info', 'unraisablehook', 'version', 'version_info',\n    'warnoptions']\n\nWithout arguments, \"dir()\" lists the names you have defined currently:\n\n   >>> a = [1, 2, 3, 4, 5]\n   >>> import fibo\n   >>> fib = fibo.fib\n   >>> dir()\n   ['__builtins__', '__name__', 'a', 'fib', 'fibo', 'sys']\n\nNote that it lists all types of names: variables, modules, functions,\netc.\n\n"
-      },
-      {
-        "chunk_id": "26445cd769b95b8fb85eb370",
-        "document_id": "7db8120c5e3a870c",
-        "source_path": "faq/programming.txt",
-        "section": "How do I find the current module name?",
-        "version": "3.11.18",
-        "start": 70566,
-        "end": 71085,
-        "text": "How do I find the current module name?\n--------------------------------------\n\nA module can find out its own module name by looking at the predefined\nglobal variable \"__name__\".  If this has the value \"'__main__'\", the\nprogram is running as a script.  Many modules that are usually used by\nimporting them also provide a command-line interface or a self-test,\nand only execute this code after checking \"__name__\":\n\n   def main():\n       print('Running test...')\n       ...\n\n   if __name__ == '__main__':\n       main()\n\n\n"
-      },
-      {
-        "chunk_id": "8010212b7c56d8c003b0a25b",
-        "document_id": "a93925347dcb39a4",
-        "source_path": "tutorial/modules.txt",
-        "section": "6.4. Packages",
-        "version": "3.11.18",
-        "start": 17446,
-        "end": 18180,
-        "text": "__init__.py\n                 equalizer.py\n                 vocoder.py\n                 karaoke.py\n                 ...\n\nWhen importing the package, Python searches through the directories on\n\"sys.path\" looking for the package subdirectory.\n\nThe \"__init__.py\" files are required to make Python treat directories\ncontaining the file as packages (unless using a *namespace package*, a\nrelatively advanced feature). This prevents directories with a common\nname, such as \"string\", from unintentionally hiding valid modules that\noccur later on the module search path. In the simplest case,\n\"__init__.py\" can just be an empty file, but it can also execute\ninitialization code for the package or set the \"__all__\" variable,\ndescribed later.\n\n"
       }
     ],
     "status": "answer",
     "reason": "validated_citations_not_semantic_proof",
-    "latency_ms": 17730.27243499928,
+    "latency_ms": 13957.831799983978,
     "retrieved_chunks": 5,
-    "total_latency_ms": 17730.358810000325,
+    "total_latency_ms": 13957.884000032209,
     "error": null,
     "usage": {
       "input_tokens": 1342,
-      "output_tokens": 63
+      "output_tokens": 76
     },
-    "cpu_seconds": 34.80095073200005,
-    "rss_mb": 2096.375,
-    "raw_model_output": "{\n  \"status\": \"answer\",\n  \"answer\": \"The `sys.path` module allows Python to locate and load modules dynamically.\",\n  \"citations\": [\n    \"S1\",\n    \"S2\",\n    \"S3\",\n    \"S4\",\n    \"S5\"\n  ]\n}",
+    "cpu_seconds": 0.546875,
+    "rss_mb": 168.98046875,
+    "raw_model_output": "{\"status\":\"answer\",\"answer\":\"The module search path `sys.path` is initialized from three sources: the directory containing the input script (or the current directory when no file is specified), the `PYTHONPATH` environment variable, and the installation-dependent default (typically including a `site-packages` directory handled by the `site` module).\",\"citations\":[\"S2\"]}",
     "human_correctness": null,
     "human_relevance": null,
     "human_faithfulness": null,
@@ -1189,32 +919,32 @@
         "quote": "The built-in function \"dir()\" is used to find out which names a module\ndefines.  It returns a sorted list of strings:"
       }
     ],
-    "answer": "To obtain the names defined in a module using `dir()` without specifying the module name, you can use the following approach:",
+    "answer": "Pour obtenir les noms définis dans un module avec `dir`, utilisez `dir(module)` où `module` est l'objet du module. Par exemple, `dir(fibo)` retourne une liste des noms comme `'fib'`, `'fib2'`, `'__name__'`, etc. Cela inclut tous les types de noms : variables, fonctions, modules, etc. Si vous souhaitez les noms de fonctions et variables internes, utilisez `dir(builtins)`.",
     "references": [
       {
-        "chunk_id": "510a47222b83941b782ddff2",
+        "chunk_id": "40c953fcf9b140882a951eb8",
         "document_id": "a93925347dcb39a4",
         "source_path": "tutorial/modules.txt",
-        "section": "6. Modules",
+        "section": "6.3. The \"dir()\" Function",
         "version": "3.11.18",
-        "start": 1923,
-        "end": 2421,
-        "text": "rrent *namespace* (see Python Scopes and Namespaces\nfor more details); it only adds the module name \"fibo\" there. Using\nthe module name you can access the functions:\n\n   >>> fibo.fib(1000)\n   0 1 1 2 3 5 8 13 21 34 55 89 144 233 377 610 987\n   >>> fibo.fib2(100)\n   [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]\n   >>> fibo.__name__\n   'fibo'\n\nIf you intend to use a function often you can assign it to a local\nname:\n\n   >>> fib = fibo.fib\n   >>> fib(500)\n   0 1 1 2 3 5 8 13 21 34 55 89 144 233 377\n\n\n"
+        "start": 13142,
+        "end": 13890,
+        "text": "_', '__name__', 'a', 'fib', 'fibo', 'sys']\n\nNote that it lists all types of names: variables, modules, functions,\netc.\n\n\"dir()\" does not list the names of built-in functions and variables.\nIf you want a list of those, they are defined in the standard module\n\"builtins\":\n\n   >>> import builtins\n   >>> dir(builtins)  \n   ['ArithmeticError', 'AssertionError', 'AttributeError', 'BaseException',\n    'BlockingIOError', 'BrokenPipeError', 'BufferError', 'BytesWarning',\n    'ChildProcessError', 'ConnectionAbortedError', 'ConnectionError',\n    'ConnectionRefusedError', 'ConnectionResetError', 'DeprecationWarning',\n    'EOFError', 'Ellipsis', 'EnvironmentError', 'Exception', 'False',\n    'FileExistsError', 'FileNotFoundError', 'FloatingPointError',\n"
       }
     ],
     "status": "answer",
     "reason": "validated_citations_not_semantic_proof",
-    "latency_ms": 16945.221858999503,
+    "latency_ms": 15358.321099891327,
     "retrieved_chunks": 5,
-    "total_latency_ms": 16945.341251999707,
+    "total_latency_ms": 15358.362700091675,
     "error": null,
     "usage": {
       "input_tokens": 1437,
-      "output_tokens": 53
+      "output_tokens": 124
     },
-    "cpu_seconds": 33.24549991999993,
-    "rss_mb": 2098.06640625,
-    "raw_model_output": "{\n    \"status\": \"answer\",\n    \"answer\": \"To obtain the names defined in a module using `dir()` without specifying the module name, you can use the following approach:\",\n    \"citations\": [\n        \"S1\"\n    ]\n}",
+    "cpu_seconds": 0.6875,
+    "rss_mb": 156.359375,
+    "raw_model_output": "{\"status\":\"answer\",\"answer\":\"Pour obtenir les noms définis dans un module avec `dir`, utilisez `dir(module)` où `module` est l'objet du module. Par exemple, `dir(fibo)` retourne une liste des noms comme `'fib'`, `'fib2'`, `'__name__'`, etc. Cela inclut tous les types de noms : variables, fonctions, modules, etc. Si vous souhaitez les noms de fonctions et variables internes, utilisez `dir(builtins)`.\", \"citations\":[\"S5\"]}",
     "human_correctness": null,
     "human_relevance": null,
     "human_faithfulness": null,
@@ -1234,7 +964,7 @@
         "quote": "* If an exception occurs during execution of the \"try\" clause, the\n  rest of the clause is skipped.  Then, if its type matches the\n  exception named after the \"except\" keyword, the *except clause* is\n  executed, and then execution continues after the try/except block."
       }
     ],
-    "answer": "Python handles exceptions in a try-except structure. When an exception occurs within a try block, it is caught and processed according to the specified exception handler. If no exception handler is provided, the program will raise an exception with a specific error message.",
+    "answer": "In a try-except statement, the try clause is executed first. If no exception occurs, the except clause is skipped. If an exception occurs, the corresponding except clause is executed. If the exception type does not match, it is passed to outer try statements. If no handler is found, it becomes an unhandled exception and execution stops with an error message. Multiple except clauses can be defined for different exceptions, and handlers only catch exceptions from the corresponding try clause.",
     "references": [
       {
         "chunk_id": "a040f74166a8ecf116b7fb14",
@@ -1257,26 +987,6 @@
         "text": "try\" statements; if\n  no handler is found, it is an *unhandled exception* and execution\n  stops with an error message.\n\nA \"try\" statement may have more than one *except clause*, to specify\nhandlers for different exceptions.  At most one handler will be\nexecuted. Handlers only handle exceptions that occur in the\ncorresponding *try clause*, not in other handlers of the same \"try\"\nstatement.  An *except clause* may name multiple exceptions as a\nparenthesized tuple, for example:\n\n   ... except (RuntimeError, TypeError, NameError):\n   ...     pass\n\nA class in an \"except\" clause is compatible with an exception if it is\nthe same class or a base class thereof (but not the other way around\n--- an *except clause* listing a derived class is not compatible with\n"
       },
       {
-        "chunk_id": "e017bb7c57deefacf5087de8",
-        "document_id": "3c62cfa3bb5c4c96",
-        "source_path": "tutorial/controlflow.txt",
-        "section": "4.4. \"break\" and \"continue\" Statements, and \"else\" Clauses on Loops",
-        "version": "3.11.18",
-        "start": 5640,
-        "end": 6386,
-        "text": "f a \"try\" statement than it does with that of \"if\"\nstatements: a \"try\" statement's \"else\" clause runs when no exception\noccurs, and a loop's \"else\" clause runs when no \"break\" occurs. For\nmore on the \"try\" statement and exceptions, see Handling Exceptions.\n\nThe \"continue\" statement, also borrowed from C, continues with the\nnext iteration of the loop:\n\n   >>> for num in range(2, 10):\n   ...     if num % 2 == 0:\n   ...         print(\"Found an even number\", num)\n   ...         continue\n   ...     print(\"Found an odd number\", num)\n   ...\n   Found an even number 2\n   Found an odd number 3\n   Found an even number 4\n   Found an odd number 5\n   Found an even number 6\n   Found an odd number 7\n   Found an even number 8\n   Found an odd number 9\n\n\n"
-      },
-      {
-        "chunk_id": "c88f52c54a8d9cdb3bb8721c",
-        "document_id": "a337544bc5e94c94",
-        "source_path": "tutorial/errors.txt",
-        "section": "8.2. Exceptions",
-        "version": "3.11.18",
-        "start": 1038,
-        "end": 1810,
-        "text": "8.2. Exceptions\n===============\n\nEven if a statement or expression is syntactically correct, it may\ncause an error when an attempt is made to execute it. Errors detected\nduring execution are called *exceptions* and are not unconditionally\nfatal: you will soon learn how to handle them in Python programs.\nMost exceptions are not handled by programs, however, and result in\nerror messages as shown here:\n\n   >>> 10 * (1/0)\n   Traceback (most recent call last):\n     File \"<stdin>\", line 1, in <module>\n   ZeroDivisionError: division by zero\n   >>> 4 + spam*3\n   Traceback (most recent call last):\n     File \"<stdin>\", line 1, in <module>\n   NameError: name 'spam' is not defined\n   >>> '2' + 2\n   Traceback (most recent call last):\n     File \"<stdin>\", line 1, in <module>\n"
-      },
-      {
         "chunk_id": "7c4b7cf018e9123c21a04d49",
         "document_id": "a337544bc5e94c94",
         "source_path": "tutorial/errors.txt",
@@ -1289,17 +999,17 @@
     ],
     "status": "answer",
     "reason": "validated_citations_not_semantic_proof",
-    "latency_ms": 26937.88666599994,
+    "latency_ms": 22875.285100075416,
     "retrieved_chunks": 5,
-    "total_latency_ms": 26937.932941000327,
+    "total_latency_ms": 22875.315500074066,
     "error": null,
     "usage": {
       "input_tokens": 1445,
-      "output_tokens": 98
+      "output_tokens": 114
     },
-    "cpu_seconds": 53.26268085200002,
-    "rss_mb": 2102.625,
-    "raw_model_output": "{\n    \"status\": \"answer\",\n    \"answer\": \"Python handles exceptions in a try-except structure. When an exception occurs within a try block, it is caught and processed according to the specified exception handler. If no exception handler is provided, the program will raise an exception with a specific error message.\",\n    \"citations\": [\n        \"S1\",\n        \"S2\",\n        \"S3\",\n        \"S4\",\n        \"S5\"\n    ]\n}",
+    "cpu_seconds": 0.640625,
+    "rss_mb": 144.41015625,
+    "raw_model_output": "{\"status\":\"answer\",\"answer\":\"In a try-except statement, the try clause is executed first. If no exception occurs, the except clause is skipped. If an exception occurs, the corresponding except clause is executed. If the exception type does not match, it is passed to outer try statements. If no handler is found, it becomes an unhandled exception and execution stops with an error message. Multiple except clauses can be defined for different exceptions, and handlers only catch exceptions from the corresponding try clause.\",\"citations\":[\"S1\",\"S2\",\"S5\"]}",
     "human_correctness": null,
     "human_relevance": null,
     "human_faithfulness": null,
@@ -1319,72 +1029,21 @@
         "quote": "The \"raise\" statement allows the programmer to force a specified\nexception to occur. For example:"
       }
     ],
-    "answer": "In Python, exceptions can be used to manage unexpected events gracefully. When an exception occurs, it can either be handled within the same `try` block, or re-raised after the `finally` block. To avoid re-raising exceptions, one can use the `add_note()` method to store additional information about the exception.",
-    "references": [
-      {
-        "chunk_id": "7c4b7cf018e9123c21a04d49",
-        "document_id": "a337544bc5e94c94",
-        "source_path": "tutorial/errors.txt",
-        "section": "8.7. Defining Clean-up Actions",
-        "version": "3.11.18",
-        "start": 13160,
-        "end": 13928,
-        "text": "iscuss more complex cases when an exception\noccurs:\n\n* If an exception occurs during execution of the \"try\" clause, the\n  exception may be handled by an \"except\" clause. If the exception is\n  not handled by an \"except\" clause, the exception is re-raised after\n  the \"finally\" clause has been executed.\n\n* An exception could occur during execution of an \"except\" or \"else\"\n  clause. Again, the exception is re-raised after the \"finally\" clause\n  has been executed.\n\n* If the \"finally\" clause executes a \"break\", \"continue\" or \"return\"\n  statement, exceptions are not re-raised.\n\n* If the \"try\" statement reaches a \"break\", \"continue\" or \"return\"\n  statement, the \"finally\" clause will execute just prior to the\n  \"break\", \"continue\" or \"return\" statement's execution.\n\n"
-      },
-      {
-        "chunk_id": "8fc76c00d15e8e4ae9c99ef8",
-        "document_id": "a337544bc5e94c94",
-        "source_path": "tutorial/errors.txt",
-        "section": "8.10. Enriching Exceptions with Notes",
-        "version": "3.11.18",
-        "start": 19656,
-        "end": 20428,
-        "text": "8.10. Enriching Exceptions with Notes\n=====================================\n\nWhen an exception is created in order to be raised, it is usually\ninitialized with information that describes the error that has\noccurred. There are cases where it is useful to add information after\nthe exception was caught. For this purpose, exceptions have a method\n\"add_note(note)\" that accepts a string and adds it to the exception's\nnotes list. The standard traceback rendering includes all notes, in\nthe order they were added, after the exception.\n\n   >>> try:\n   ...     raise TypeError('bad type')\n   ... except Exception as e:\n   ...     e.add_note('Add some information')\n   ...     e.add_note('Add some more information')\n   ...     raise\n   ...\n   Traceback (most recent call last):\n"
-      },
-      {
-        "chunk_id": "a040f74166a8ecf116b7fb14",
-        "document_id": "a337544bc5e94c94",
-        "source_path": "tutorial/errors.txt",
-        "section": "8.3. Handling Exceptions",
-        "version": "3.11.18",
-        "start": 3469,
-        "end": 4207,
-        "text": "works as follows.\n\n* First, the *try clause* (the statement(s) between the \"try\" and\n  \"except\" keywords) is executed.\n\n* If no exception occurs, the *except clause* is skipped and execution\n  of the \"try\" statement is finished.\n\n* If an exception occurs during execution of the \"try\" clause, the\n  rest of the clause is skipped.  Then, if its type matches the\n  exception named after the \"except\" keyword, the *except clause* is\n  executed, and then execution continues after the try/except block.\n\n* If an exception occurs which does not match the exception named in\n  the *except clause*, it is passed on to outer \"try\" statements; if\n  no handler is found, it is an *unhandled exception* and execution\n  stops with an error message.\n\n"
-      },
-      {
-        "chunk_id": "8e8911bfa77bf13e595cb75f",
-        "document_id": "a337544bc5e94c94",
-        "source_path": "tutorial/errors.txt",
-        "section": "8.9. Raising and Handling Multiple Unrelated Exceptions",
-        "version": "3.11.18",
-        "start": 16492,
-        "end": 17276,
-        "text": "8.9. Raising and Handling Multiple Unrelated Exceptions\n=======================================================\n\nThere are situations where it is necessary to report several\nexceptions that have occurred. This is often the case in concurrency\nframeworks, when several tasks may have failed in parallel, but there\nare also other use cases where it is desirable to continue execution\nand collect multiple errors rather than raise the first exception.\n\nThe builtin \"ExceptionGroup\" wraps a list of exception instances so\nthat they can be raised together. It is an exception itself, so it can\nbe caught like any other exception.\n\n   >>> def f():\n   ...     excs = [OSError('error 1'), SystemError('error 2')]\n   ...     raise ExceptionGroup('there were problems', excs)\n   ...\n   >>> f()\n"
-      },
-      {
-        "chunk_id": "6dcce4c51a4f4f305fdac4d7",
-        "document_id": "a337544bc5e94c94",
-        "source_path": "tutorial/errors.txt",
-        "section": "8.5. Exception Chaining",
-        "version": "3.11.18",
-        "start": 9900,
-        "end": 10654,
-        "text": "8.5. Exception Chaining\n=======================\n\nIf an unhandled exception occurs inside an \"except\" section, it will\nhave the exception being handled attached to it and included in the\nerror message:\n\n   >>> try:\n   ...     open(\"database.sqlite\")\n   ... except OSError:\n   ...     raise RuntimeError(\"unable to handle error\")\n   ...\n   Traceback (most recent call last):\n     File \"<stdin>\", line 2, in <module>\n   FileNotFoundError: [Errno 2] No such file or directory: 'database.sqlite'\n\n   During handling of the above exception, another exception occurred:\n\n   Traceback (most recent call last):\n     File \"<stdin>\", line 4, in <module>\n   RuntimeError: unable to handle error\n\nTo indicate that an exception is a direct consequence of another, the\n"
-      }
-    ],
-    "status": "answer",
-    "reason": "validated_citations_not_semantic_proof",
-    "latency_ms": 26151.625751999745,
+    "answer": "Information fiable insuffisante dans le corpus Python 3.11.18 / Insufficient reliable evidence.",
+    "references": [],
+    "status": "abstention",
+    "reason": "model_abstention_or_invalid_citations",
+    "latency_ms": 16769.699800061062,
     "retrieved_chunks": 5,
-    "total_latency_ms": 26151.65120799975,
+    "total_latency_ms": 16769.73659999203,
     "error": null,
     "usage": {
       "input_tokens": 1369,
-      "output_tokens": 114
+      "output_tokens": 18
     },
-    "cpu_seconds": 51.00465110699997,
-    "rss_mb": 2113.73046875,
-    "raw_model_output": "{\n    \"status\": \"answer\",\n    \"answer\": \"In Python, exceptions can be used to manage unexpected events gracefully. When an exception occurs, it can either be handled within the same `try` block, or re-raised after the `finally` block. To avoid re-raising exceptions, one can use the `add_note()` method to store additional information about the exception.\",\n    \"citations\": [\n        \"S1\",\n        \"S2\",\n        \"S3\",\n        \"S4\",\n        \"S5\"\n    ]\n}",
+    "cpu_seconds": 0.640625,
+    "rss_mb": 142.609375,
+    "raw_model_output": "{\"status\":\"abstention\",\"answer\":\"Insufficient evidence.\",\"citations\":[]}",
     "human_correctness": null,
     "human_relevance": null,
     "human_faithfulness": null,
@@ -1404,7 +1063,7 @@
         "quote": "As you can see, the \"finally\" clause is executed in any event.  The\n\"TypeError\" raised by dividing two strings is not handled by the\n\"except\" clause and therefore re-raised after the \"finally\" clause has\nbeen executed."
       }
     ],
-    "answer": "In Python, handling exceptions effectively involves using try-except blocks to catch specific types of exceptions and provide appropriate responses.",
+    "answer": "Yes, if an exception occurs during execution of the \"try\" clause and is not handled by an \"except\" clause, it is re-raised after the \"finally\" clause has been executed. This is stated in S1.",
     "references": [
       {
         "chunk_id": "7c4b7cf018e9123c21a04d49",
@@ -1415,61 +1074,21 @@
         "start": 13160,
         "end": 13928,
         "text": "iscuss more complex cases when an exception\noccurs:\n\n* If an exception occurs during execution of the \"try\" clause, the\n  exception may be handled by an \"except\" clause. If the exception is\n  not handled by an \"except\" clause, the exception is re-raised after\n  the \"finally\" clause has been executed.\n\n* An exception could occur during execution of an \"except\" or \"else\"\n  clause. Again, the exception is re-raised after the \"finally\" clause\n  has been executed.\n\n* If the \"finally\" clause executes a \"break\", \"continue\" or \"return\"\n  statement, exceptions are not re-raised.\n\n* If the \"try\" statement reaches a \"break\", \"continue\" or \"return\"\n  statement, the \"finally\" clause will execute just prior to the\n  \"break\", \"continue\" or \"return\" statement's execution.\n\n"
-      },
-      {
-        "chunk_id": "c88f52c54a8d9cdb3bb8721c",
-        "document_id": "a337544bc5e94c94",
-        "source_path": "tutorial/errors.txt",
-        "section": "8.2. Exceptions",
-        "version": "3.11.18",
-        "start": 1038,
-        "end": 1810,
-        "text": "8.2. Exceptions\n===============\n\nEven if a statement or expression is syntactically correct, it may\ncause an error when an attempt is made to execute it. Errors detected\nduring execution are called *exceptions* and are not unconditionally\nfatal: you will soon learn how to handle them in Python programs.\nMost exceptions are not handled by programs, however, and result in\nerror messages as shown here:\n\n   >>> 10 * (1/0)\n   Traceback (most recent call last):\n     File \"<stdin>\", line 1, in <module>\n   ZeroDivisionError: division by zero\n   >>> 4 + spam*3\n   Traceback (most recent call last):\n     File \"<stdin>\", line 1, in <module>\n   NameError: name 'spam' is not defined\n   >>> '2' + 2\n   Traceback (most recent call last):\n     File \"<stdin>\", line 1, in <module>\n"
-      },
-      {
-        "chunk_id": "a040f74166a8ecf116b7fb14",
-        "document_id": "a337544bc5e94c94",
-        "source_path": "tutorial/errors.txt",
-        "section": "8.3. Handling Exceptions",
-        "version": "3.11.18",
-        "start": 3469,
-        "end": 4207,
-        "text": "works as follows.\n\n* First, the *try clause* (the statement(s) between the \"try\" and\n  \"except\" keywords) is executed.\n\n* If no exception occurs, the *except clause* is skipped and execution\n  of the \"try\" statement is finished.\n\n* If an exception occurs during execution of the \"try\" clause, the\n  rest of the clause is skipped.  Then, if its type matches the\n  exception named after the \"except\" keyword, the *except clause* is\n  executed, and then execution continues after the try/except block.\n\n* If an exception occurs which does not match the exception named in\n  the *except clause*, it is passed on to outer \"try\" statements; if\n  no handler is found, it is an *unhandled exception* and execution\n  stops with an error message.\n\n"
-      },
-      {
-        "chunk_id": "5e4fd7b2687222b902490f51",
-        "document_id": "a337544bc5e94c94",
-        "source_path": "tutorial/errors.txt",
-        "section": "8.3. Handling Exceptions",
-        "version": "3.11.18",
-        "start": 2801,
-        "end": 3589,
-        "text": "8.3. Handling Exceptions\n========================\n\nIt is possible to write programs that handle selected exceptions. Look\nat the following example, which asks the user for input until a valid\ninteger has been entered, but allows the user to interrupt the program\n(using \"Control-C\" or whatever the operating system supports); note\nthat a user-generated interruption is signalled by raising the\n\"KeyboardInterrupt\" exception.\n\n   >>> while True:\n   ...     try:\n   ...         x = int(input(\"Please enter a number: \"))\n   ...         break\n   ...     except ValueError:\n   ...         print(\"Oops!  That was no valid number.  Try again...\")\n   ...\n\nThe \"try\" statement works as follows.\n\n* First, the *try clause* (the statement(s) between the \"try\" and\n  \"except\" keywords) is executed.\n\n"
-      },
-      {
-        "chunk_id": "8e8911bfa77bf13e595cb75f",
-        "document_id": "a337544bc5e94c94",
-        "source_path": "tutorial/errors.txt",
-        "section": "8.9. Raising and Handling Multiple Unrelated Exceptions",
-        "version": "3.11.18",
-        "start": 16492,
-        "end": 17276,
-        "text": "8.9. Raising and Handling Multiple Unrelated Exceptions\n=======================================================\n\nThere are situations where it is necessary to report several\nexceptions that have occurred. This is often the case in concurrency\nframeworks, when several tasks may have failed in parallel, but there\nare also other use cases where it is desirable to continue execution\nand collect multiple errors rather than raise the first exception.\n\nThe builtin \"ExceptionGroup\" wraps a list of exception instances so\nthat they can be raised together. It is an exception itself, so it can\nbe caught like any other exception.\n\n   >>> def f():\n   ...     excs = [OSError('error 1'), SystemError('error 2')]\n   ...     raise ExceptionGroup('there were problems', excs)\n   ...\n   >>> f()\n"
       }
     ],
     "status": "answer",
     "reason": "validated_citations_not_semantic_proof",
-    "latency_ms": 18641.1344119997,
+    "latency_ms": 11510.721900034696,
     "retrieved_chunks": 5,
-    "total_latency_ms": 18641.159733000677,
+    "total_latency_ms": 11510.762799996883,
     "error": null,
     "usage": {
       "input_tokens": 1400,
-      "output_tokens": 71
+      "output_tokens": 61
     },
-    "cpu_seconds": 36.17522512800019,
-    "rss_mb": 2117.7109375,
-    "raw_model_output": "{\n    \"status\": \"answer\",\n    \"answer\": \"In Python, handling exceptions effectively involves using try-except blocks to catch specific types of exceptions and provide appropriate responses.\",\n    \"citations\": [\n        \"S1\",\n        \"S2\",\n        \"S3\",\n        \"S4\",\n        \"S5\"\n    ]\n}",
+    "cpu_seconds": 0.71875,
+    "rss_mb": 143.8046875,
+    "raw_model_output": "{\"status\":\"answer\",\"answer\":\"Yes, if an exception occurs during execution of the \\\"try\\\" clause and is not handled by an \\\"except\\\" clause, it is re-raised after the \\\"finally\\\" clause has been executed. This is stated in S1.\",\"citations\":[\"S1\"]}",
     "human_correctness": null,
     "human_relevance": null,
     "human_faithfulness": null,
@@ -1489,7 +1108,7 @@
         "quote": "   python -m venv tutorial-env"
       }
     ],
-    "answer": "To create a virtual environment using `venv`:",
+    "answer": "To create a virtual environment using venv, decide on a directory (e.g., \"tutorial-env\"), and run the command: python -m venv tutorial-env. This creates a self-contained directory with a Python interpreter and supporting files. You can activate it on Windows with tutorial-env\\Scripts\\activate.bat or on Unix/MacOS with source tutorial-env/bin/activate. If you have multiple Python versions, use the specific version with python3 or the desired version number.",
     "references": [
       {
         "chunk_id": "e6cb49f1e6ffadd98020e824",
@@ -1500,21 +1119,31 @@
         "start": 1381,
         "end": 2129,
         "text": "12.2. Creating Virtual Environments\n===================================\n\nThe module used to create and manage virtual environments is called\n\"venv\".  \"venv\" will usually install the most recent version of Python\nthat you have available. If you have multiple versions of Python on\nyour system, you can select a specific Python version by running\n\"python3\" or whichever version you want.\n\nTo create a virtual environment, decide upon a directory where you\nwant to place it, and run the \"venv\" module as a script with the\ndirectory path:\n\n   python -m venv tutorial-env\n\nThis will create the \"tutorial-env\" directory if it doesn't exist, and\nalso create directories inside it containing a copy of the Python\ninterpreter and various supporting files.\n\n"
+      },
+      {
+        "chunk_id": "c54a392d7f583b158acb1e46",
+        "document_id": "34a2c2d71755e4db",
+        "source_path": "tutorial/venv.txt",
+        "section": "12.2. Creating Virtual Environments",
+        "version": "3.11.18",
+        "start": 2009,
+        "end": 2807,
+        "text": "exist, and\nalso create directories inside it containing a copy of the Python\ninterpreter and various supporting files.\n\nA common directory location for a virtual environment is \".venv\". This\nname keeps the directory typically hidden in your shell and thus out\nof the way while giving it a name that explains why the directory\nexists. It also prevents clashing with \".env\" environment variable\ndefinition files that some tooling supports.\n\nOnce you've created a virtual environment, you may activate it.\n\nOn Windows, run:\n\n   tutorial-env\\Scripts\\activate.bat\n\nOn Unix or MacOS, run:\n\n   source tutorial-env/bin/activate\n\n(This script is written for the bash shell.  If you use the **csh** or\n**fish** shells, there are alternate \"activate.csh\" and\n\"activate.fish\" scripts you should use instead.)\n\n"
       }
     ],
     "status": "answer",
     "reason": "validated_citations_not_semantic_proof",
-    "latency_ms": 12299.869788999786,
+    "latency_ms": 6245.765100000426,
     "retrieved_chunks": 5,
-    "total_latency_ms": 12300.026435999825,
+    "total_latency_ms": 6245.805200072937,
     "error": null,
     "usage": {
       "input_tokens": 983,
-      "output_tokens": 39
+      "output_tokens": 114
     },
-    "cpu_seconds": 24.36506887099995,
-    "rss_mb": 2149.41796875,
-    "raw_model_output": "{\n    \"status\": \"answer\",\n    \"answer\": \"To create a virtual environment using `venv`:\",\n    \"citations\": [\n        \"S1\"\n    ]\n}",
+    "cpu_seconds": 0.6875,
+    "rss_mb": 142.41796875,
+    "raw_model_output": "{\"status\":\"answer\",\"answer\":\"To create a virtual environment using venv, decide on a directory (e.g., \\\"tutorial-env\\\"), and run the command: python -m venv tutorial-env. This creates a self-contained directory with a Python interpreter and supporting files. You can activate it on Windows with tutorial-env\\\\Scripts\\\\activate.bat or on Unix/MacOS with source tutorial-env/bin/activate. If you have multiple Python versions, use the specific version with python3 or the desired version number.\",\"citations\":[\"S1\",\"S3\"]}",
     "human_correctness": null,
     "human_relevance": null,
     "human_faithfulness": null,
@@ -1534,48 +1163,8 @@
         "quote": "   tutorial-env\\Scripts\\activate.bat"
       }
     ],
-    "answer": "Actively creating a virtual environment involves using the `venv` module in Python. You need to specify the directory where you want to place the virtual environment and run the command `python -m venv <directory_path>`. This creates a new directory within the specified path and installs the required Python version.",
+    "answer": "Pour activer un environnement virtuel sous Windows, exécutez la commande : `tutorial-env\\Scripts\\activate.bat`.",
     "references": [
-      {
-        "chunk_id": "ba1f46c5f41fd058d5b3fac7",
-        "document_id": "cd5021fcd496f81a",
-        "source_path": "installing/index.txt",
-        "section": "Basic usage",
-        "version": "3.11.18",
-        "start": 4239,
-        "end": 4466,
-        "text": "virtual environments is done through the \"venv\" module.\nInstalling packages into an active virtual environment uses the\ncommands shown above.\n\nSee also:\n\n  Python Packaging User Guide: Installing Python Distribution Packages\n\n\n"
-      },
-      {
-        "chunk_id": "e6cb49f1e6ffadd98020e824",
-        "document_id": "34a2c2d71755e4db",
-        "source_path": "tutorial/venv.txt",
-        "section": "12.2. Creating Virtual Environments",
-        "version": "3.11.18",
-        "start": 1381,
-        "end": 2129,
-        "text": "12.2. Creating Virtual Environments\n===================================\n\nThe module used to create and manage virtual environments is called\n\"venv\".  \"venv\" will usually install the most recent version of Python\nthat you have available. If you have multiple versions of Python on\nyour system, you can select a specific Python version by running\n\"python3\" or whichever version you want.\n\nTo create a virtual environment, decide upon a directory where you\nwant to place it, and run the \"venv\" module as a script with the\ndirectory path:\n\n   python -m venv tutorial-env\n\nThis will create the \"tutorial-env\" directory if it doesn't exist, and\nalso create directories inside it containing a copy of the Python\ninterpreter and various supporting files.\n\n"
-      },
-      {
-        "chunk_id": "e5a070f410bc51b1105c81c0",
-        "document_id": "34a2c2d71755e4db",
-        "source_path": "tutorial/venv.txt",
-        "section": "12. Virtual Environments and Packages",
-        "version": "3.11.18",
-        "start": 0,
-        "end": 78,
-        "text": "12. Virtual Environments and Packages\n*************************************\n\n\n"
-      },
-      {
-        "chunk_id": "94d8b4940ff822f7ceee95b0",
-        "document_id": "34a2c2d71755e4db",
-        "source_path": "tutorial/venv.txt",
-        "section": "12.1. Introduction",
-        "version": "3.11.18",
-        "start": 728,
-        "end": 1381,
-        "text": "or\n2.0 will leave one application unable to run.\n\nThe solution for this problem is to create a *virtual environment*, a\nself-contained directory tree that contains a Python installation for\na particular version of Python, plus a number of additional packages.\n\nDifferent applications can then use different virtual environments. To\nresolve the earlier example of conflicting requirements, application A\ncan have its own virtual environment with version 1.0 installed while\napplication B has another virtual environment with version 2.0. If\napplication B requires a library be upgraded to version 3.0, this will\nnot affect application A's environment.\n\n\n"
-      },
       {
         "chunk_id": "c54a392d7f583b158acb1e46",
         "document_id": "34a2c2d71755e4db",
@@ -1589,17 +1178,17 @@
     ],
     "status": "answer",
     "reason": "validated_citations_not_semantic_proof",
-    "latency_ms": 25611.905806000323,
+    "latency_ms": 14277.247000019997,
     "retrieved_chunks": 5,
-    "total_latency_ms": 25611.970729999484,
+    "total_latency_ms": 14277.326000039466,
     "error": null,
     "usage": {
       "input_tokens": 983,
-      "output_tokens": 110
+      "output_tokens": 43
     },
-    "cpu_seconds": 50.73060714099984,
-    "rss_mb": 2150.703125,
-    "raw_model_output": "{\n    \"status\": \"answer\",\n    \"answer\": \"Actively creating a virtual environment involves using the `venv` module in Python. You need to specify the directory where you want to place the virtual environment and run the command `python -m venv <directory_path>`. This creates a new directory within the specified path and installs the required Python version.\",\n    \"citations\": [\n        \"S1\",\n        \"S2\",\n        \"S3\",\n        \"S4\",\n        \"S5\"\n    ]\n}",
+    "cpu_seconds": 0.6875,
+    "rss_mb": 142.828125,
+    "raw_model_output": "{\"status\":\"answer\",\"answer\":\"Pour activer un environnement virtuel sous Windows, exécutez la commande : `tutorial-env\\\\Scripts\\\\activate.bat`.\", \"citations\":[\"S5\"]}",
     "human_correctness": null,
     "human_relevance": null,
     "human_faithfulness": null,
@@ -1619,7 +1208,7 @@
         "quote": "\"python -m pip freeze\" will produce a similar list of the installed\npackages, but the output uses the format that \"python -m pip install\"\nexpects. A common convention is to put this list in a\n\"requirements.txt\" file:"
       }
     ],
-    "answer": "To record installed packages with pip freeze, follow these steps:",
+    "answer": "You can record installed packages with pip freeze by running the command `python -m pip freeze > requirements.txt`. This will save the list of installed packages to a file named `requirements.txt` in your current directory. You can then commit this file to version control and use `python -m pip install -r requirements.txt` to install the same packages in another environment.",
     "references": [
       {
         "chunk_id": "b93f570d98bd7e86c713281b",
@@ -1630,61 +1219,21 @@
         "start": 5981,
         "end": 6770,
         "text": "the format that \"python -m pip install\"\nexpects. A common convention is to put this list in a\n\"requirements.txt\" file:\n\n   (tutorial-env) $ python -m pip freeze > requirements.txt\n   (tutorial-env) $ cat requirements.txt\n   novas==3.1.1.3\n   numpy==1.9.2\n   requests==2.7.0\n\nThe \"requirements.txt\" can then be committed to version control and\nshipped as part of an application.  Users can then install all the\nnecessary packages with \"install -r\":\n\n   (tutorial-env) $ python -m pip install -r requirements.txt\n   Collecting novas==3.1.1.3 (from -r requirements.txt (line 1))\n     ...\n   Collecting numpy==1.9.2 (from -r requirements.txt (line 2))\n     ...\n   Collecting requests==2.7.0 (from -r requirements.txt (line 3))\n     ...\n   Installing collected packages: novas, numpy, requests\n"
-      },
-      {
-        "chunk_id": "95d21e8fc2351f79c1429fe0",
-        "document_id": "34a2c2d71755e4db",
-        "source_path": "tutorial/venv.txt",
-        "section": "12.3. Managing Packages with pip",
-        "version": "3.11.18",
-        "start": 4052,
-        "end": 4792,
-        "text": "  Installing collected packages: novas\n     Running setup.py install for novas\n   Successfully installed novas-3.1.1.3\n\nYou can also install a specific version of a package by giving the\npackage name  followed by \"==\" and the version number:\n\n   (tutorial-env) $ python -m pip install requests==2.6.0\n   Collecting requests==2.6.0\n     Using cached requests-2.6.0-py2.py3-none-any.whl\n   Installing collected packages: requests\n   Successfully installed requests-2.6.0\n\nIf you re-run this command, \"pip\" will notice that the requested\nversion is already installed and do nothing.  You can supply a\ndifferent version number to get that version, or you can run \"python\n-m pip install --upgrade\" to upgrade the package to the latest\nversion:\n\n"
-      },
-      {
-        "chunk_id": "0d78f62b743b177a5465b2f2",
-        "document_id": "34a2c2d71755e4db",
-        "source_path": "tutorial/venv.txt",
-        "section": "12.3. Managing Packages with pip",
-        "version": "3.11.18",
-        "start": 3402,
-        "end": 4172,
-        "text": "12.3. Managing Packages with pip\n================================\n\nYou can install, upgrade, and remove packages using a program called\n**pip**.  By default \"pip\" will install packages from the Python\nPackage Index.  You can browse the Python Package Index by going to it\nin your web browser.\n\n\"pip\" has a number of subcommands: \"install\", \"uninstall\", \"freeze\",\netc.  (Consult the Installing Python Modules guide for complete\ndocumentation for \"pip\".)\n\nYou can install the latest version of a package by specifying a\npackage's name:\n\n   (tutorial-env) $ python -m pip install novas\n   Collecting novas\n     Downloading novas-3.1.1.3.tar.gz (136kB)\n   Installing collected packages: novas\n     Running setup.py install for novas\n   Successfully installed novas-3.1.1.3\n\n"
-      },
-      {
-        "chunk_id": "149c3b588a5f6a7fd6da02f9",
-        "document_id": "34a2c2d71755e4db",
-        "source_path": "tutorial/venv.txt",
-        "section": "12.3. Managing Packages with pip",
-        "version": "3.11.18",
-        "start": 6650,
-        "end": 7121,
-        "text": "g requests==2.7.0 (from -r requirements.txt (line 3))\n     ...\n   Installing collected packages: novas, numpy, requests\n     Running setup.py install for novas\n   Successfully installed novas-3.1.1.3 numpy-1.9.2 requests-2.7.0\n\n\"pip\" has many more options.  Consult the Installing Python Modules\nguide for complete documentation for \"pip\".  When you've written a\npackage and want to make it available on the Python Package Index,\nconsult the Python packaging user guide.\n"
-      },
-      {
-        "chunk_id": "c94f514cf99537d3d8b84893",
-        "document_id": "34a2c2d71755e4db",
-        "source_path": "tutorial/venv.txt",
-        "section": "12.3. Managing Packages with pip",
-        "version": "3.11.18",
-        "start": 4672,
-        "end": 5442,
-        "text": "er to get that version, or you can run \"python\n-m pip install --upgrade\" to upgrade the package to the latest\nversion:\n\n   (tutorial-env) $ python -m pip install --upgrade requests\n   Collecting requests\n   Installing collected packages: requests\n     Found existing installation: requests 2.6.0\n       Uninstalling requests-2.6.0:\n         Successfully uninstalled requests-2.6.0\n   Successfully installed requests-2.7.0\n\n\"python -m pip uninstall\" followed by one or more package names will\nremove the packages from the virtual environment.\n\n\"python -m pip show\" will display information about a particular\npackage:\n\n   (tutorial-env) $ python -m pip show requests\n   ---\n   Metadata-Version: 2.0\n   Name: requests\n   Version: 2.7.0\n   Summary: Python HTTP for Humans.\n"
       }
     ],
     "status": "answer",
     "reason": "validated_citations_not_semantic_proof",
-    "latency_ms": 17808.856263000052,
+    "latency_ms": 20690.287199919112,
     "retrieved_chunks": 5,
-    "total_latency_ms": 17808.94190900017,
+    "total_latency_ms": 20690.3284,
     "error": null,
     "usage": {
       "input_tokens": 1400,
-      "output_tokens": 60
+      "output_tokens": 88
     },
-    "cpu_seconds": 34.75633123900002,
-    "rss_mb": 2115.0234375,
-    "raw_model_output": "{\n    \"status\": \"answer\",\n    \"answer\": \"To record installed packages with pip freeze, follow these steps:\",\n    \"citations\": [\n        \"S1\",\n        \"S2\",\n        \"S3\",\n        \"S4\",\n        \"S5\"\n    ]\n}",
+    "cpu_seconds": 0.6875,
+    "rss_mb": 145.1796875,
+    "raw_model_output": "{\"status\":\"answer\",\"answer\":\"You can record installed packages with pip freeze by running the command `python -m pip freeze > requirements.txt`. This will save the list of installed packages to a file named `requirements.txt` in your current directory. You can then commit this file to version control and use `python -m pip install -r requirements.txt` to install the same packages in another environment.\",\"citations\":[\"S1\"]}",
     "human_correctness": null,
     "human_relevance": null,
     "human_faithfulness": null,
@@ -1704,7 +1253,7 @@
         "quote": "This is because when you make an assignment to a variable in a scope,\nthat variable becomes local to that scope and shadows any similarly\nnamed variable in the outer scope.  Since the last statement in foo\nassigns a new value to \"x\", the compiler recognizes it as a local\nvariable.  Consequently when the earlier \"print(x)\" attempts to print\nthe uninitialized local variable and an error results."
       }
     ],
-    "answer": "Une variable locale peut produire un `UnboundLocalError` lorsque vous essayez d'appeler une fonction qui utilise cette variable à l'intérieur de la fonction.",
+    "answer": "Une variable locale peut produire un UnboundLocalError lorsqu'elle est référencée avant d'être assignée dans la fonction. En Python, une variable devient locale dès qu'elle est assignée, ce qui empêche sa référence dans le corps de la fonction avant l'assignation. Pour éviter cela, il faut déclarer la variable comme globale avec la déclaration `global`.",
     "references": [
       {
         "chunk_id": "2b1f42a7f9c43836a5e9be4a",
@@ -1739,17 +1288,17 @@
     ],
     "status": "answer",
     "reason": "validated_citations_not_semantic_proof",
-    "latency_ms": 22387.528504999864,
+    "latency_ms": 21287.265899940394,
     "retrieved_chunks": 5,
-    "total_latency_ms": 22387.691852999524,
+    "total_latency_ms": 21287.358000059612,
     "error": null,
     "usage": {
       "input_tokens": 1353,
-      "output_tokens": 72
+      "output_tokens": 105
     },
-    "cpu_seconds": 44.23930803899998,
-    "rss_mb": 2129.88671875,
-    "raw_model_output": "{\n    \"status\": \"answer\",\n    \"answer\": \"Une variable locale peut produire un `UnboundLocalError` lorsque vous essayez d'appeler une fonction qui utilise cette variable à l'intérieur de la fonction.\",\n    \"citations\": [\n        \"S1\",\n        \"S2\",\n        \"S3\"\n    ]\n}",
+    "cpu_seconds": 0.65625,
+    "rss_mb": 145.8671875,
+    "raw_model_output": "{\"status\":\"answer\",\"answer\":\"Une variable locale peut produire un UnboundLocalError lorsqu'elle est référencée avant d'être assignée dans la fonction. En Python, une variable devient locale dès qu'elle est assignée, ce qui empêche sa référence dans le corps de la fonction avant l'assignation. Pour éviter cela, il faut déclarer la variable comme globale avec la déclaration `global`.\", \"citations\":[\"S1\",\"S2\",\"S3\"]}",
     "human_correctness": null,
     "human_relevance": null,
     "human_faithfulness": null,
@@ -1769,7 +1318,7 @@
         "quote": "1. Variables are simply names that refer to objects.  Doing \"y = x\"\n   doesn't create a copy of the list -- it creates a new variable \"y\"\n   that refers to the same object \"x\" refers to.  This means that\n   there is only one object (the list), and both \"x\" and \"y\" refer to\n   it."
       }
     ],
-    "answer": "Changing list `y` also changes list `x` because `y` is a mutable object that can be modified using the `+=` operator.",
+    "answer": "Changing list 'y' also changed list 'x' because 'y' was assigned to refer to the same object as 'x'. Lists are mutable, so modifying 'y' directly modified the shared object, affecting 'x'.",
     "references": [
       {
         "chunk_id": "9ee79b603890895c83afd6cf",
@@ -1780,36 +1329,6 @@
         "start": 14788,
         "end": 15536,
         "text": "Why did changing list 'y' also change list 'x'?\n-----------------------------------------------\n\nIf you wrote code like:\n\n   >>> x = []\n   >>> y = x\n   >>> y.append(10)\n   >>> y\n   [10]\n   >>> x\n   [10]\n\nyou might be wondering why appending an element to \"y\" changed \"x\"\ntoo.\n\nThere are two factors that produce this result:\n\n1. Variables are simply names that refer to objects.  Doing \"y = x\"\n   doesn't create a copy of the list -- it creates a new variable \"y\"\n   that refers to the same object \"x\" refers to.  This means that\n   there is only one object (the list), and both \"x\" and \"y\" refer to\n   it.\n\n2. Lists are *mutable*, which means that you can change their content.\n\nAfter the call to \"append()\", the content of the mutable object has\n"
-      },
-      {
-        "chunk_id": "29d6be3a4019219af53b9664",
-        "document_id": "7db8120c5e3a870c",
-        "source_path": "faq/programming.txt",
-        "section": "Why does a_tuple[i] += ['item'] raise an exception when the addition works?",
-        "version": "3.11.18",
-        "start": 46464,
-        "end": 47228,
-        "text": "ment statement; and (b) for lists, \"__iadd__()\" is\nequivalent to calling \"extend()\" on the list and returning the list.\nThat's why we say that for lists, \"+=\" is a \"shorthand\" for\n\"list.extend()\":\n\n   >>> a_list = []\n   >>> a_list += [1]\n   >>> a_list\n   [1]\n\nThis is equivalent to:\n\n   >>> result = a_list.__iadd__([1])\n   >>> a_list = result\n\nThe object pointed to by a_list has been mutated, and the pointer to\nthe mutated object is assigned back to \"a_list\".  The end result of\nthe assignment is a no-op, since it is a pointer to the same object\nthat \"a_list\" was previously pointing to, but the assignment still\nhappens.\n\nThus, in our tuple example what is happening is equivalent to:\n\n   >>> result = a_tuple[0].__iadd__(['item'])\n   >>> a_tuple[0] = result\n"
-      },
-      {
-        "chunk_id": "f18822cd500d2d8be0fd3002",
-        "document_id": "3c62cfa3bb5c4c96",
-        "source_path": "tutorial/controlflow.txt",
-        "section": "4.8.5. Unpacking Argument Lists",
-        "version": "3.11.18",
-        "start": 30409,
-        "end": 31157,
-        "text": "4.8.5. Unpacking Argument Lists\n-------------------------------\n\nThe reverse situation occurs when the arguments are already in a list\nor tuple but need to be unpacked for a function call requiring\nseparate positional arguments.  For instance, the built-in \"range()\"\nfunction expects separate *start* and *stop* arguments.  If they are\nnot available separately, write the function call with the\n\"*\"-operator to unpack the arguments out of a list or tuple:\n\n   >>> list(range(3, 6))            # normal call with separate arguments\n   [3, 4, 5]\n   >>> args = [3, 6]\n   >>> list(range(*args))            # call with arguments unpacked from a list\n   [3, 4, 5]\n\nIn the same fashion, dictionaries can deliver keyword arguments with\nthe \"**\"-operator:\n\n"
-      },
-      {
-        "chunk_id": "dd0dd174a538dab883c2d524",
-        "document_id": "7db8120c5e3a870c",
-        "source_path": "faq/programming.txt",
-        "section": "How do you make a higher order function in Python?",
-        "version": "3.11.18",
-        "start": 21390,
-        "end": 21536,
-        "text": "c, dec, reset = count.up, count.down, count.set\n\nHere \"inc()\", \"dec()\" and \"reset()\" act like functions which share the\nsame counting variable.\n\n\n"
       },
       {
         "chunk_id": "e3e0845fbf949e4764d0726a",
@@ -1824,17 +1343,17 @@
     ],
     "status": "answer",
     "reason": "validated_citations_not_semantic_proof",
-    "latency_ms": 18957.250135000322,
+    "latency_ms": 24565.624099923298,
     "retrieved_chunks": 5,
-    "total_latency_ms": 18957.341010000164,
+    "total_latency_ms": 24565.735700074583,
     "error": null,
     "usage": {
       "input_tokens": 1360,
-      "output_tokens": 78
+      "output_tokens": 64
     },
-    "cpu_seconds": 37.23417756800018,
-    "rss_mb": 2118.8984375,
-    "raw_model_output": "{\n    \"status\": \"answer\",\n    \"answer\": \"Changing list `y` also changes list `x` because `y` is a mutable object that can be modified using the `+=` operator.\",\n    \"citations\": [\n        \"S1\",\n        \"S2\",\n        \"S3\",\n        \"S4\",\n        \"S5\"\n    ]\n}",
+    "cpu_seconds": 0.703125,
+    "rss_mb": 146.86328125,
+    "raw_model_output": "{\"status\":\"answer\",\"answer\":\"Changing list 'y' also changed list 'x' because 'y' was assigned to refer to the same object as 'x'. Lists are mutable, so modifying 'y' directly modified the shared object, affecting 'x'.\",\"citations\":[\"S1\",\"S5\"]}",
     "human_correctness": null,
     "human_relevance": null,
     "human_faithfulness": null,
@@ -1854,7 +1373,7 @@
         "quote": "When he began implementing Python, Guido van Rossum was also reading\nthe published scripts from \"Monty Python's Flying Circus\", a BBC\ncomedy series from the 1970s.  Van Rossum thought he needed a name\nthat was short, unique, and slightly mysterious, so he decided to call\nthe language Python."
       }
     ],
-    "answer": "Python was created because Guido van Rossum wanted a name that was short, unique, and slightly mysterious.",
+    "answer": "Python was named after the BBC comedy series \"Monty Python's Flying Circus\". Guido van Rossum, its creator, chose the name because it was short, unique, and slightly mysterious.",
     "references": [
       {
         "chunk_id": "f9a3414f513e2888811df08a",
@@ -1869,17 +1388,17 @@
     ],
     "status": "answer",
     "reason": "validated_citations_not_semantic_proof",
-    "latency_ms": 14190.264472999843,
+    "latency_ms": 16845.886799972504,
     "retrieved_chunks": 5,
-    "total_latency_ms": 14190.389728999435,
+    "total_latency_ms": 16845.925700035878,
     "error": null,
     "usage": {
       "input_tokens": 1181,
-      "output_tokens": 50
+      "output_tokens": 55
     },
-    "cpu_seconds": 27.975527473000056,
-    "rss_mb": 2114.9453125,
-    "raw_model_output": "{\n    \"status\": \"answer\",\n    \"answer\": \"Python was created because Guido van Rossum wanted a name that was short, unique, and slightly mysterious.\",\n    \"citations\": [\n        \"S1\"\n    ]\n}",
+    "cpu_seconds": 0.53125,
+    "rss_mb": 147.30078125,
+    "raw_model_output": "{\"status\":\"answer\",\"answer\":\"Python was named after the BBC comedy series \\\"Monty Python's Flying Circus\\\". Guido van Rossum, its creator, chose the name because it was short, unique, and slightly mysterious.\", \"citations\":[\"S1\"]}",
     "human_correctness": null,
     "human_relevance": null,
     "human_faithfulness": null,
@@ -1899,7 +1418,7 @@
         "quote": "   python -m pip install SomePackage"
       }
     ],
-    "answer": "Install `novas` using `pip install novas==3.1.1.3`.",
+    "answer": "Pour installer un package avec pip, utilisez la commande `python -m pip install <nom_du_package>`. Par exemple, `python -m pip install novas` installe la dernière version du package `novas`. Vous pouvez spécifier une version exacte avec `==`, une version minimale avec `>=`, etc. Si pip n’est pas installé, utilisez `python -m ensurepip --default-pip`.",
     "references": [
       {
         "chunk_id": "0d78f62b743b177a5465b2f2",
@@ -1910,21 +1429,41 @@
         "start": 3402,
         "end": 4172,
         "text": "12.3. Managing Packages with pip\n================================\n\nYou can install, upgrade, and remove packages using a program called\n**pip**.  By default \"pip\" will install packages from the Python\nPackage Index.  You can browse the Python Package Index by going to it\nin your web browser.\n\n\"pip\" has a number of subcommands: \"install\", \"uninstall\", \"freeze\",\netc.  (Consult the Installing Python Modules guide for complete\ndocumentation for \"pip\".)\n\nYou can install the latest version of a package by specifying a\npackage's name:\n\n   (tutorial-env) $ python -m pip install novas\n   Collecting novas\n     Downloading novas-3.1.1.3.tar.gz (136kB)\n   Installing collected packages: novas\n     Running setup.py install for novas\n   Successfully installed novas-3.1.1.3\n\n"
+      },
+      {
+        "chunk_id": "b93f570d98bd7e86c713281b",
+        "document_id": "34a2c2d71755e4db",
+        "source_path": "tutorial/venv.txt",
+        "section": "12.3. Managing Packages with pip",
+        "version": "3.11.18",
+        "start": 5981,
+        "end": 6770,
+        "text": "the format that \"python -m pip install\"\nexpects. A common convention is to put this list in a\n\"requirements.txt\" file:\n\n   (tutorial-env) $ python -m pip freeze > requirements.txt\n   (tutorial-env) $ cat requirements.txt\n   novas==3.1.1.3\n   numpy==1.9.2\n   requests==2.7.0\n\nThe \"requirements.txt\" can then be committed to version control and\nshipped as part of an application.  Users can then install all the\nnecessary packages with \"install -r\":\n\n   (tutorial-env) $ python -m pip install -r requirements.txt\n   Collecting novas==3.1.1.3 (from -r requirements.txt (line 1))\n     ...\n   Collecting numpy==1.9.2 (from -r requirements.txt (line 2))\n     ...\n   Collecting requests==2.7.0 (from -r requirements.txt (line 3))\n     ...\n   Installing collected packages: novas, numpy, requests\n"
+      },
+      {
+        "chunk_id": "ef94342ce664b9ebfcb41fbd",
+        "document_id": "cd5021fcd496f81a",
+        "source_path": "installing/index.txt",
+        "section": "Basic usage",
+        "version": "3.11.18",
+        "start": 3575,
+        "end": 4359,
+        "text": "e. When using comparator operators such as \">\", \"<\" or\nsome other special character which get interpreted by shell, the\npackage name and the version should be enclosed within double quotes:\n\n   python -m pip install SomePackage==1.0.4    # specific version\n   python -m pip install \"SomePackage>=1.0.4\"  # minimum version\n\nNormally, if a suitable module is already installed, attempting to\ninstall it again will have no effect. Upgrading existing modules must\nbe requested explicitly:\n\n   python -m pip install --upgrade SomePackage\n\nMore information and resources regarding \"pip\" and its capabilities\ncan be found in the Python Packaging User Guide.\n\nCreation of virtual environments is done through the \"venv\" module.\nInstalling packages into an active virtual environment uses the\n"
       }
     ],
     "status": "answer",
     "reason": "validated_citations_not_semantic_proof",
-    "latency_ms": 14685.028466999938,
+    "latency_ms": 15659.533700090833,
     "retrieved_chunks": 5,
-    "total_latency_ms": 14685.052873999666,
+    "total_latency_ms": 15659.57190003246,
     "error": null,
     "usage": {
       "input_tokens": 1187,
-      "output_tokens": 49
+      "output_tokens": 112
     },
-    "cpu_seconds": 28.66474124499996,
-    "rss_mb": 2119.11328125,
-    "raw_model_output": "{\n  \"status\": \"answer\",\n  \"answer\": \"Install `novas` using `pip install novas==3.1.1.3`.\",\n  \"citations\": [\n    \"S1\"\n  ]\n}",
+    "cpu_seconds": 0.734375,
+    "rss_mb": 145.00390625,
+    "raw_model_output": "{\"status\":\"answer\",\"answer\":\"Pour installer un package avec pip, utilisez la commande `python -m pip install <nom_du_package>`. Par exemple, `python -m pip install novas` installe la dernière version du package `novas`. Vous pouvez spécifier une version exacte avec `==`, une version minimale avec `>=`, etc. Si pip n’est pas installé, utilisez `python -m ensurepip --default-pip`.\", \"citations\":[\"S1\",\"S4\",\"S5\"]}",
     "human_correctness": null,
     "human_relevance": null,
     "human_faithfulness": null,
@@ -1950,7 +1489,7 @@
         "quote": "   python -m pip install SomePackage"
       }
     ],
-    "answer": "To create an isolated environment and install a package into it, follow these steps:",
+    "answer": "To create an isolated environment, use the \"venv\" module to generate a virtual environment. Install packages using the \"pip\" command within the active virtual environment. This ensures that packages are installed for a specific application without affecting the system-wide Python installation.",
     "references": [
       {
         "chunk_id": "ba1f46c5f41fd058d5b3fac7",
@@ -1991,31 +1530,21 @@
         "start": 1381,
         "end": 2129,
         "text": "12.2. Creating Virtual Environments\n===================================\n\nThe module used to create and manage virtual environments is called\n\"venv\".  \"venv\" will usually install the most recent version of Python\nthat you have available. If you have multiple versions of Python on\nyour system, you can select a specific Python version by running\n\"python3\" or whichever version you want.\n\nTo create a virtual environment, decide upon a directory where you\nwant to place it, and run the \"venv\" module as a script with the\ndirectory path:\n\n   python -m venv tutorial-env\n\nThis will create the \"tutorial-env\" directory if it doesn't exist, and\nalso create directories inside it containing a copy of the Python\ninterpreter and various supporting files.\n\n"
-      },
-      {
-        "chunk_id": "d780bf0a54a83b1b7a2ab5c7",
-        "document_id": "7db8120c5e3a870c",
-        "source_path": "faq/programming.txt",
-        "section": "How can I create a stand-alone binary from a Python script?",
-        "version": "3.11.18",
-        "start": 2961,
-        "end": 3333,
-        "text": " links it with the rest of the Python\ninterpreter to form a self-contained binary which acts exactly like\nyour script.\n\nThe following packages can help with the creation of console and GUI\nexecutables:\n\n* Nuitka (Cross-platform)\n\n* PyInstaller (Cross-platform)\n\n* PyOxidizer (Cross-platform)\n\n* cx_Freeze (Cross-platform)\n\n* py2app (macOS only)\n\n* py2exe (Windows only)\n\n\n"
       }
     ],
     "status": "answer",
     "reason": "validated_citations_not_semantic_proof",
-    "latency_ms": 14978.051805999712,
+    "latency_ms": 18395.59349999763,
     "retrieved_chunks": 5,
-    "total_latency_ms": 14978.076119999969,
+    "total_latency_ms": 18395.636700093746,
     "error": null,
     "usage": {
       "input_tokens": 1072,
-      "output_tokens": 64
+      "output_tokens": 74
     },
-    "cpu_seconds": 29.295669693000036,
-    "rss_mb": 2173.44921875,
-    "raw_model_output": "{\n    \"status\": \"answer\",\n    \"answer\": \"To create an isolated environment and install a package into it, follow these steps:\",\n    \"citations\": [\n        \"S1\",\n        \"S2\",\n        \"S3\",\n        \"S4\",\n        \"S5\"\n    ]\n}",
+    "cpu_seconds": 0.5625,
+    "rss_mb": 146.12109375,
+    "raw_model_output": "{\"status\":\"answer\",\"answer\":\"To create an isolated environment, use the \\\"venv\\\" module to generate a virtual environment. Install packages using the \\\"pip\\\" command within the active virtual environment. This ensures that packages are installed for a specific application without affecting the system-wide Python installation.\",\"citations\":[\"S1\",\"S2\",\"S3\",\"S4\"]}",
     "human_correctness": null,
     "human_relevance": null,
     "human_faithfulness": null,
@@ -2032,13 +1561,13 @@
     "references": [],
     "status": "abstention",
     "reason": "low_retrieval_score",
-    "latency_ms": 28.84958699996787,
+    "latency_ms": 46.656399965286255,
     "retrieved_chunks": 5,
-    "total_latency_ms": 28.877814000225044,
+    "total_latency_ms": 46.683200052939355,
     "error": null,
     "usage": {},
-    "cpu_seconds": 0.0499964349999118,
-    "rss_mb": 2173.625,
+    "cpu_seconds": 0.0625,
+    "rss_mb": 146.83203125,
     "raw_model_output": null,
     "human_correctness": null,
     "human_relevance": null,
@@ -2056,13 +1585,13 @@
     "references": [],
     "status": "abstention",
     "reason": "low_retrieval_score",
-    "latency_ms": 26.01510699969367,
+    "latency_ms": 29.467899934388697,
     "retrieved_chunks": 5,
-    "total_latency_ms": 26.04103999965446,
+    "total_latency_ms": 29.48710008058697,
     "error": null,
     "usage": {},
-    "cpu_seconds": 0.047100354000122024,
-    "rss_mb": 2173.75,
+    "cpu_seconds": 0.03125,
+    "rss_mb": 147.1953125,
     "raw_model_output": null,
     "human_correctness": null,
     "human_relevance": null,
@@ -2080,13 +1609,13 @@
     "references": [],
     "status": "abstention",
     "reason": "low_retrieval_score",
-    "latency_ms": 38.79137800049648,
+    "latency_ms": 32.2118999902159,
     "retrieved_chunks": 5,
-    "total_latency_ms": 38.80290100005368,
+    "total_latency_ms": 32.23070001695305,
     "error": null,
     "usage": {},
-    "cpu_seconds": 0.06388730599996961,
-    "rss_mb": 2174.01171875,
+    "cpu_seconds": 0.0625,
+    "rss_mb": 147.30859375,
     "raw_model_output": null,
     "human_correctness": null,
     "human_relevance": null,
@@ -2104,13 +1633,13 @@
     "references": [],
     "status": "abstention",
     "reason": "low_retrieval_score",
-    "latency_ms": 30.34912000020995,
+    "latency_ms": 43.56030002236366,
     "retrieved_chunks": 5,
-    "total_latency_ms": 30.360400000063237,
+    "total_latency_ms": 43.599899974651635,
     "error": null,
     "usage": {},
-    "cpu_seconds": 0.06232167899997876,
-    "rss_mb": 2174.26171875,
+    "cpu_seconds": 0.09375,
+    "rss_mb": 147.953125,
     "raw_model_output": null,
     "human_correctness": null,
     "human_relevance": null,
@@ -2128,13 +1657,13 @@
     "references": [],
     "status": "abstention",
     "reason": "low_retrieval_score",
-    "latency_ms": 48.676192999664636,
+    "latency_ms": 41.35780001524836,
     "retrieved_chunks": 5,
-    "total_latency_ms": 48.688220999792975,
+    "total_latency_ms": 41.38149996288121,
     "error": null,
     "usage": {},
-    "cpu_seconds": 0.09605493799995202,
-    "rss_mb": 2174.9609375,
+    "cpu_seconds": 0.0625,
+    "rss_mb": 148.515625,
     "raw_model_output": null,
     "human_correctness": null,
     "human_relevance": null,
@@ -2152,13 +1681,13 @@
     "references": [],
     "status": "abstention",
     "reason": "version_mismatch",
-    "latency_ms": 21.454637999340775,
+    "latency_ms": 35.18110001459718,
     "retrieved_chunks": 5,
-    "total_latency_ms": 21.46698300020944,
+    "total_latency_ms": 35.20239994395524,
     "error": null,
     "usage": {},
-    "cpu_seconds": 0.03800897800010716,
-    "rss_mb": 2175.08984375,
+    "cpu_seconds": 0.0625,
+    "rss_mb": 148.7578125,
     "raw_model_output": null,
     "human_correctness": null,
     "human_relevance": null,
@@ -2176,13 +1705,13 @@
     "references": [],
     "status": "abstention",
     "reason": "low_retrieval_score",
-    "latency_ms": 17.64267899943661,
+    "latency_ms": 29.59809999447316,
     "retrieved_chunks": 5,
-    "total_latency_ms": 17.65414600049553,
+    "total_latency_ms": 29.61740002501756,
     "error": null,
     "usage": {},
-    "cpu_seconds": 0.03559767399997327,
-    "rss_mb": 2175.22265625,
+    "cpu_seconds": 0.0625,
+    "rss_mb": 149.01953125,
     "raw_model_output": null,
     "human_correctness": null,
     "human_relevance": null,
@@ -2200,17 +1729,17 @@
     "references": [],
     "status": "abstention",
     "reason": "model_abstention_or_invalid_citations",
-    "latency_ms": 26310.921809999854,
+    "latency_ms": 15689.337700023316,
     "retrieved_chunks": 5,
-    "total_latency_ms": 26310.949655000513,
+    "total_latency_ms": 15689.366399892606,
     "error": null,
     "usage": {
       "input_tokens": 1270,
-      "output_tokens": 70
+      "output_tokens": 18
     },
-    "cpu_seconds": 52.375606869999956,
-    "rss_mb": 2131.94921875,
-    "raw_model_output": "{\n    \"status\": \"abstention\",\n    \"answer\": \"In some cases, the `is` operator might not work correctly due to immutability issues.\",\n    \"citations\": [\n        \"S1\",\n        \"S2\",\n        \"S3\",\n        \"S4\",\n        \"S5\"\n    ]\n}",
+    "cpu_seconds": 0.546875,
+    "rss_mb": 149.8515625,
+    "raw_model_output": "{\"status\":\"abstention\",\"answer\":\"Insufficient evidence.\",\"citations\":[]}",
     "human_correctness": null,
     "human_relevance": null,
     "human_faithfulness": null,
@@ -2227,13 +1756,13 @@
     "references": [],
     "status": "abstention",
     "reason": "unsafe_instruction",
-    "latency_ms": 40.31887400014966,
+    "latency_ms": 54.797900025732815,
     "retrieved_chunks": 5,
-    "total_latency_ms": 40.336188000765105,
+    "total_latency_ms": 54.82700001448393,
     "error": null,
     "usage": {},
-    "cpu_seconds": 0.07297223299997313,
-    "rss_mb": 2132.39453125,
+    "cpu_seconds": 0.09375,
+    "rss_mb": 150.796875,
     "raw_model_output": null,
     "human_correctness": null,
     "human_relevance": null,
@@ -2247,42 +1776,21 @@
     "expected_behavior": "abstention",
     "reference_answer": null,
     "reference_evidence": [],
-    "answer": "The problem described is related to common installation issues and should be addressed through proper configuration.",
-    "references": [
-      {
-        "chunk_id": "ae8fd73d32e5dafd9d9967b1",
-        "document_id": "cd5021fcd496f81a",
-        "source_path": "installing/index.txt",
-        "section": "Common installation issues",
-        "version": "3.11.18",
-        "start": 6521,
-        "end": 6577,
-        "text": "Common installation issues\n==========================\n\n\n"
-      },
-      {
-        "chunk_id": "63864a088d71fc993ef84cb3",
-        "document_id": "a337544bc5e94c94",
-        "source_path": "tutorial/errors.txt",
-        "section": "8.9. Raising and Handling Multiple Unrelated Exceptions",
-        "version": "3.11.18",
-        "start": 17156,
-        "end": 17933,
-        "text": "rror('error 1'), SystemError('error 2')]\n   ...     raise ExceptionGroup('there were problems', excs)\n   ...\n   >>> f()\n     + Exception Group Traceback (most recent call last):\n     |   File \"<stdin>\", line 1, in <module>\n     |   File \"<stdin>\", line 3, in f\n     | ExceptionGroup: there were problems\n     +-+---------------- 1 ----------------\n       | OSError: error 1\n       +---------------- 2 ----------------\n       | SystemError: error 2\n       +------------------------------------\n   >>> try:\n   ...     f()\n   ... except Exception as e:\n   ...     print(f'caught {type(e)}: e')\n   ...\n   caught <class 'ExceptionGroup'>: e\n   >>>\n\nBy using \"except*\" instead of \"except\", we can selectively handle only\nthe exceptions in the group that match a certain type. In the\n"
-      }
-    ],
-    "status": "answer",
-    "reason": "validated_citations_not_semantic_proof",
-    "latency_ms": 18037.179328999628,
+    "answer": "Information fiable insuffisante dans le corpus Python 3.11.18 / Insufficient reliable evidence.",
+    "references": [],
+    "status": "abstention",
+    "reason": "model_abstention_or_invalid_citations",
+    "latency_ms": 6819.603000069037,
     "retrieved_chunks": 5,
-    "total_latency_ms": 18037.21386399957,
+    "total_latency_ms": 6819.636499974877,
     "error": null,
     "usage": {
       "input_tokens": 1024,
-      "output_tokens": 50
+      "output_tokens": 18
     },
-    "cpu_seconds": 35.71454136200009,
-    "rss_mb": 2181.62890625,
-    "raw_model_output": "{\n    \"status\": \"answer\",\n    \"answer\": \"The problem described is related to common installation issues and should be addressed through proper configuration.\",\n    \"citations\": [\n        \"S1\",\n        \"S2\"\n    ]\n}",
+    "cpu_seconds": 0.671875,
+    "rss_mb": 150.14453125,
+    "raw_model_output": "{\"status\":\"abstention\",\"answer\":\"Insufficient evidence.\",\"citations\":[]}",
     "human_correctness": null,
     "human_relevance": null,
     "human_faithfulness": null,

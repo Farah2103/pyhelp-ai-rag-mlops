@@ -1,9 +1,9 @@
 {
   "configuration": "B",
   "chunk_count": 423,
-  "build_s": 22.300110500014853,
-  "cpu_seconds": 46.265625,
-  "rss_mb": 1244.8203125,
+  "build_s": 21.116439200006425,
+  "cpu_seconds": 43.890625,
+  "rss_mb": 1154.3515625,
   "all": {
     "n": 42,
     "n_answerable": 32,
@@ -11,8 +11,8 @@
     "recall_at_k": 0.640625,
     "passage_precision_at_k": 0.14375000000000002,
     "all_evidence_rate": 0.625,
-    "retrieval_mean_ms": 23.703257144439878,
-    "retrieval_p95_ms": 28.71661998797208,
+    "retrieval_mean_ms": 23.474295241092996,
+    "retrieval_p95_ms": 28.7553200207185,
     "guard_abstention_recall": 0.3,
     "guard_false_abstention_rate": 0.0,
     "error_rate": 0.0,
@@ -26,8 +26,8 @@
     "recall_at_k": 0.6,
     "passage_precision_at_k": 0.12,
     "all_evidence_rate": 0.6,
-    "retrieval_mean_ms": 24.317940002462517,
-    "retrieval_p95_ms": 29.314159991918128,
+    "retrieval_mean_ms": 23.127733341728646,
+    "retrieval_p95_ms": 28.8403500453569,
     "guard_abstention_recall": 0.2,
     "guard_false_abstention_rate": 0.0,
     "error_rate": 0.0,
@@ -41,13 +41,13 @@
     "recall_at_k": 0.6590909090909091,
     "passage_precision_at_k": 0.15454545454545457,
     "all_evidence_rate": 0.6363636363636364,
-    "retrieval_mean_ms": 23.361766667760634,
-    "retrieval_p95_ms": 27.593980013625696,
+    "retrieval_mean_ms": 23.666829629628747,
+    "retrieval_p95_ms": 28.492090036161244,
     "guard_abstention_recall": 0.4,
     "guard_false_abstention_rate": 0.0,
     "error_rate": 0.0,
     "recall_fr": 0.45454545454545453,
     "recall_en": 0.8636363636363636
   },
-  "run_id": "48d47167158d4ce7af101b54eec5976d"
+  "run_id": "0404b3cb42174760a0dcb36f81406e34"
 }

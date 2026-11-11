@@ -9,7 +9,7 @@
     "recall": 0.0,
     "precision": 0.0,
     "all_evidence": 0.0,
-    "retrieval_ms": 19.369899993762374,
+    "retrieval_ms": 21.05370000936091,
     "guard_abstains": false,
     "max_score": 0.6475726962089539,
     "retrieved": [
@@ -65,7 +65,7 @@
     "recall": 0.0,
     "precision": 0.0,
     "all_evidence": 0.0,
-    "retrieval_ms": 20.75999998487532,
+    "retrieval_ms": 22.233900032006204,
     "guard_abstains": false,
     "max_score": 0.5278297066688538,
     "retrieved": [
@@ -121,7 +121,7 @@
     "recall": 0.0,
     "precision": 0.0,
     "all_evidence": 0.0,
-    "retrieval_ms": 19.09489999525249,
+    "retrieval_ms": 19.895899924449623,
     "guard_abstains": false,
     "max_score": 0.6665313243865967,
     "retrieved": [
@@ -177,7 +177,7 @@
     "recall": 1.0,
     "precision": 0.2,
     "all_evidence": 1.0,
-    "retrieval_ms": 19.78099998086691,
+    "retrieval_ms": 20.616999943740666,
     "guard_abstains": false,
     "max_score": 0.5579653978347778,
     "retrieved": [
@@ -233,7 +233,7 @@
     "recall": 1.0,
     "precision": 0.2,
     "all_evidence": 1.0,
-    "retrieval_ms": 18.77349999267608,
+    "retrieval_ms": 20.331699983216822,
     "guard_abstains": false,
     "max_score": 0.6302526593208313,
     "retrieved": [
@@ -289,7 +289,7 @@
     "recall": 1.0,
     "precision": 0.2,
     "all_evidence": 1.0,
-    "retrieval_ms": 26.89860004466027,
+    "retrieval_ms": 20.953899947926402,
     "guard_abstains": false,
     "max_score": 0.5315070152282715,
     "retrieved": [
@@ -345,7 +345,7 @@
     "recall": 1.0,
     "precision": 0.2,
     "all_evidence": 1.0,
-    "retrieval_ms": 19.74850002443418,
+    "retrieval_ms": 23.297499981708825,
     "guard_abstains": false,
     "max_score": 0.6744440793991089,
     "retrieved": [
@@ -401,7 +401,7 @@
     "recall": 0.0,
     "precision": 0.0,
     "all_evidence": 0.0,
-    "retrieval_ms": 18.86080001713708,
+    "retrieval_ms": 23.229100042954087,
     "guard_abstains": false,
     "max_score": 0.4042649269104004,
     "retrieved": [
@@ -457,7 +457,7 @@
     "recall": 1.0,
     "precision": 0.2,
     "all_evidence": 1.0,
-    "retrieval_ms": 18.64010002464056,
+    "retrieval_ms": 22.472399985417724,
     "guard_abstains": false,
     "max_score": 0.5701383352279663,
     "retrieved": [
@@ -513,7 +513,7 @@
     "recall": 0.0,
     "precision": 0.0,
     "all_evidence": 0.0,
-    "retrieval_ms": 19.10089998273179,
+    "retrieval_ms": 26.952099986374378,
     "guard_abstains": false,
     "max_score": 0.7139149308204651,
     "retrieved": [
@@ -569,7 +569,7 @@
     "recall": 1.0,
     "precision": 0.2,
     "all_evidence": 1.0,
-    "retrieval_ms": 19.62690002983436,
+    "retrieval_ms": 26.739099994301796,
     "guard_abstains": false,
     "max_score": 0.7060531973838806,
     "retrieved": [
@@ -625,7 +625,7 @@
     "recall": 1.0,
     "precision": 0.2,
     "all_evidence": 1.0,
-    "retrieval_ms": 22.716699982993305,
+    "retrieval_ms": 29.268400045111775,
     "guard_abstains": false,
     "max_score": 0.788772702217102,
     "retrieved": [
@@ -681,7 +681,7 @@
     "recall": 1.0,
     "precision": 0.2,
     "all_evidence": 1.0,
-    "retrieval_ms": 22.09220000077039,
+    "retrieval_ms": 28.794700047001243,
     "guard_abstains": false,
     "max_score": 0.7497656345367432,
     "retrieved": [
@@ -737,7 +737,7 @@
     "recall": 1.0,
     "precision": 0.2,
     "all_evidence": 1.0,
-    "retrieval_ms": 25.68189997691661,
+    "retrieval_ms": 23.558399989269674,
     "guard_abstains": false,
     "max_score": 0.6228492259979248,
     "retrieved": [
@@ -793,7 +793,7 @@
     "recall": 1.0,
     "precision": 0.2,
     "all_evidence": 1.0,
-    "retrieval_ms": 23.518599977251142,
+    "retrieval_ms": 24.367299978621304,
     "guard_abstains": false,
     "max_score": 0.7782480716705322,
     "retrieved": [
@@ -849,7 +849,7 @@
     "recall": 1.0,
     "precision": 0.2,
     "all_evidence": 1.0,
-    "retrieval_ms": 22.85519998986274,
+    "retrieval_ms": 27.865800075232983,
     "guard_abstains": false,
     "max_score": 0.7059966325759888,
     "retrieved": [
@@ -905,7 +905,7 @@
     "recall": 1.0,
     "precision": 0.2,
     "all_evidence": 1.0,
-    "retrieval_ms": 23.719899996649474,
+    "retrieval_ms": 22.31879997998476,
     "guard_abstains": false,
     "max_score": 0.6700224876403809,
     "retrieved": [
@@ -961,7 +961,7 @@
     "recall": 0.0,
     "precision": 0.0,
     "all_evidence": 0.0,
-    "retrieval_ms": 23.62880000146106,
+    "retrieval_ms": 20.172800053842366,
     "guard_abstains": false,
     "max_score": 0.8135279417037964,
     "retrieved": [
@@ -1017,7 +1017,7 @@
     "recall": 0.0,
     "precision": 0.0,
     "all_evidence": 0.0,
-    "retrieval_ms": 27.60520001174882,
+    "retrieval_ms": 24.40220001153648,
     "guard_abstains": false,
     "max_score": 0.4383442997932434,
     "retrieved": [
@@ -1073,7 +1073,7 @@
     "recall": 1.0,
     "precision": 0.4,
     "all_evidence": 1.0,
-    "retrieval_ms": 23.768199956975877,
+    "retrieval_ms": 26.214599958620965,
     "guard_abstains": false,
     "max_score": 0.7181443572044373,
     "retrieved": [
@@ -1129,7 +1129,7 @@
     "recall": 0.0,
     "precision": 0.0,
     "all_evidence": 0.0,
-    "retrieval_ms": 28.399700007867068,
+    "retrieval_ms": 22.931599989533424,
     "guard_abstains": false,
     "max_score": 0.736972451210022,
     "retrieved": [
@@ -1185,7 +1185,7 @@
     "recall": 1.0,
     "precision": 0.2,
     "all_evidence": 1.0,
-    "retrieval_ms": 28.764699993189424,
+    "retrieval_ms": 21.59859996754676,
     "guard_abstains": false,
     "max_score": 0.7919000387191772,
     "retrieved": [
@@ -1241,7 +1241,7 @@
     "recall": 0.0,
     "precision": 0.0,
     "all_evidence": 0.0,
-    "retrieval_ms": 24.566200037952513,
+    "retrieval_ms": 21.10230003017932,
     "guard_abstains": false,
     "max_score": 0.6800789833068848,
     "retrieved": [
@@ -1297,7 +1297,7 @@
     "recall": 0.0,
     "precision": 0.0,
     "all_evidence": 0.0,
-    "retrieval_ms": 27.460500015877187,
+    "retrieval_ms": 22.620400064624846,
     "guard_abstains": false,
     "max_score": 0.7224628925323486,
     "retrieved": [
@@ -1353,7 +1353,7 @@
     "recall": 1.0,
     "precision": 0.2,
     "all_evidence": 1.0,
-    "retrieval_ms": 27.128499990794808,
+    "retrieval_ms": 23.376199998892844,
     "guard_abstains": false,
     "max_score": 0.830098032951355,
     "retrieved": [
@@ -1409,7 +1409,7 @@
     "recall": 1.0,
     "precision": 0.2,
     "all_evidence": 1.0,
-    "retrieval_ms": 24.655800021719187,
+    "retrieval_ms": 23.753900080919266,
     "guard_abstains": false,
     "max_score": 0.728844404220581,
     "retrieved": [
@@ -1465,7 +1465,7 @@
     "recall": 1.0,
     "precision": 0.2,
     "all_evidence": 1.0,
-    "retrieval_ms": 28.733299986924976,
+    "retrieval_ms": 24.45110003463924,
     "guard_abstains": false,
     "max_score": 0.5603229999542236,
     "retrieved": [
@@ -1521,7 +1521,7 @@
     "recall": 1.0,
     "precision": 0.4,
     "all_evidence": 1.0,
-    "retrieval_ms": 22.68210001057014,
+    "retrieval_ms": 24.31190002243966,
     "guard_abstains": false,
     "max_score": 0.7662383317947388,
     "retrieved": [
@@ -1577,7 +1577,7 @@
     "recall": 1.0,
     "precision": 0.2,
     "all_evidence": 1.0,
-    "retrieval_ms": 25.856299966108054,
+    "retrieval_ms": 23.371499963104725,
     "guard_abstains": false,
     "max_score": 0.8343929052352905,
     "retrieved": [
@@ -1633,7 +1633,7 @@
     "recall": 1.0,
     "precision": 0.2,
     "all_evidence": 1.0,
-    "retrieval_ms": 19.96629999484867,
+    "retrieval_ms": 21.645199973136187,
     "guard_abstains": false,
     "max_score": 0.8191187977790833,
     "retrieved": [
@@ -1689,7 +1689,7 @@
     "recall": 0.0,
     "precision": 0.0,
     "all_evidence": 0.0,
-    "retrieval_ms": 27.40520000224933,
+    "retrieval_ms": 22.0907999901101,
     "guard_abstains": false,
     "max_score": 0.6963421106338501,
     "retrieved": [
@@ -1745,7 +1745,7 @@
     "recall": 0.5,
     "precision": 0.2,
     "all_evidence": 0.0,
-    "retrieval_ms": 27.467900014016777,
+    "retrieval_ms": 23.14730000216514,
     "guard_abstains": false,
     "max_score": 0.5318260192871094,
     "retrieved": [
@@ -1801,7 +1801,7 @@
     "recall": null,
     "precision": null,
     "all_evidence": null,
-    "retrieval_ms": 24.050300009548664,
+    "retrieval_ms": 21.217100089415908,
     "guard_abstains": false,
     "max_score": 0.35030263662338257,
     "retrieved": [
@@ -1857,7 +1857,7 @@
     "recall": null,
     "precision": null,
     "all_evidence": null,
-    "retrieval_ms": 21.852799982298166,
+    "retrieval_ms": 20.011599990539253,
     "guard_abstains": true,
     "max_score": 0.15034538507461548,
     "retrieved": [
@@ -1913,7 +1913,7 @@
     "recall": null,
     "precision": null,
     "all_evidence": null,
-    "retrieval_ms": 23.33659998839721,
+    "retrieval_ms": 21.33690007030964,
     "guard_abstains": false,
     "max_score": 0.3052644729614258,
     "retrieved": [
@@ -1969,7 +1969,7 @@
     "recall": null,
     "precision": null,
     "all_evidence": null,
-    "retrieval_ms": 23.927600006572902,
+    "retrieval_ms": 28.760500019416213,
     "guard_abstains": false,
     "max_score": 0.3109351098537445,
     "retrieved": [
@@ -2025,7 +2025,7 @@
     "recall": null,
     "precision": null,
     "all_evidence": null,
-    "retrieval_ms": 30.669500003568828,
+    "retrieval_ms": 28.656900045461953,
     "guard_abstains": false,
     "max_score": 0.39806073904037476,
     "retrieved": [
@@ -2081,7 +2081,7 @@
     "recall": null,
     "precision": null,
     "all_evidence": null,
-    "retrieval_ms": 24.103700008708984,
+    "retrieval_ms": 20.77659999486059,
     "guard_abstains": true,
     "max_score": 0.5775727033615112,
     "retrieved": [
@@ -2137,7 +2137,7 @@
     "recall": null,
     "precision": null,
     "all_evidence": null,
-    "retrieval_ms": 20.328199956566095,
+    "retrieval_ms": 20.674399915151298,
     "guard_abstains": false,
     "max_score": 0.346849262714386,
     "retrieved": [
@@ -2193,7 +2193,7 @@
     "recall": null,
     "precision": null,
     "all_evidence": null,
-    "retrieval_ms": 27.567800018005073,
+    "retrieval_ms": 25.40059993043542,
     "guard_abstains": false,
     "max_score": 0.5979362726211548,
     "retrieved": [
@@ -2249,7 +2249,7 @@
     "recall": null,
     "precision": null,
     "all_evidence": null,
-    "retrieval_ms": 27.32700004708022,
+    "retrieval_ms": 26.251700008288026,
     "guard_abstains": true,
     "max_score": 0.39837348461151123,
     "retrieved": [
@@ -2305,7 +2305,7 @@
     "recall": null,
     "precision": null,
     "all_evidence": null,
-    "retrieval_ms": 23.04500003810972,
+    "retrieval_ms": 23.69399997405708,
     "guard_abstains": false,
     "max_score": 0.5484609603881836,
     "retrieved": [

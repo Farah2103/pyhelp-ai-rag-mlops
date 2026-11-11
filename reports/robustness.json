@@ -7,7 +7,7 @@
       "references": [],
       "status": "abstention",
       "reason": "suspicious_context",
-      "latency_ms": 0.49111000043922104,
+      "latency_ms": 0.521400012075901,
       "retrieved_chunks": 1
     },
     "raw_output": null,
@@ -17,50 +17,28 @@
     "scenario": "contradiction",
     "expected": "abstention",
     "actual": {
-      "answer": "Lists in Python are mutable.",
-      "references": [
-        {
-          "chunk_id": "fixture-0",
-          "document_id": "SYNTHETIC-TEST-ONLY",
-          "source_path": "fixtures/synthetic.txt",
-          "section": "fixture",
-          "version": "fixture-not-official",
-          "start": 0,
-          "end": 100,
-          "text": "Python lists are mutable."
-        }
-      ],
-      "status": "answer",
-      "reason": "validated_citations_not_semantic_proof",
-      "latency_ms": 16257.22633499936,
+      "answer": "Information fiable insuffisante dans le corpus Python 3.11.18 / Insufficient reliable evidence.",
+      "references": [],
+      "status": "abstention",
+      "reason": "model_abstention_or_invalid_citations",
+      "latency_ms": 14586.788899963722,
       "retrieved_chunks": 2
     },
-    "raw_output": "{\n    \"status\": \"answer\",\n    \"answer\": \"Lists in Python are mutable.\",\n    \"citations\": [\n        \"S1\"\n    ]\n}",
-    "passed": false
+    "raw_output": "{\"status\":\"abstention\",\"answer\":\"Insufficient evidence.\",\"citations\":[]}",
+    "passed": true
   },
   {
     "scenario": "incomplete",
     "expected": "abstention",
     "actual": {
-      "answer": "To activate a Python environment in PowerShell, follow these steps:\n\n1. Open PowerShell as an administrator.\n2. Type `python -m venv` and press Enter.\n3. Follow the prompts to create a virtual environment.",
-      "references": [
-        {
-          "chunk_id": "fixture-0",
-          "document_id": "SYNTHETIC-TEST-ONLY",
-          "source_path": "fixtures/synthetic.txt",
-          "section": "fixture",
-          "version": "fixture-not-official",
-          "start": 0,
-          "end": 100,
-          "text": "Python is a programming language."
-        }
-      ],
-      "status": "answer",
-      "reason": "validated_citations_not_semantic_proof",
-      "latency_ms": 12178.439733000232,
+      "answer": "Information fiable insuffisante dans le corpus Python 3.11.18 / Insufficient reliable evidence.",
+      "references": [],
+      "status": "abstention",
+      "reason": "model_abstention_or_invalid_citations",
+      "latency_ms": 3270.5641000065953,
       "retrieved_chunks": 1
     },
-    "raw_output": "{\"status\": \"answer\", \"answer\": \"To activate a Python environment in PowerShell, follow these steps:\\n\\n1. Open PowerShell as an administrator.\\n2. Type `python -m venv` and press Enter.\\n3. Follow the prompts to create a virtual environment.\", \"citations\": [\"S1\"]}",
-    "passed": false
+    "raw_output": "{\"status\":\"abstention\",\"answer\":\"Insufficient evidence.\",\"citations\":[]}",
+    "passed": true
   }
 ]
